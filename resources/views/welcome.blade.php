@@ -14,7 +14,7 @@
     </head>
     <body>
         <div id="app">
-            <welcome></welcome>
+            <welcome :title="'BillScribe'"></welcome>
         </div>
         <script type="text/javascript" src="js/app.js"></script>
     </body>

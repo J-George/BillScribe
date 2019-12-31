@@ -2,7 +2,7 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome to Vue.js on Laravel
+                    {{title}}
                 </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">View Laravel Docs</a>
@@ -14,7 +14,9 @@
 </template>
 
 <script>
-        export default {}
+        export default {
+             props : ['title']
+        }
 </script>
 
 <style scoped>
