@@ -12,13 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome',['title' => 'Coming from the server']);
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
