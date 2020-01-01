@@ -49108,7 +49108,7 @@ exports = module.exports = __webpack_require__(42)(false);
 
 
 // module
-exports.push([module.i, "\n.nav-item[data-v-410d367b]\n{\n    margin-right: 25px;\n    color: #eaeaea;\n    font-weight: 700;\n}\n.nav-link[data-v-410d367b],.navbar-light[data-v-410d367b]\n{\n    color: #eaeaea !important;\n    font-weight: 700;\n    margin-top: 5px;\n}    \n", ""]);
+exports.push([module.i, "\n.nav-item[data-v-410d367b]\n{\n    margin-right: 25px;\n    color: #eaeaea;\n    font-weight: 700;\n}\n.nav-link[data-v-410d367b],.navbar-light[data-v-410d367b]\n{\n    color: #eaeaea !important;\n    font-weight: 700;\n    padding-top: 10px;\n}\n.front-splash[data-v-410d367b]\n{\n    min-height: calc(100vh - 60px);\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    color: white;\n}\n.front-splash .row[data-v-410d367b]\n{\n    border: 10px solid white;\n    width: 100%;\n}\n.front-splash .row h1[data-v-410d367b]\n{\n    margin: 150px 20px;\n    font-weight: 700;\n    font-size: 50px;\n}  \n", ""]);
 
 // exports
 
@@ -49586,6 +49586,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
      props: ['title']
@@ -49610,7 +49618,9 @@ var render = function() {
       _vm._m(0),
       _vm._v(" "),
       _vm._m(1)
-    ])
+    ]),
+    _vm._v(" "),
+    _vm._m(2)
   ])
 }
 var staticRenderFns = [
@@ -49670,6 +49680,20 @@ var staticRenderFns = [
         ])
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container front-splash" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-lg-6" }, [
+          _c("h1", [_vm._v("All warranties, One location")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-6" })
+      ])
+    ])
   }
 ]
 render._withStripped = true

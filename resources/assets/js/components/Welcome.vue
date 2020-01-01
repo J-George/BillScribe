@@ -10,6 +10,14 @@
                     </ul>
 				</div>
 			</nav>
+            <div class="container front-splash">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1>All warranties, One location</h1>
+                    </div>
+                    <div class="col-lg-6"></div>
+                </div>
+            </div>
         </div> 
 </template>
 
@@ -30,6 +38,24 @@
     {
         color: #eaeaea !important;
         font-weight: 700;
-        margin-top: 5px;
-    }    
+        padding-top: 10px;
+    }
+    .front-splash
+    {
+        min-height: calc(100vh - 60px);
+        display: flex;
+        align-items: center;
+        color: white;
+    }  
+    .front-splash .row
+    {
+        border: 10px solid white;
+        width: 100%;
+    }
+    .front-splash .row h1
+    {
+        margin: 150px 20px;
+        font-weight: 700;
+        font-size: 50px;
+    }  
 </style>
