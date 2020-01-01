@@ -10,6 +10,16 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <style>
+        html, body {
+            color: #636b6f;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(290deg,#F48A23, #F15A24)
+        }
+        </style>
 
     </head>
     <body>

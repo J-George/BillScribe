@@ -12,10 +12,23 @@
 */
 
 Route::get('/', function () {
-    return view('welcome',['title' => 'Coming from the server']);
+    return view('welcome',['title' => 'BillScribe']);
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/page', function () {
+    return view('page',
+        [
+            'title' => "Page 2 - A little about the Author",
+            'author' => json_encode([
+                    "name" => "Fisayo Afolayan",
+                    "role" => "Software Enginner",
+                    "code" => "Always keeping it clean"
+            ])
+        ]
+    );
+});
 
