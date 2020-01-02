@@ -6,6 +6,11 @@
  */
 
 require('./bootstrap');
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+ 
+library.add(faMobileAlt);
 
 window.Vue = require('vue');
 
@@ -17,6 +22,7 @@ window.Vue = require('vue');
 
 Vue.component('welcome', require('./components/Welcome.vue'));
 Vue.component('page', require('./components/Page.vue'));
+Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 const app = new Vue({
     el: '#app'
