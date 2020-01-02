@@ -14191,7 +14191,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fortawesome_fontawesome_svg_core__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fortawesome_vue_fontawesome__ = __webpack_require__(62);
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -14203,7 +14202,7 @@ __webpack_require__(13);
 
 
 
-__WEBPACK_IMPORTED_MODULE_0__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["a" /* faMobileAlt */]);
+__WEBPACK_IMPORTED_MODULE_0__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["a" /* faMobileAlt */], __WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["b" /* faRecycle */], __WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["c" /* faUserTie */]);
 
 window.Vue = __webpack_require__(35);
 
@@ -14213,12 +14212,12 @@ window.Vue = __webpack_require__(35);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('welcome', __webpack_require__(39));
-Vue.component('page', __webpack_require__(55));
-Vue.component('font-awesome-icon', __WEBPACK_IMPORTED_MODULE_2__fortawesome_vue_fontawesome__["a" /* FontAwesomeIcon */]);
+Vue.component("welcome", __webpack_require__(39));
+Vue.component("page", __webpack_require__(55));
+Vue.component("font-awesome-icon", __WEBPACK_IMPORTED_MODULE_2__fortawesome_vue_fontawesome__["a" /* FontAwesomeIcon */]);
 
 var app = new Vue({
-  el: '#app'
+  el: "#app"
 });
 
 /***/ }),
@@ -49119,7 +49118,7 @@ exports = module.exports = __webpack_require__(42)(false);
 
 
 // module
-exports.push([module.i, "\n.front-splash[data-v-410d367b] {\r\n    min-height: calc(100vh - 60px);\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    color: white;\n}\n.front-splash .row[data-v-410d367b] {\r\n    border: 10px solid white;\r\n    width: 100%;\n}\n.front-splash .row h1[data-v-410d367b] {\r\n    margin: 150px 20px;\r\n    font-weight: 700;\r\n    font-size: 50px;\n}\n.focus[data-v-410d367b] {\r\n    margin: 100px 0px;\n}\n.blackbackground[data-v-410d367b] {\r\n    background-color: #503927;\r\n    color: white;\n}\n.blackbackground div[data-v-410d367b] {\r\n    padding: 150px 80px;\n}\n.whitebackground[data-v-410d367b] {\r\n    background-color: white;\n}\n.whitebackground div[data-v-410d367b] {\r\n    margin: 150px 20px;\n}\n.whitebackground h2[data-v-410d367b],\r\n.blackbackground h2[data-v-410d367b] {\r\n    font-size: 40px;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\r\n    font-weight: 700;\n}\n.whitebackground p[data-v-410d367b],\r\n.blackbackground p[data-v-410d367b] {\r\n    font-weight: 600;\n}\n.triangle[data-v-410d367b] {\r\n    background: linear-gradient(136deg, white 57%, #ffffff73 0%);\n}\r\n", ""]);
+exports.push([module.i, "\n.front-splash[data-v-410d367b] {\r\n    min-height: calc(100vh - 60px);\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    color: white;\n}\n.front-splash .row[data-v-410d367b] {\r\n    border: 10px solid white;\r\n    width: 100%;\n}\n.front-splash .row h1[data-v-410d367b] {\r\n    margin: 150px 20px;\r\n    font-weight: 700;\r\n    font-size: 50px;\n}\n.focus[data-v-410d367b] {\r\n    margin: 100px 0px;\n}\n.blackbackground[data-v-410d367b] {\r\n    background-color: #503927;\r\n    color: white;\n}\n.blackbackground div[data-v-410d367b] {\r\n    padding: 150px 80px;\n}\n.whitebackground[data-v-410d367b] {\r\n    background-color: white;\n}\n.whitebackground div[data-v-410d367b] {\r\n    margin: 150px 20px;\n}\n.whitebackground h2[data-v-410d367b],\r\n.blackbackground h2[data-v-410d367b] {\r\n    font-size: 40px;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\r\n    font-weight: 700;\n}\n.whitebackground p[data-v-410d367b],\r\n.blackbackground p[data-v-410d367b] {\r\n    font-weight: 600;\n}\n.triangle[data-v-410d367b] {\r\n    background: linear-gradient(136deg, white 57%, #ffffff73 0%);\n}\n.d-flex div[data-v-410d367b] {\r\n    width: 33%;\r\n    text-align: center;\r\n    color: white;\r\n    padding: 10px;\r\n    margin-bottom: 100px;\n}\n.d-flex svg[data-v-410d367b] {\r\n    width: 75px;\r\n    height: 85px;\n}\n.redbackground[data-v-410d367b] {\r\n    background-color: #e23e3e;\r\n    padding: 50px;\n}\r\n", ""]);
 
 // exports
 
@@ -49636,6 +49635,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -49658,23 +49671,43 @@ var render = function() {
       _c("div", { staticClass: "d-flex" }, [
         _c(
           "div",
-          [_c("font-awesome-icon", { attrs: { icon: "mobile-alt" } })],
+          [
+            _c("font-awesome-icon", { attrs: { icon: "mobile-alt" } }),
+            _vm._v(" "),
+            _vm._m(3),
+            _vm._v(" "),
+            _c("p")
+          ],
           1
         ),
         _vm._v(" "),
         _c(
           "div",
-          [_c("font-awesome-icon", { attrs: { icon: "mobile-alt" } })],
+          [
+            _c("font-awesome-icon", { attrs: { icon: "user-tie" } }),
+            _vm._v(" "),
+            _vm._m(4),
+            _vm._v(" "),
+            _c("p")
+          ],
           1
         ),
         _vm._v(" "),
         _c(
           "div",
-          [_c("font-awesome-icon", { attrs: { icon: "mobile-alt" } })],
+          [
+            _c("font-awesome-icon", { attrs: { icon: "recycle" } }),
+            _vm._v(" "),
+            _vm._m(5),
+            _vm._v(" "),
+            _c("p")
+          ],
           1
         )
       ])
-    ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container-fluid redbackground" })
   ])
 }
 var staticRenderFns = [
@@ -49726,7 +49759,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("p", [
               _vm._v(
-                "\n                        BillScribe is a tool for logging your purchases with\n                        warranties. Be it a phone, a laptop, a luxury watch\n                        or even a suitcase, if it has a warranty, add it in."
+                "\n                        BillScribe is a tool for logging your purchases with\n                        warranties. Be it a phone, a laptop, a luxury watch\n                        or even a suitcase, if it has a warranty, add it\n                        in."
               ),
               _c("br"),
               _vm._v(
@@ -49738,6 +49771,30 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "col-lg-6 triangle" })
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", { staticClass: "mt-2" }, [
+      _c("strong", [_vm._v(" Always Accessible ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", { staticClass: "mt-2" }, [
+      _c("strong", [_vm._v(" Go Premium ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", { staticClass: "mt-2" }, [
+      _c("strong", [_vm._v(" Be Responsible ")])
     ])
   }
 ]
@@ -53030,7 +53087,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faRandom */
 /* unused harmony export faReceipt */
 /* unused harmony export faRecordVinyl */
-/* unused harmony export faRecycle */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return faRecycle; });
 /* unused harmony export faRedo */
 /* unused harmony export faRedoAlt */
 /* unused harmony export faRegistered */
@@ -53276,7 +53333,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faUserShield */
 /* unused harmony export faUserSlash */
 /* unused harmony export faUserTag */
-/* unused harmony export faUserTie */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return faUserTie; });
 /* unused harmony export faUserTimes */
 /* unused harmony export faUsers */
 /* unused harmony export faUsersCog */

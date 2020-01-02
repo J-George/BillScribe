@@ -31,7 +31,8 @@
                         <p>
                             BillScribe is a tool for logging your purchases with
                             warranties. Be it a phone, a laptop, a luxury watch
-                            or even a suitcase, if it has a warranty, add it in.</br>
+                            or even a suitcase, if it has a warranty, add it
+                            in.<br />
                             The app will keep you informed of when the warranty
                             is about to expire and what it covers. You will
                             never need to worry about hunting for old reciepts
@@ -44,11 +45,24 @@
         </div>
         <div class="container">
             <div class="d-flex">
-                <div><font-awesome-icon icon="mobile-alt" /></div>
-                <div><font-awesome-icon icon="mobile-alt" /></div>
-                <div><font-awesome-icon icon="mobile-alt" /></div>
+                <div>
+                    <font-awesome-icon icon="mobile-alt" />
+                    <h3 class="mt-2"><strong> Always Accessible </strong></h3>
+                    <p></p>
+                </div>
+                <div>
+                    <font-awesome-icon icon="user-tie" />
+                    <h3 class="mt-2"><strong> Go Premium </strong></h3>
+                    <p></p>
+                </div>
+                <div>
+                    <font-awesome-icon icon="recycle" />
+                    <h3 class="mt-2"><strong> Be Responsible </strong></h3>
+                    <p></p>
+                </div>
             </div>
-        </div>    
+        </div>
+        <div class="container-fluid redbackground"></div>
     </div>
 </template>
 
@@ -101,5 +115,20 @@ export default {};
 }
 .triangle {
     background: linear-gradient(136deg, white 57%, #ffffff73 0%);
+}
+.d-flex div {
+    width: 33%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.d-flex svg {
+    width: 75px;
+    height: 85px;
+}
+.redbackground {
+    background-color: #e23e3e;
+    padding: 50px;
 }
 </style>

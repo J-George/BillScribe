@@ -1,18 +1,21 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
- 
-library.add(faMobileAlt);
+require("./bootstrap");
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+    faMobileAlt,
+    faRecycle,
+    faUserTie
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-window.Vue = require('vue');
+library.add(faMobileAlt, faRecycle, faUserTie);
+
+window.Vue = require("vue");
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -20,10 +23,10 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('welcome', require('./components/Welcome.vue'));
-Vue.component('page', require('./components/Page.vue'));
-Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component("welcome", require("./components/Welcome.vue"));
+Vue.component("page", require("./components/Page.vue"));
+Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 const app = new Vue({
-    el: '#app'
+    el: "#app"
 });
