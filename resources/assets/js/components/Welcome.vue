@@ -48,17 +48,17 @@
                 <div>
                     <font-awesome-icon icon="mobile-alt" />
                     <h3 class="mt-2"><strong> Always Accessible </strong></h3>
-                    <p></p>
+                    <p>Get all the details on any device. Supported on iOS and Android.</p>
                 </div>
                 <div>
                     <font-awesome-icon icon="user-tie" />
                     <h3 class="mt-2"><strong> Go Premium </strong></h3>
-                    <p></p>
+                    <p>Add upto 20 devices for free! Or go Premium and add as many as you'd like.</p>
                 </div>
                 <div>
                     <font-awesome-icon icon="recycle" />
                     <h3 class="mt-2"><strong> Be Responsible </strong></h3>
-                    <p></p>
+                    <p>Get rid of the clutter and waste of reciepts and go digital.</p>
                 </div>
             </div>
         </div>
@@ -122,6 +122,7 @@ export default {};
     color: white;
     padding: 10px;
     margin-bottom: 100px;
+    font-weight: 700;
 }
 .d-flex svg {
     width: 75px;

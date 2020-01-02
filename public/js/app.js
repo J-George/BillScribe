@@ -49118,7 +49118,7 @@ exports = module.exports = __webpack_require__(42)(false);
 
 
 // module
-exports.push([module.i, "\n.front-splash[data-v-410d367b] {\r\n    min-height: calc(100vh - 60px);\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    color: white;\n}\n.front-splash .row[data-v-410d367b] {\r\n    border: 10px solid white;\r\n    width: 100%;\n}\n.front-splash .row h1[data-v-410d367b] {\r\n    margin: 150px 20px;\r\n    font-weight: 700;\r\n    font-size: 50px;\n}\n.focus[data-v-410d367b] {\r\n    margin: 100px 0px;\n}\n.blackbackground[data-v-410d367b] {\r\n    background-color: #503927;\r\n    color: white;\n}\n.blackbackground div[data-v-410d367b] {\r\n    padding: 150px 80px;\n}\n.whitebackground[data-v-410d367b] {\r\n    background-color: white;\n}\n.whitebackground div[data-v-410d367b] {\r\n    margin: 150px 20px;\n}\n.whitebackground h2[data-v-410d367b],\r\n.blackbackground h2[data-v-410d367b] {\r\n    font-size: 40px;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\r\n    font-weight: 700;\n}\n.whitebackground p[data-v-410d367b],\r\n.blackbackground p[data-v-410d367b] {\r\n    font-weight: 600;\n}\n.triangle[data-v-410d367b] {\r\n    background: linear-gradient(136deg, white 57%, #ffffff73 0%);\n}\n.d-flex div[data-v-410d367b] {\r\n    width: 33%;\r\n    text-align: center;\r\n    color: white;\r\n    padding: 10px;\r\n    margin-bottom: 100px;\n}\n.d-flex svg[data-v-410d367b] {\r\n    width: 75px;\r\n    height: 85px;\n}\n.redbackground[data-v-410d367b] {\r\n    background-color: #e23e3e;\r\n    padding: 50px;\n}\r\n", ""]);
+exports.push([module.i, "\n.front-splash[data-v-410d367b] {\r\n    min-height: calc(100vh - 60px);\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    color: white;\n}\n.front-splash .row[data-v-410d367b] {\r\n    border: 10px solid white;\r\n    width: 100%;\n}\n.front-splash .row h1[data-v-410d367b] {\r\n    margin: 150px 20px;\r\n    font-weight: 700;\r\n    font-size: 50px;\n}\n.focus[data-v-410d367b] {\r\n    margin: 100px 0px;\n}\n.blackbackground[data-v-410d367b] {\r\n    background-color: #503927;\r\n    color: white;\n}\n.blackbackground div[data-v-410d367b] {\r\n    padding: 150px 80px;\n}\n.whitebackground[data-v-410d367b] {\r\n    background-color: white;\n}\n.whitebackground div[data-v-410d367b] {\r\n    margin: 150px 20px;\n}\n.whitebackground h2[data-v-410d367b],\r\n.blackbackground h2[data-v-410d367b] {\r\n    font-size: 40px;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\r\n    font-weight: 700;\n}\n.whitebackground p[data-v-410d367b],\r\n.blackbackground p[data-v-410d367b] {\r\n    font-weight: 600;\n}\n.triangle[data-v-410d367b] {\r\n    background: linear-gradient(136deg, white 57%, #ffffff73 0%);\n}\n.d-flex div[data-v-410d367b] {\r\n    width: 33%;\r\n    text-align: center;\r\n    color: white;\r\n    padding: 10px;\r\n    margin-bottom: 100px;\r\n    font-weight: 700;\n}\n.d-flex svg[data-v-410d367b] {\r\n    width: 75px;\r\n    height: 85px;\n}\n.redbackground[data-v-410d367b] {\r\n    background-color: #e23e3e;\r\n    padding: 50px;\n}\r\n", ""]);
 
 // exports
 
@@ -49676,7 +49676,11 @@ var render = function() {
             _vm._v(" "),
             _vm._m(3),
             _vm._v(" "),
-            _c("p")
+            _c("p", [
+              _vm._v(
+                "Get all the details on any device. Supported on iOS and Android."
+              )
+            ])
           ],
           1
         ),
@@ -49688,7 +49692,11 @@ var render = function() {
             _vm._v(" "),
             _vm._m(4),
             _vm._v(" "),
-            _c("p")
+            _c("p", [
+              _vm._v(
+                "Add upto 20 devices for free! Or go Premium and add as many as you'd like."
+              )
+            ])
           ],
           1
         ),
@@ -49700,7 +49708,11 @@ var render = function() {
             _vm._v(" "),
             _vm._m(5),
             _vm._v(" "),
-            _c("p")
+            _c("p", [
+              _vm._v(
+                "Get rid of the clutter and waste of reciepts and go digital."
+              )
+            ])
           ],
           1
         )
