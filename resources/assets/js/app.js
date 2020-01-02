@@ -8,12 +8,12 @@ require("./bootstrap");
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
     faMobileAlt,
-    faRecycle,
+    faMapMarkedAlt,
     faUserTie
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faMobileAlt, faRecycle, faUserTie);
+library.add(faMobileAlt, faMapMarkedAlt, faUserTie);
 
 window.Vue = require("vue");
 

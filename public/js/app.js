@@ -14202,7 +14202,7 @@ __webpack_require__(13);
 
 
 
-__WEBPACK_IMPORTED_MODULE_0__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["a" /* faMobileAlt */], __WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["b" /* faRecycle */], __WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["c" /* faUserTie */]);
+__WEBPACK_IMPORTED_MODULE_0__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["b" /* faMobileAlt */], __WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["a" /* faMapMarkedAlt */], __WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["c" /* faUserTie */]);
 
 window.Vue = __webpack_require__(35);
 
@@ -49704,13 +49704,13 @@ var render = function() {
         _c(
           "div",
           [
-            _c("font-awesome-icon", { attrs: { icon: "recycle" } }),
+            _c("font-awesome-icon", { attrs: { icon: "map-marked-alt" } }),
             _vm._v(" "),
             _vm._m(5),
             _vm._v(" "),
             _c("p", [
               _vm._v(
-                "Get rid of the clutter and waste of reciepts and go digital."
+                "View all available support resources closest to you, right on the app."
               )
             ])
           ],
@@ -49806,7 +49806,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("h3", { staticClass: "mt-2" }, [
-      _c("strong", [_vm._v(" Be Responsible ")])
+      _c("strong", [_vm._v(" Find Support, Fast ")])
     ])
   }
 ]
@@ -52959,7 +52959,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faMale */
 /* unused harmony export faMap */
 /* unused harmony export faMapMarked */
-/* unused harmony export faMapMarkedAlt */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return faMapMarkedAlt; });
 /* unused harmony export faMapMarker */
 /* unused harmony export faMapMarkerAlt */
 /* unused harmony export faMapPin */
@@ -52991,7 +52991,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faMinusSquare */
 /* unused harmony export faMitten */
 /* unused harmony export faMobile */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return faMobileAlt; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return faMobileAlt; });
 /* unused harmony export faMoneyBill */
 /* unused harmony export faMoneyBillAlt */
 /* unused harmony export faMoneyBillWave */
@@ -53099,7 +53099,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faRandom */
 /* unused harmony export faReceipt */
 /* unused harmony export faRecordVinyl */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return faRecycle; });
+/* unused harmony export faRecycle */
 /* unused harmony export faRedo */
 /* unused harmony export faRedoAlt */
 /* unused harmony export faRegistered */

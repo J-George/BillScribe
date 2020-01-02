@@ -56,9 +56,9 @@
                     <p>Add upto 20 devices for free! Or go Premium and add as many as you'd like.</p>
                 </div>
                 <div>
-                    <font-awesome-icon icon="recycle" />
-                    <h3 class="mt-2"><strong> Be Responsible </strong></h3>
-                    <p>Get rid of the clutter and waste of reciepts and go digital.</p>
+                    <font-awesome-icon icon="map-marked-alt" />
+                    <h3 class="mt-2"><strong> Find Support, Fast </strong></h3>
+                    <p>View all available support resources closest to you, right on the app.</p>
                 </div>
             </div>
         </div>
