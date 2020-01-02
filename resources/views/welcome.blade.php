@@ -14,8 +14,35 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light"> 
+                <a class="navbar-brand front-page-logo"  href="#">BillScribe</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                    @guest
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"> <a class="nav-link" href="/register">Register </a> </li>
+                        <li class="nav-item active"> <a class="nav-link" href="/login">Login </a> </li>
+                    </ul>
+                    @endguest
+                    @auth
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                        </li>                    
+                    @endauth
+                </div>
+            </nav>
+        </div>
         <div id="app">
-            <welcome :title="'{{$title}}'"></welcome>
+            <welcome></welcome>
         </div>
         <script type="text/javascript" src="js/app.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

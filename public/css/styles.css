@@ -6,3 +6,15 @@ html, body {
     margin: 0;
     background: linear-gradient(290deg,#F48A23, #F15A24)
 }
+.nav-item
+{
+    margin-right: 25px;
+    color: #eaeaea;
+    font-weight: 700;
+}
+.nav-link,.navbar-light
+{
+    color: #eaeaea !important;
+    font-weight: 700;
+    padding-top: 10px;
+}
