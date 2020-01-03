@@ -22,27 +22,90 @@
                     @guest
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active"> <a class="nav-link" href="/register">Register </a> </li>
-                        <li class="nav-item active"> <a class="nav-link" href="/login">Login </a> </li>
-                    </ul>
+                        <li class="nav-item active"> <a class="nav-link" href="/login">Login </a> </li>  
+                    </ul>                      
                     @endguest
                     @auth
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                        </li>                    
+                                                onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                                {{ __('Logout') }}
+                            </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </li>
+                    </ul>                        
                     @endauth
                 </div>
             </nav>
         </div>
-        <div id="app">
-            <welcome></welcome>
+        <div>
+            <div class="container">
+                <div class="container front-splash">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1>All warranties, One location</h1>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid blackbackground">
+                <div class="container">
+                    <h2 class="text-center">
+                        The essential tool for a smart home.
+                    </h2>
+                    <p class="text-center">
+                        As our homes get smarter, it makes sense to secure our
+                        products with a good warranty program. It makes greater
+                        sense to record and never forget your warranties when you
+                        need them the most.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row focus">
+                    <div class="col-lg-6 whitebackground">
+                        <div>
+                            <h2>Relax while your warranties are recorded.</h2>
+                            <p>
+                                BillScribe is a tool for logging your purchases with
+                                warranties. Be it a phone, a laptop, a luxury watch
+                                or even a suitcase, if it has a warranty, add it
+                                in.<br />
+                                The app will keep you informed of when the warranty
+                                is about to expire and what it covers. You will
+                                never need to worry about hunting for old reciepts
+                                again.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 triangle"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-flex">
+                    <div>
+                        <icons icon="mobile-alt" />
+                        <h3 class="mt-2"><strong> Always Accessible </strong></h3>
+                        <p>Get all the details on any device. Supported on iOS and Android.</p>
+                    </div>
+                    <div>
+                        <icons icon="user-tie" />
+                        <h3 class="mt-2"><strong> Go Premium </strong></h3>
+                        <p>Add upto 20 devices for free! Or go Premium and add as many as you'd like.</p>
+                    </div>
+                    <div>
+                        <icons icon="map-marked-alt" />
+                        <h3 class="mt-2"><strong> Find Support, Fast </strong></h3>
+                        <p>View all available support resources closest to you, right on the app.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid redbackground"></div> 
         </div>
         <script type="text/javascript" src="js/app.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

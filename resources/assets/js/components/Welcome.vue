@@ -46,17 +46,17 @@
         <div class="container">
             <div class="d-flex">
                 <div>
-                    <font-awesome-icon icon="mobile-alt" />
+                    <icons icon="mobile-alt" />
                     <h3 class="mt-2"><strong> Always Accessible </strong></h3>
                     <p>Get all the details on any device. Supported on iOS and Android.</p>
                 </div>
                 <div>
-                    <font-awesome-icon icon="user-tie" />
+                    <icons icon="user-tie" />
                     <h3 class="mt-2"><strong> Go Premium </strong></h3>
                     <p>Add upto 20 devices for free! Or go Premium and add as many as you'd like.</p>
                 </div>
                 <div>
-                    <font-awesome-icon icon="map-marked-alt" />
+                    <icons icon="map-marked-alt" />
                     <h3 class="mt-2"><strong> Find Support, Fast </strong></h3>
                     <p>View all available support resources closest to you, right on the app.</p>
                 </div>
@@ -67,7 +67,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+};
 </script>
 
 <style scoped>

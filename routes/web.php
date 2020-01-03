@@ -10,14 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome',['title' => 'BillScribe']);
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/page', function () {
     return view('page',
@@ -31,4 +31,9 @@ Route::get('/page', function () {
         ]
     );
 });
+*/
+
+Route::get('/{any}', function(){
+        return view('layouts.vueapp');
+})->where('any', '.*');
 

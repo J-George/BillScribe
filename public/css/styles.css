@@ -14,7 +14,9 @@ html, body {
 }
 .nav-link,.navbar-light
 {
-    color: #eaeaea !important;
+    color: #eaeaea;
     font-weight: 700;
     padding-top: 10px;
+    margin-right: 25px;
+    font-size: 18px;
 }
