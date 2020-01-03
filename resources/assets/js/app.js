@@ -23,7 +23,7 @@ window.Vue = require("vue");
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component("welcome", require("./components/Welcome.vue"));
+Vue.component("welcome", require("./components/Welcome.vue").default);
 Vue.component("login", require("./components/VueLogin.vue"));
 Vue.component("register", require("./components/VueRegister.vue"));
 Vue.component("font-awesome-icon", FontAwesomeIcon);

@@ -1,10 +1,9 @@
-html, body {
+.front-splash-background {
     color: #636b6f;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(290deg,#F48A23, #F15A24)
 }
 .nav-item
 {
@@ -19,4 +18,5 @@ html, body {
     padding-top: 10px;
     margin-right: 25px;
     font-size: 18px;
+    text-decoration: none;
 }

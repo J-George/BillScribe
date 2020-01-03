@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(290deg,#F48A23, #F15A24)
+}
+
+.logo{
+    color:white;
+}
+.nav-link,.navbar-light
+{
+    color: #eaeaea !important;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-right: 25px;
+    font-size: 18px;
+}
+
+.front-splash {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.front-splash .row {
+    border: 10px solid white;
+    width: 100%;
+}
+.front-splash .row h1 {
+    margin: 150px 20px;
+    font-weight: 700;
+    font-size: 50px;
+}
+.focus {
+    margin: 100px 0px;
+}
+.blackbackground {
+    background-color: #503927;
+    color: white;
+}
+.blackbackground div {
+    padding: 150px 80px;
+}
+
+.whitebackground {
+    background-color: white;
+}
+.whitebackground div {
+    margin: 150px 20px;
+}
+.whitebackground h2,
+.blackbackground h2 {
+    font-size: 40px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+}
+.whitebackground p,
+.blackbackground p {
+    font-weight: 600;
+}
+.triangle {
+    background: linear-gradient(136deg, white 57%, #ffffff73 0%);
+}
+.d-flex div {
+    width: 33%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+    font-weight: 700;
+}
+.d-flex svg {
+    width: 75px;
+    height: 85px;
+}
+.redbackground {
+    background-color: #e23e3e;
+    padding: 50px;
+}

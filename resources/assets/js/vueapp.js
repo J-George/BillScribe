@@ -1,9 +1,12 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import App from './components/App'
-import Welcome from './components/Welcome'
-import VueLogin from './components/VueLogin'
-import VueRegister from './components/VueRegister'
+import Vue from "vue";
+import VueRouter from "vue-router";
+
+Vue.use(VueRouter);
+
+import App from "./components/App";
+import Welcome from "./components/Welcome";
+import VueLogin from "./components/VueLogin";
+import VueRegister from "./components/VueRegister";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -15,40 +18,41 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(faMobileAlt, faMapMarkedAlt, faUserTie);
 
-
-Vue.use(VueRouter)
-
 const router = new VueRouter({
-    mode: 'history',
+    mode: "history",
     routes: [
         {
-            path: '/home',
-            name: 'welcome',
+            path: "/home",
+            name: "welcome",
             component: Welcome,
-            props: {
-                icons : FontAwesomeIcon,
-            }
+            children: [
+                {
+                    path: "",
+                    component: Welcome
+                }
+            ],
+            props: {}
         },
         {
-            path: '/login',
-            name: 'vuelogin',
+            path: "/login",
+            name: "login",
             component: VueLogin,
-            props: { 
-                title: "Login Page",
+            props: {
+                title: "Login Page"
             }
         },
         {
-            path: '/register',
-            name: 'vueregister',
+            path: "/register",
+            name: "register",
             component: VueRegister,
-            props: { 
-                title: "Register",
+            props: {
+                title: "Register"
             }
-        },    
-    ],
-})
+        }
+    ]
+});
 const app = new Vue({
-    el: '#app',
+    el: "#app",
     components: { App },
-    router,
+    router
 });
