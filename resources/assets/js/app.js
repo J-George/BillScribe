@@ -25,6 +25,7 @@ window.Vue = require("vue");
 
 Vue.component("welcome", require("./components/Welcome.vue"));
 Vue.component("login", require("./components/VueLogin.vue"));
+Vue.component("register", require("./components/VueRegister.vue"));
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 const app = new Vue({

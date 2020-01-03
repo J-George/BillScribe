@@ -10,30 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*
+
 Route::get('/', function () {
-    return view('welcome',['title' => 'BillScribe']);
+    return view('welcome');
 });
 
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/page', function () {
-    return view('page',
-        [
-            'title' => "Page 2 - A little about the Author",
-            'author' => json_encode([
-                    "name" => "Fisayo Afolayan",
-                    "role" => "Software Enginner",
-                    "code" => "Always keeping it clean"
-            ])
-        ]
-    );
-});
-*/
 
 Route::get('/{any}', function(){
-        return view('layouts.vueapp');
+        return view('vueapp');
 })->where('any', '.*');
 

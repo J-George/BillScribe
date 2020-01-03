@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import App from './components/App'
 import Welcome from './components/Welcome'
 import VueLogin from './components/VueLogin'
+import VueRegister from './components/VueRegister'
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -34,11 +35,6 @@ const router = new VueRouter({
             component: VueLogin,
             props: { 
                 title: "Login Page",
-                author : {
-                    name : "Fisayo Afolayan",
-                    role : "Software Engineer",
-                    code : "Always keep it clean"
-                }
             }
         },
         {
@@ -47,11 +43,6 @@ const router = new VueRouter({
             component: VueRegister,
             props: { 
                 title: "Register",
-                author : {
-                    name : "Fisayo Afolayan",
-                    role : "Software Engineer",
-                    code : "Always keep it clean"
-                }
             }
         },    
     ],
