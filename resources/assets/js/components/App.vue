@@ -21,3 +21,21 @@
 <script>
     export default {}
 </script>
+
+ <style >
+ .navbar-nav .nav-item,.navbar-light
+{
+    color:grey;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-right: 25px;
+    font-size: 18px;
+}
+.nav-item:last-child
+{
+    margin-right: 0px;
+}
+.logo{
+    color:grey;
+}
+ </style>
