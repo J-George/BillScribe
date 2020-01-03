@@ -21,21 +21,3 @@
 <script>
     export default {}
 </script>
-
-<style>
-.logo{
-    color:grey;
-}
-.nav-link,.navbar-light
-{
-    /* color: #eaeaea !important; */
-    font-weight: 700;
-    padding-top: 10px;
-    margin-right: 25px;
-    font-size: 18px;
-}
-.nav-link:last-child
-{
-    margin-right: 0px;
-}
-</style>
