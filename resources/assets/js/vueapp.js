@@ -7,16 +7,17 @@ import App from "./components/App";
 import Welcome from "./components/Welcome";
 import VueLogin from "./components/VueLogin";
 import VueRegister from "./components/VueRegister";
+import Dashboard from "./components/Dashboard";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
     faMobileAlt,
     faMapMarkedAlt,
-    faUserTie
+    faUserTie,
+    faArrowCircleLeft
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faMobileAlt, faMapMarkedAlt, faUserTie);
+library.add(faMobileAlt, faMapMarkedAlt, faUserTie, faArrowCircleLeft);
 
 const router = new VueRouter({
     mode: "history",
@@ -25,29 +26,27 @@ const router = new VueRouter({
             path: "/home",
             name: "welcome",
             component: Welcome,
-            children: [
-                {
-                    path: "",
-                    component: Welcome
-                }
-            ],
             props: {}
+        },
+        {
+            path: "/",
+            name: "home",
+            component: Welcome,
         },
         {
             path: "/login",
             name: "login",
             component: VueLogin,
-            props: {
-                title: "Login Page"
-            }
         },
         {
             path: "/register",
             name: "register",
             component: VueRegister,
-            props: {
-                title: "Register"
-            }
+        },
+        {
+            path: "/dashboard",
+            name: "dashboard",
+            component: Dashboard,
         }
     ]
 });
