@@ -9,7 +9,7 @@
                 </div>
                 <input type="text" class="searchBar" placeholder="Search here...">
                 <div>
-                    <button id="addButton" class="btn btn-primary"><FontAwesomeIcon icon="plus" /> add</button>
+                    <button id="addButton" class="btn btn-primary" @click="addItem"><FontAwesomeIcon icon="plus" /> add</button>
                 </div>
             </div>
             <div class="profile mx-2">
@@ -19,7 +19,14 @@
             </div>
         </div>
         <div id="contents">
-
+            <div class="container d-flex pt-5">
+                <div v-for="item in contents" :key="item.id" class="items">
+                    <div class="itemCategory"></div>
+                    {{ item.title }}
+                </div>
+            </div>
+            <div class="addItemBox">
+            </div>
         </div>
     </div>    
 </template>
@@ -30,7 +37,38 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 export default {
     components: {
         FontAwesomeIcon
-    }
+    },
+    data(){
+        return{
+            contents:[
+                {
+                    'id':1,
+                    'title': 'Apple Watch',
+                    'category': 'smartwatch',
+                },
+                {
+                    'id':2,
+                    'title': 'iPad',
+                    'category': 'tablet',
+                },
+                {
+                    'id':3,
+                    'title': 'Macbook',
+                    'category': 'laptop',
+                },
+                {
+                    'id':4,
+                    'title': 'iPhone',
+                    'category': 'phone',
+                }
+            ]
+        }
+    },
+    methods:{
+        addItem(){
+            alert('you clicked the add button');
+        }
+    },
 };
 </script>
 
@@ -164,6 +202,33 @@ export default {
     border-radius:25px;
     width:40px;
     height: 40px;
+}
+
+.items{
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-right: 30px;
+    border-radius: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;
+    overflow: hidden;
+    width:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.items:hover{
+  box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;  
+}
+
+.itemCategory{
+    width:75px;
+    height:75px;
+    margin-bottom:5px;
 }
 
 </style>

@@ -25941,7 +25941,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n#mainBar{\r\n    width:100vw;\r\n    height:50px;\r\n    background-color: rgb(214, 82, 5);\r\n    -webkit-box-shadow: 0px 6px 7px #c1c1c1;\r\n            box-shadow: 0px 6px 7px #c1c1c1;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\n}\n#mainBar h4{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents{\r\n    height: calc(100vh - 50px);\r\n    background: -webkit-gradient(linear, left bottom, left top, from(#bdbdbd), to(transparent));\r\n    background: linear-gradient(0deg, #bdbdbd, transparent)\n}\n.functions{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar{\r\n    width:60%;\r\n    border-radius: 10px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\n}\n.searchBar:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 10px;\r\n    outline: white;\r\n    color: white;\n}\n.searchBar::-webkit-input-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::-moz-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::-ms-input-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n#addButton{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #227200;\r\n    color: white;\r\n    font-weight: 600;\n}\n#addButton svg{\r\n    margin-top: 5px;\n}\n#addButton:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n#listButton,#gridButton{\r\n    color: white;\n}\n#listButton:focus,#gridButton:focus{\r\n    outline: orange;\n}\n#listButton:active,#gridButton:active{\r\n    background-color: #f5965e75;\n}\n#listButton:active svg{\r\n    margin-left: 2px;\n}\n#gridButton:active svg{\r\n    margin-right: 2px;\n}\n#listButton{\r\n    border-bottom-left-radius: 10px;\r\n    border-top-left-radius: 10px;\r\n    margin-right: -3px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#gridButton{\r\n    border-bottom-right-radius: 10px;\r\n    border-top-right-radius: 10px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#listButton svg,#gridButton svg{\r\n    width: 15px;\r\n    height: 15px;\r\n    margin-left: 1px;\n}\n#listButton svg{\r\n    margin-left: 1px;\r\n    margin-top: 3px;\n}\n#gridButton svg{\r\n    margin-right: 1px;\r\n    margin-top: 3px;\n}\n#listButton:active svg,#gridButton:active svg{\r\n    width: 14px;\r\n    height: 14px;\r\n    color:#d65205;\n}\n.profile{\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\n}\n.profile svg{\r\n    color:white;\n}\n.photo{\r\n    background-color: white;\r\n    border-radius:25px;\r\n    width:40px;\r\n    height: 40px;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n#mainBar{\r\n    width:100vw;\r\n    height:50px;\r\n    background-color: rgb(214, 82, 5);\r\n    -webkit-box-shadow: 0px 6px 7px #c1c1c1;\r\n            box-shadow: 0px 6px 7px #c1c1c1;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\n}\n#mainBar h4{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents{\r\n    height: calc(100vh - 50px);\r\n    background: -webkit-gradient(linear, left bottom, left top, from(#bdbdbd), to(transparent));\r\n    background: linear-gradient(0deg, #bdbdbd, transparent)\n}\n.functions{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar{\r\n    width:60%;\r\n    border-radius: 10px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\n}\n.searchBar:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 10px;\r\n    outline: white;\r\n    color: white;\n}\n.searchBar::-webkit-input-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::-moz-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::-ms-input-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n#addButton{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #227200;\r\n    color: white;\r\n    font-weight: 600;\n}\n#addButton svg{\r\n    margin-top: 5px;\n}\n#addButton:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n#listButton,#gridButton{\r\n    color: white;\n}\n#listButton:focus,#gridButton:focus{\r\n    outline: orange;\n}\n#listButton:active,#gridButton:active{\r\n    background-color: #f5965e75;\n}\n#listButton:active svg{\r\n    margin-left: 2px;\n}\n#gridButton:active svg{\r\n    margin-right: 2px;\n}\n#listButton{\r\n    border-bottom-left-radius: 10px;\r\n    border-top-left-radius: 10px;\r\n    margin-right: -3px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#gridButton{\r\n    border-bottom-right-radius: 10px;\r\n    border-top-right-radius: 10px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#listButton svg,#gridButton svg{\r\n    width: 15px;\r\n    height: 15px;\r\n    margin-left: 1px;\n}\n#listButton svg{\r\n    margin-left: 1px;\r\n    margin-top: 3px;\n}\n#gridButton svg{\r\n    margin-right: 1px;\r\n    margin-top: 3px;\n}\n#listButton:active svg,#gridButton:active svg{\r\n    width: 14px;\r\n    height: 14px;\r\n    color:#d65205;\n}\n.profile{\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\n}\n.profile svg{\r\n    color:white;\n}\n.photo{\r\n    background-color: white;\r\n    border-radius:25px;\r\n    width:40px;\r\n    height: 40px;\n}\n.items{\r\n    background-color: whitesmoke;\r\n    padding: 10px;\r\n    margin-right: 30px;\r\n    border-radius: 10px;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    overflow: hidden;\r\n    width:100px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.items:hover{\r\n  -webkit-box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\r\n          box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\n}\n.itemCategory{\r\n    width:75px;\r\n    height:75px;\r\n    margin-bottom:5px;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -25979,12 +25979,46 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     components: {
         FontAwesomeIcon: __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__["a" /* FontAwesomeIcon */]
+    },
+    data: function data() {
+        return {
+            contents: [{
+                'id': 1,
+                'title': 'Apple Watch',
+                'category': 'smartwatch'
+            }, {
+                'id': 2,
+                'title': 'iPad',
+                'category': 'tablet'
+            }, {
+                'id': 3,
+                'title': 'Macbook',
+                'category': 'laptop'
+            }, {
+                'id': 4,
+                'title': 'iPhone',
+                'category': 'phone'
+            }]
+        };
+    },
+
+    methods: {
+        addItem: function addItem() {
+            alert('you clicked the add button');
+        }
     }
 });
 
@@ -26025,7 +26059,11 @@ var render = function() {
         _c("div", [
           _c(
             "button",
-            { staticClass: "btn btn-primary", attrs: { id: "addButton" } },
+            {
+              staticClass: "btn btn-primary",
+              attrs: { id: "addButton" },
+              on: { click: _vm.addItem }
+            },
             [
               _c("FontAwesomeIcon", { attrs: { icon: "plus" } }),
               _vm._v(" add")
@@ -26047,7 +26085,21 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _c("div", { attrs: { id: "contents" } })
+    _c("div", { attrs: { id: "contents" } }, [
+      _c(
+        "div",
+        { staticClass: "container d-flex pt-5" },
+        _vm._l(_vm.contents, function(item) {
+          return _c("div", { key: item.id, staticClass: "items" }, [
+            _c("div", { staticClass: "itemCategory" }),
+            _vm._v("\n                " + _vm._s(item.title) + "\n            ")
+          ])
+        }),
+        0
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "addItemBox" })
+    ])
   ])
 }
 var staticRenderFns = []
