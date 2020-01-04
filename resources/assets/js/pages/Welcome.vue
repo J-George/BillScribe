@@ -74,6 +74,11 @@
                         <h3 class="mt-2"><strong> Find Support, Fast </strong></h3>
                         <p>View all available support resources closest to you, right on the app.</p>
                     </div>
+                    <div>
+                        <FontAwesomeIcon icon="tools" />
+                        <h3 class="mt-2"><strong> Log Services </strong></h3>
+                        <p>Log service guarantees for parts and replacements.</p>
+                    </div>
                 </div>
             </div>    
             <div class="container-fluid redbackground"></div>
@@ -160,13 +165,17 @@ export default {
 .triangle {
     background: linear-gradient(136deg, white 57%, #ffffff73 0%);
 }
+.d-flex{
+    margin-bottom: 100px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 .d-flex div {
-    width: 33%;
     text-align: center;
     color: white;
     padding: 10px;
-    margin-bottom: 100px;
     font-weight: 700;
+    max-width: 250px;
 }
 .d-flex svg {
     width: 75px;

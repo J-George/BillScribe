@@ -5,6 +5,7 @@
             <div class="col-lg-5 col-md-6 orangeBackground d-flex">
                 <router-link :to="{ name: 'welcome' }" class="nav-link logo"><FontAwesomeIcon icon="arrow-circle-left" /></router-link>
                 <div class="d-flex formBox">
+                    <img src="/images/Logo Concept.png" alt="logo">
                     <h2>Login</h2>
                     <form action="">
 
@@ -84,11 +85,15 @@ export default {
     align-items: center; 
     width:500px;
     max-width: 100%;
-    padding: 25px 10px;
+    padding: 25px 0px;
     margin: 30px 5px;
     border-radius: 10px;
     box-shadow: 4px 5px 4px #ffaf61, -6px -6px 6px #f94d10;
 
+}
+.formBox img{
+    max-width: 215px;
+    margin: 25px;
 }
 .formBox h2{
     font-family: 'Montserrat Alternates', sans-serif;
@@ -99,6 +104,7 @@ export default {
 }
 form{
     width:90%;
+    margin-bottom: 50px;
 }
 
 .btn-primary{
