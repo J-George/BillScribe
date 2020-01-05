@@ -23881,7 +23881,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_VueLogin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__pages_VueLogin__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_VueRegister__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_VueRegister___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__pages_VueRegister__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_Dashboard__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_Dashboard__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_Dashboard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__pages_Dashboard__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__fortawesome_fontawesome_svg_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__ = __webpack_require__(11);
@@ -26950,10 +26950,241 @@ if (false) {
 }
 
 /***/ }),
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(71)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(73)
+/* template */
+var __vue_template__ = __webpack_require__(79)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/pages/Dashboard.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-049f0327", Component.options)
+  } else {
+    hotAPI.reload("data-v-049f0327", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(72);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("ab8519ac", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-049f0327\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Dashboard.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-049f0327\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Dashboard.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#mainBar{\r\n    width:100vw;\r\n    background-color: rgb(214, 82, 5);\r\n    -webkit-box-shadow: 0px 6px 7px #c1c1c1;\r\n            box-shadow: 0px 6px 7px #c1c1c1;\r\n    position: fixed;\r\n    top:0;\r\n    z-index: 1;\n}\n#mainBar > div{\r\n    max-width: 1900px;\r\n    height:50px;\r\n    margin:0 auto;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\n}\n#mainBar h4{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents{\r\n    min-height: calc(100vh - 50px);\r\n    background: -webkit-gradient(linear, left bottom, left top, from(#bdbdbd), to(transparent));\r\n    background: linear-gradient(0deg, #bdbdbd, transparent);\r\n    position: relative;\r\n    z-index: 0;\n}\n#contents .container\r\n{\r\n    margin-top:50px;\n}\n.functions{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar{\r\n    width:60%;\r\n    border-radius: 10px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\n}\n.searchBar:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 10px;\r\n    outline: white;\r\n    color: white;\n}\n.searchBar::-webkit-input-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::-moz-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::-ms-input-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n#addButton{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #227200;\r\n    color: white;\r\n    font-weight: 600;\n}\n#addButton svg{\r\n    margin-top: 5px;\n}\n#addButton:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n#listButton,#gridButton{\r\n    color: white;\n}\n#listButton:focus,#gridButton:focus{\r\n    outline: orange;\n}\n#listButton:active,#gridButton:active{\r\n    background-color: #f5965e75;\n}\n.darken{\r\n    background-color: #f5965e75 !important;\n}\n#listButton:active svg{\r\n    margin-left: 2px;\n}\n#gridButton:active svg{\r\n    margin-right: 2px;\n}\n#listButton{\r\n    border-bottom-left-radius: 10px;\r\n    border-top-left-radius: 10px;\r\n    margin-right: -3px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#gridButton{\r\n    border-bottom-right-radius: 10px;\r\n    border-top-right-radius: 10px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#listButton svg,#gridButton svg{\r\n    width: 15px;\r\n    height: 15px;\r\n    margin-left: 1px;\n}\n#listButton svg{\r\n    margin-left: 1px;\r\n    margin-top: 3px;\n}\n#gridButton svg{\r\n    margin-right: 1px;\r\n    margin-top: 3px;\n}\n#listButton:active svg,#gridButton:active svg, .darken svg{\r\n    width: 14px;\r\n    height: 14px;\r\n    color:#d65205;\n}\n.items{\r\n    background-color: whitesmoke;\r\n    padding: 10px;\r\n    margin-right: 30px;\r\n    border-radius: 10px;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    overflow: hidden;\r\n    width:100px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.itemsList{\r\n    background-color: #f5f5f580;\r\n    padding: 10px;\r\n    margin-bottom: 10px;\r\n    border-radius: 10px;\r\n    font-family: \"Montserrat Alternates\", sans-serif; \r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white; \r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.items:hover, .itemsList:hover{\r\n  -webkit-box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\r\n          box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\n}\n.itemCategory{\r\n    width:75px;\r\n    height:75px;\r\n    margin-bottom:5px;\n}\n.itemCategoryList{\r\n    width:30px;\r\n    height:30px;\r\n    margin-right:5px;\n}\n.addItemBox,.viewItemBox{\r\n    width:100vw;\r\n    height:100vh;\r\n    position: absolute;   \r\n    top: 0px;\r\n    z-index:2;\r\n    background: radial-gradient(transparent, #4e4e4ead);\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-transition: all .5s;\r\n    transition: all .5s;\n}\n.addItem,.viewItem{\r\n    width:300px;\r\n    height:250px;\r\n    background-color: white;\r\n    position: relative;\r\n    padding:20px;\n}\n.addItem svg, .viewItem svg{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: black;\r\n    cursor: pointer;\n}\r\n\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 73 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Settings__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Settings___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_Settings__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        FontAwesomeIcon: __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__["a" /* FontAwesomeIcon */],
+        Settings: __WEBPACK_IMPORTED_MODULE_1__components_Settings___default.a
+    },
+    data: function data() {
+        return {
+            displayed: false,
+            viewItem: false,
+            gridView: true,
+            listView: false,
+            viewTitle: '',
+            viewCat: '',
+            contents: [{
+                'id': 0,
+                'title': 'Apple Watch',
+                'category': 'electronics',
+                'sub-category': 'Smartwatch',
+                'brand': 'Apple',
+                'picture': '',
+                'DOP': '',
+                'Place of Purchase': '',
+                'Serial Numbers': '',
+                'Warranty Type': '',
+                'Place Duration': '',
+                'Additional Warranty': '',
+                'Service Location': '',
+                'Reciept Picture': ''
+            }, {
+                'id': 1,
+                'title': 'iPad',
+                'category': 'electronics',
+                'sub-category': 'Tablet',
+                'brand': 'Apple',
+                'picture': '',
+                'DOP': '',
+                'Place of Purchase': '',
+                'Serial Numbers': '',
+                'Warranty Type': '',
+                'Place Duration': '',
+                'Additional Warranty': '',
+                'Service Location': '',
+                'Reciept Picture': ''
+            }, {
+                'id': 2,
+                'title': 'Macbook',
+                'category': 'electronics',
+                'sub-category': 'Laptop',
+                'brand': 'Apple',
+                'picture': '',
+                'DOP': '',
+                'Place of Purchase': '',
+                'Serial Numbers': '',
+                'Warranty Type': '',
+                'Place Duration': '',
+                'Additional Warranty': '',
+                'Service Location': '',
+                'Reciept Picture': ''
+            }, {
+                'id': 3,
+                'title': 'iPhone',
+                'category': 'electronics',
+                'sub-category': 'Phone',
+                'brand': 'Apple',
+                'picture': '',
+                'DOP': '',
+                'Place of Purchase': '',
+                'Serial Numbers': '',
+                'Warranty Type': '',
+                'Place Duration': '',
+                'Additional Warranty': '',
+                'Service Location': '',
+                'Reciept Picture': ''
+            }]
+        };
+    },
+
+    methods: {
+        viewDetails: function viewDetails(id) {
+            this.viewTitle = this.contents[id].title;
+            this.viewCat = this.contents[id].category;
+            this.viewItem = true;
+        }
+    }
+});
+
+/***/ }),
 /* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27192,207 +27423,7 @@ if (false) {
 }
 
 /***/ }),
-/* 79 */,
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */,
-/* 87 */,
-/* 88 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(89)
-}
-var normalizeComponent = __webpack_require__(5)
-/* script */
-var __vue_script__ = __webpack_require__(91)
-/* template */
-var __vue_template__ = __webpack_require__(92)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/pages/Dashboard.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-049f0327", Component.options)
-  } else {
-    hotAPI.reload("data-v-049f0327", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(90);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(4)("ab8519ac", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-049f0327\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Dashboard.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-049f0327\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Dashboard.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 90 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#mainBar{\r\n    width:100vw;\r\n    background-color: rgb(214, 82, 5);\r\n    -webkit-box-shadow: 0px 6px 7px #c1c1c1;\r\n            box-shadow: 0px 6px 7px #c1c1c1;\r\n    position: fixed;\r\n    top:0;\r\n    z-index: 1;\n}\n#mainBar > div{\r\n    max-width: 1900px;\r\n    height:50px;\r\n    margin:0 auto;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\n}\n#mainBar h4{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents{\r\n    min-height: calc(100vh - 50px);\r\n    background: -webkit-gradient(linear, left bottom, left top, from(#bdbdbd), to(transparent));\r\n    background: linear-gradient(0deg, #bdbdbd, transparent);\r\n    position: relative;\r\n    z-index: 0;\n}\n#contents .container\r\n{\r\n    margin-top:50px;\n}\n.functions{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar{\r\n    width:60%;\r\n    border-radius: 10px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\n}\n.searchBar:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 10px;\r\n    outline: white;\r\n    color: white;\n}\n.searchBar::-webkit-input-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::-moz-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::-ms-input-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n#addButton{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #227200;\r\n    color: white;\r\n    font-weight: 600;\n}\n#addButton svg{\r\n    margin-top: 5px;\n}\n#addButton:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n#listButton,#gridButton{\r\n    color: white;\n}\n#listButton:focus,#gridButton:focus{\r\n    outline: orange;\n}\n#listButton:active,#gridButton:active{\r\n    background-color: #f5965e75;\n}\n.darken{\r\n    background-color: #f5965e75 !important;\n}\n#listButton:active svg{\r\n    margin-left: 2px;\n}\n#gridButton:active svg{\r\n    margin-right: 2px;\n}\n#listButton{\r\n    border-bottom-left-radius: 10px;\r\n    border-top-left-radius: 10px;\r\n    margin-right: -3px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#gridButton{\r\n    border-bottom-right-radius: 10px;\r\n    border-top-right-radius: 10px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#listButton svg,#gridButton svg{\r\n    width: 15px;\r\n    height: 15px;\r\n    margin-left: 1px;\n}\n#listButton svg{\r\n    margin-left: 1px;\r\n    margin-top: 3px;\n}\n#gridButton svg{\r\n    margin-right: 1px;\r\n    margin-top: 3px;\n}\n#listButton:active svg,#gridButton:active svg, .darken svg{\r\n    width: 14px;\r\n    height: 14px;\r\n    color:#d65205;\n}\n.items{\r\n    background-color: whitesmoke;\r\n    padding: 10px;\r\n    margin-right: 30px;\r\n    border-radius: 10px;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    overflow: hidden;\r\n    width:100px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.itemsList{\r\n    background-color: #f5f5f580;\r\n    padding: 10px;\r\n    margin-bottom: 10px;\r\n    border-radius: 10px;\r\n    font-family: \"Montserrat Alternates\", sans-serif; \r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white; \r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.items:hover, .itemsList:hover{\r\n  -webkit-box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\r\n          box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\n}\n.itemCategory{\r\n    width:75px;\r\n    height:75px;\r\n    margin-bottom:5px;\n}\n.itemCategoryList{\r\n    width:30px;\r\n    height:30px;\r\n    margin-right:5px;\n}\n.addItemBox,.viewItemBox{\r\n    width:100vw;\r\n    height:100vh;\r\n    position: absolute;   \r\n    top: 0px;\r\n    z-index:2;\r\n    background: radial-gradient(transparent, #4e4e4ead);\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-transition: all .5s;\r\n    transition: all .5s;\n}\n.addItem,.viewItem{\r\n    width:300px;\r\n    height:250px;\r\n    background-color: white;\r\n    position: relative;\r\n    padding:20px;\n}\n.addItem svg, .viewItem svg{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: black;\r\n    cursor: pointer;\n}\r\n\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 91 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Settings__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Settings___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_Settings__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        FontAwesomeIcon: __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__["a" /* FontAwesomeIcon */],
-        Settings: __WEBPACK_IMPORTED_MODULE_1__components_Settings___default.a
-    },
-    data: function data() {
-        return {
-            displayed: false,
-            viewItem: false,
-            gridView: true,
-            listView: false,
-            viewTitle: '',
-            viewCat: '',
-            contents: [{
-                'id': 0,
-                'title': 'Apple Watch',
-                'category': 'smartwatch'
-            }, {
-                'id': 1,
-                'title': 'iPad',
-                'category': 'tablet'
-            }, {
-                'id': 2,
-                'title': 'Macbook',
-                'category': 'laptop'
-            }, {
-                'id': 3,
-                'title': 'iPhone',
-                'category': 'phone'
-            }]
-        };
-    },
-
-    methods: {
-        viewDetails: function viewDetails(id) {
-            this.viewTitle = this.contents[id].title;
-            this.viewCat = this.contents[id].category;
-            this.viewItem = true;
-        }
-    }
-});
-
-/***/ }),
-/* 92 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
