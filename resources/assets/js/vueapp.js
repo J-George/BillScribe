@@ -7,7 +7,7 @@ import App from "./components/App";
 import Welcome from "./pages/Welcome";
 import VueLogin from "./pages/VueLogin";
 import VueRegister from "./pages/VueRegister";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./pages/Dashboard";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -19,10 +19,13 @@ import {
     faList,
     faTh,
     faCaretDown,
-    faArrowCircleLeft
+    faArrowCircleLeft,
+    faUserCog,
+    faSignOutAlt
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faMobileAlt, faMapMarkedAlt, faUserTie, faTools, faPlus, faList, faTh, faCaretDown, faArrowCircleLeft);
+library.add(faMobileAlt, faMapMarkedAlt, faUserTie, faTools, faPlus,
+     faList, faTh, faCaretDown, faArrowCircleLeft, faUserCog, faSignOutAlt);
 
 const router = new VueRouter({
     mode: "history",
