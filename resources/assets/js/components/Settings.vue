@@ -8,8 +8,9 @@
         <div class="profileOptions" v-if="profilemenu">
             <div @click="settings = !settings; profilemenu = !profilemenu"><font-awesome-icon icon="user-cog" />Settings</div>
             <hr>
-            <div><font-awesome-icon icon="sign-out-alt" />Exit</div>
+            <div><font-awesome-icon icon="sign-out-alt" />Exit</div>          
         </div>
+        <div class="profilemask" v-if="profilemenu" @click="profilemenu = !profilemenu"></div>
         <div class="settings" v-if="settings">
             <FontAwesomeIcon icon="arrow-circle-left" @click="settings = !settings"/>
             <h3 class="mt-5"><FontAwesomeIcon icon="user-cog" class="mr-2"/>Settings</h3>
@@ -32,7 +33,7 @@ export default {
             profilemenu:false,
             settings:false,
         }
-    }
+    },
 }
 </script>
 
@@ -45,6 +46,15 @@ export default {
 .profile svg{
     color:white;
 }
+.profilemask{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    right:0;
+    width:100vw;
+    height: 100vh;
+    background-color: transparent;   
+}
 .photo{
     background-color: white;
     border-radius:25px;
@@ -55,7 +65,7 @@ export default {
     position: absolute;
     z-index: 2;
     right:0;
-    top:50px;
+    top:65px;
     background-color: rgb(250, 250, 250);
     box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.473);
 }

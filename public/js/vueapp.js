@@ -4225,7 +4225,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faDumpster */
 /* unused harmony export faDumpsterFire */
 /* unused harmony export faDungeon */
-/* unused harmony export faEdit */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return faEdit; });
 /* unused harmony export faEgg */
 /* unused harmony export faEject */
 /* unused harmony export faEllipsisH */
@@ -4458,7 +4458,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faLightbulb */
 /* unused harmony export faLink */
 /* unused harmony export faLiraSign */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return faList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return faList; });
 /* unused harmony export faListAlt */
 /* unused harmony export faListOl */
 /* unused harmony export faListUl */
@@ -4477,7 +4477,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faMale */
 /* unused harmony export faMap */
 /* unused harmony export faMapMarked */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return faMapMarkedAlt; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return faMapMarkedAlt; });
 /* unused harmony export faMapMarker */
 /* unused harmony export faMapMarkerAlt */
 /* unused harmony export faMapPin */
@@ -4509,7 +4509,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faMinusSquare */
 /* unused harmony export faMitten */
 /* unused harmony export faMobile */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return faMobileAlt; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return faMobileAlt; });
 /* unused harmony export faMoneyBill */
 /* unused harmony export faMoneyBillAlt */
 /* unused harmony export faMoneyBillWave */
@@ -4583,7 +4583,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faPlay */
 /* unused harmony export faPlayCircle */
 /* unused harmony export faPlug */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return faPlus; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return faPlus; });
 /* unused harmony export faPlusCircle */
 /* unused harmony export faPlusSquare */
 /* unused harmony export faPodcast */
@@ -4676,7 +4676,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faSign */
 /* unused harmony export faSignInAlt */
 /* unused harmony export faSignLanguage */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return faSignOutAlt; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return faSignOutAlt; });
 /* unused harmony export faSignal */
 /* unused harmony export faSignature */
 /* unused harmony export faSimCard */
@@ -4780,7 +4780,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faTerminal */
 /* unused harmony export faTextHeight */
 /* unused harmony export faTextWidth */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return faTh; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return faTh; });
 /* unused harmony export faThLarge */
 /* unused harmony export faThList */
 /* unused harmony export faTheaterMasks */
@@ -4804,7 +4804,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faToilet */
 /* unused harmony export faToiletPaper */
 /* unused harmony export faToolbox */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return faTools; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return faTools; });
 /* unused harmony export faTooth */
 /* unused harmony export faTorah */
 /* unused harmony export faToriiGate */
@@ -4848,7 +4848,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faUserCheck */
 /* unused harmony export faUserCircle */
 /* unused harmony export faUserClock */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return faUserCog; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return faUserCog; });
 /* unused harmony export faUserEdit */
 /* unused harmony export faUserFriends */
 /* unused harmony export faUserGraduate */
@@ -4863,7 +4863,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faUserShield */
 /* unused harmony export faUserSlash */
 /* unused harmony export faUserTag */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return faUserTie; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return faUserTie; });
 /* unused harmony export faUserTimes */
 /* unused harmony export faUsers */
 /* unused harmony export faUsersCog */
@@ -22769,7 +22769,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.navbar-nav .nav-item[data-v-7d274096],.navbar-light[data-v-7d274096]\n{\n    font-weight: 700;\n    padding-top: 10px;\n    margin-right: 25px;\n    font-size: 18px;\n}\n.nav-item[data-v-7d274096]:last-child\n{\n    margin-right: 0px;\n}\n.logo[data-v-7d274096], .navbar-light .navbar-nav .show > .nav-link[data-v-7d274096], \n.navbar-light .navbar-nav .active > .nav-link[data-v-7d274096], \n.navbar-light .navbar-nav .nav-link.show[data-v-7d274096], \n.navbar-light .navbar-nav .nav-link.active[data-v-7d274096]{\n    color:white;\n}\n.front-splash-background[data-v-7d274096] {\n    background: linear-gradient(290deg,#F48A23, #F15A24)\n}\n.front-splash[data-v-7d274096] {\n    min-height: calc(100vh - 60px);\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    color: white;\n}\n.front-splash .row[data-v-7d274096] {\n    border: 10px solid white;\n    width: 100%;\n}\n.front-splash .row h1[data-v-7d274096] {\n    margin: 150px 20px;\n    font-weight: 700;\n    font-size: 50px;\n    font-family: 'Raleway', sans-serif;\n}\n.focus[data-v-7d274096] {\n    margin: 100px 0px;\n}\n.blackbackground[data-v-7d274096] {\n    background-color: #503927;\n    color: white;\n}\n.blackbackground div[data-v-7d274096] {\n    padding: 150px 80px;\n}\n.whitebackground[data-v-7d274096] {\n    background-color: white;\n    color:#687077;\n}\n.whitebackground div[data-v-7d274096] {\n    margin: 150px 20px;\n}\n.whitebackground h2[data-v-7d274096],\n.blackbackground h2[data-v-7d274096] {\n    font-size: 40px;\n    font-family: \"Montserrat Alternates\", sans-serif;\n    font-weight: 700;\n}\n.whitebackground p[data-v-7d274096],\n.blackbackground p[data-v-7d274096] {\n    font-weight: 600;\n}\n.triangle[data-v-7d274096] {\n    background: linear-gradient(136deg, white 57%, #ffffff73 0%);\n}\n.d-flex[data-v-7d274096]{\n    margin-bottom: 100px;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: row wrap;\n            flex-flow: row wrap;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n}\n.d-flex div[data-v-7d274096] {\n    text-align: center;\n    color: white;\n    padding: 10px;\n    font-weight: 700;\n    max-width: 250px;\n}\n.d-flex svg[data-v-7d274096] {\n    width: 75px;\n    height: 85px;\n}\n.redbackground[data-v-7d274096] {\n    background-color: #e23e3e;\n    padding: 50px;\n}\n", ""]);
+exports.push([module.i, "\n.navbar-nav .nav-item[data-v-7d274096],.navbar-light[data-v-7d274096]\n{\n    font-weight: 700;\n    padding-top: 10px;\n    margin-right: 25px;\n    font-size: 18px;\n}\n.nav-item[data-v-7d274096]:last-child\n{\n    margin-right: 0px;\n}\n.logo[data-v-7d274096], .navbar-light .navbar-nav .show > .nav-link[data-v-7d274096], \n.navbar-light .navbar-nav .active > .nav-link[data-v-7d274096], \n.navbar-light .navbar-nav .nav-link.show[data-v-7d274096], \n.navbar-light .navbar-nav .nav-link.active[data-v-7d274096]{\n    color:white;\n}\n.front-splash-background[data-v-7d274096] {\n    background: linear-gradient(290deg,#F48A23, #F15A24)\n}\n.front-splash[data-v-7d274096] {\n    min-height: calc(100vh - 60px);\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    color: white;\n}\n.front-splash .row[data-v-7d274096] {\n    border: 10px solid white;\n    width: 100%;\n}\n.front-splash .row h1[data-v-7d274096] {\n    margin: 150px 20px;\n    font-weight: 700;\n    font-size: 50px;\n    font-family: 'Raleway', sans-serif;\n}\n.focus[data-v-7d274096] {\n    margin: 100px 0px;\n}\n.blackbackground[data-v-7d274096] {\n    background-color: #503927;\n    color: white;\n}\n.blackbackground div[data-v-7d274096] {\n    padding: 150px 80px;\n}\n.whitebackground[data-v-7d274096] {\n    background-color: white;\n    color:#687077;\n}\n.whitebackground div[data-v-7d274096] {\n    margin: 150px 20px;\n}\n.whitebackground h2[data-v-7d274096],\n.blackbackground h2[data-v-7d274096] {\n    font-size: 40px;\n    font-family: \"Montserrat Alternates\", sans-serif;\n    font-weight: 700;\n}\n.whitebackground p[data-v-7d274096],\n.blackbackground p[data-v-7d274096] {\n    font-weight: 500;\n}\n.triangle[data-v-7d274096] {\n    background: linear-gradient(136deg, white 57%, #ffffff73 0%);\n}\n.d-flex[data-v-7d274096]{\n    margin-bottom: 100px;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: row wrap;\n            flex-flow: row wrap;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n}\n.d-flex div[data-v-7d274096] {\n    text-align: center;\n    color: white;\n    padding: 10px;\n    font-weight: 500;\n    max-width: 250px;\n}\n.d-flex svg[data-v-7d274096] {\n    width: 75px;\n    height: 85px;\n}\n.redbackground[data-v-7d274096] {\n    background-color: #e23e3e;\n    padding: 50px;\n}\n", ""]);
 
 // exports
 
@@ -23650,6 +23650,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -23669,6 +23670,8 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container-fluid" }, [
     _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-lg-7 col-md-6" }),
+      _vm._v(" "),
       _c(
         "div",
         { staticClass: "col-lg-5 col-md-6 orangeBackground d-flex" },
@@ -23686,9 +23689,7 @@ var render = function() {
           _vm._m(0)
         ],
         1
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-lg-7 col-md-6" })
+      )
     ])
   ])
 }
@@ -23899,7 +23900,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 
 
-__WEBPACK_IMPORTED_MODULE_7__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["e" /* faMobileAlt */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["d" /* faMapMarkedAlt */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["k" /* faUserTie */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["i" /* faTools */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["f" /* faPlus */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["c" /* faList */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["h" /* faTh */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["b" /* faCaretDown */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["a" /* faArrowCircleLeft */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["j" /* faUserCog */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["g" /* faSignOutAlt */]);
+__WEBPACK_IMPORTED_MODULE_7__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["f" /* faMobileAlt */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["e" /* faMapMarkedAlt */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["l" /* faUserTie */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["j" /* faTools */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["g" /* faPlus */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["d" /* faList */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["i" /* faTh */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["b" /* faCaretDown */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["a" /* faArrowCircleLeft */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["k" /* faUserCog */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["c" /* faEdit */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["h" /* faSignOutAlt */]);
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     mode: "history",
@@ -26907,7 +26908,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\np{\n    font-family: 'Montserrat Alternates', sans-serif;\n}\n", ""]);
+exports.push([module.i, "\np{\n    font-family: 'Roboto', sans-serif;\n}\na:hover{\n    text-decoration: none;\n}\n", ""]);
 
 // exports
 
@@ -27035,7 +27036,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n#mainBar{\r\n    width:100vw;\r\n    background-color: rgb(214, 82, 5);\r\n    -webkit-box-shadow: 0px 6px 7px #c1c1c1;\r\n            box-shadow: 0px 6px 7px #c1c1c1;\r\n    position: fixed;\r\n    top:0;\r\n    z-index: 1;\n}\n#mainBar > div{\r\n    max-width: 1900px;\r\n    height:50px;\r\n    margin:0 auto;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\n}\n#mainBar h4{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents{\r\n    min-height: calc(100vh - 50px);\r\n    background: -webkit-gradient(linear, left bottom, left top, from(#bdbdbd), to(transparent));\r\n    background: linear-gradient(0deg, #bdbdbd, transparent);\r\n    position: relative;\r\n    z-index: 0;\n}\n#contents .container\r\n{\r\n    margin-top:50px;\n}\n.functions{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar{\r\n    width:60%;\r\n    border-radius: 10px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\n}\n.searchBar:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 10px;\r\n    outline: white;\r\n    color: white;\n}\n.searchBar::-webkit-input-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::-moz-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::-ms-input-placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n.searchBar::placeholder{\r\n    color: rgba(255, 255, 255, 0.39);\n}\n#addButton{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #227200;\r\n    color: white;\r\n    font-weight: 600;\n}\n#addButton svg{\r\n    margin-top: 5px;\n}\n#addButton:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n#listButton,#gridButton{\r\n    color: white;\n}\n#listButton:focus,#gridButton:focus{\r\n    outline: orange;\n}\n#listButton:active,#gridButton:active{\r\n    background-color: #f5965e75;\n}\n.darken{\r\n    background-color: #f5965e75 !important;\n}\n#listButton:active svg{\r\n    margin-left: 2px;\n}\n#gridButton:active svg{\r\n    margin-right: 2px;\n}\n#listButton{\r\n    border-bottom-left-radius: 10px;\r\n    border-top-left-radius: 10px;\r\n    margin-right: -3px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#gridButton{\r\n    border-bottom-right-radius: 10px;\r\n    border-top-right-radius: 10px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#listButton svg,#gridButton svg{\r\n    width: 15px;\r\n    height: 15px;\r\n    margin-left: 1px;\n}\n#listButton svg{\r\n    margin-left: 1px;\r\n    margin-top: 3px;\n}\n#gridButton svg{\r\n    margin-right: 1px;\r\n    margin-top: 3px;\n}\n#listButton:active svg,#gridButton:active svg, .darken svg{\r\n    width: 14px;\r\n    height: 14px;\r\n    color:#d65205;\n}\n.items{\r\n    background-color: whitesmoke;\r\n    padding: 10px;\r\n    margin-right: 30px;\r\n    border-radius: 10px;\r\n    font-family: \"Montserrat Alternates\", sans-serif;\r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    overflow: hidden;\r\n    width:100px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.itemsList{\r\n    background-color: #f5f5f580;\r\n    padding: 10px;\r\n    margin-bottom: 10px;\r\n    border-radius: 10px;\r\n    font-family: \"Montserrat Alternates\", sans-serif; \r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white; \r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.items:hover, .itemsList:hover{\r\n  -webkit-box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\r\n          box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\n}\n.itemCategory{\r\n    width:75px;\r\n    height:75px;\r\n    margin-bottom:5px;\n}\n.itemCategoryList{\r\n    width:30px;\r\n    height:30px;\r\n    margin-right:5px;\n}\n.addItemBox,.viewItemBox{\r\n    width:100vw;\r\n    height:100vh;\r\n    position: absolute;   \r\n    top: 0px;\r\n    z-index:2;\r\n    background: radial-gradient(transparent, #4e4e4ead);\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-transition: all .5s;\r\n    transition: all .5s;\n}\n.addItem,.viewItem{\r\n    width:300px;\r\n    height:250px;\r\n    background-color: white;\r\n    position: relative;\r\n    padding:20px;\n}\n.addItem svg, .viewItem svg{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: black;\r\n    cursor: pointer;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n#mainBar{\r\n    width:100vw;\r\n    background-color: rgb(214, 82, 5);\r\n    -webkit-box-shadow: 0px 6px 7px #c1c1c1;\r\n            box-shadow: 0px 6px 7px #c1c1c1;\r\n    position: fixed;\r\n    top:0;\r\n    z-index: 1;\n}\n#mainBar > div{\r\n    max-width: 1900px;\r\n    height:65px;\r\n    margin:0 auto;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\n}\n#mainBar h4{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents{\r\n    min-height: calc(100vh - 65px);\r\n    background: #fafafa;\r\n    position: relative;\r\n    z-index: 0;\n}\n#contents .container\r\n{\r\n    margin-top:65px;\n}\n.functions{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar{\r\n    width:60%;\r\n    border-radius: 5px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\n.searchBar:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 5px;\r\n    outline: white;\r\n    color: rgb(116, 116, 116);\r\n    background: #fcf7f4c4;\n}\n.searchBar:focus::-webkit-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-moz-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-ms-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar::-webkit-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-moz-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-ms-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n#addButton{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #227200;\r\n    color: white;\r\n    font-weight: 300;\n}\n#addButton svg{\r\n    margin-top: 5px;\r\n    margin-right: 5px;\n}\n#addButton:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n#listButton,#gridButton{\r\n    color: white;\n}\n#listButton:focus,#gridButton:focus{\r\n    outline: orange;\n}\n#listButton:active,#gridButton:active{\r\n    background-color: #f5965e75;\n}\n.darken{\r\n    background-color: #f5965e75 !important;\n}\n#listButton:active svg{\r\n    margin-left: 2px;\n}\n#gridButton:active svg{\r\n    margin-right: 2px;\n}\n#listButton{\r\n    border-bottom-left-radius: 10px;\r\n    border-top-left-radius: 10px;\r\n    margin-right: -3px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#gridButton{\r\n    border-bottom-right-radius: 10px;\r\n    border-top-right-radius: 10px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#listButton svg,#gridButton svg{\r\n    width: 15px;\r\n    height: 15px;\r\n    margin-left: 1px;\n}\n#listButton svg{\r\n    margin-left: 1px;\r\n    margin-top: 3px;\n}\n#gridButton svg{\r\n    margin-right: 1px;\r\n    margin-top: 3px;\n}\n#listButton:active svg,#gridButton:active svg, .darken svg{\r\n    width: 14px;\r\n    height: 14px;\r\n    color:#d65205;\n}\n#listButton:hover svg,#gridButton:hover svg{\r\n    color:#d65205;\n}\n.items{\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\r\n    color: grey;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.itemsGrid{\r\n    background-color: #f9f9f9;   \r\n    margin-right: 30px;  \r\n    font-family: \"Roboto\", sans-serif;\r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    overflow: hidden;\r\n    width:100px;  \r\n    -webkit-box-orient: vertical;  \r\n    -webkit-box-direction: normal;  \r\n        -ms-flex-direction: column;  \r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.itemsList{\r\n    background-color: #f9f9f9;   \r\n    margin-bottom: 10px;   \r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;   \r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\n}\n.items:hover, .itemsList:hover{\r\n  -webkit-box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\r\n          box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\n}\n.itemCategory{\r\n    width:75px;\r\n    height:75px;\r\n    margin-bottom:5px;\n}\n.itemCategoryList{\r\n    width:30px;\r\n    height:30px;\r\n    margin-right:5px;\n}\n.addItemBox,.viewItemBox{\r\n    width:100vw;\r\n    height:100vh;\r\n    position: absolute;   \r\n    top: 0px;\r\n    z-index:2;\r\n    background: radial-gradient(transparent, #4e4e4ead);\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.addItem,.viewItem{\r\n    min-width:300px;\r\n    min-height:250px;\r\n    background-color: white;\r\n    position: relative;\r\n    padding:20px;\r\n    font-family: 'Roboto', sans-serif;\n}\n.backButton{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #d65205;\r\n    cursor: pointer;\n}\n.editButton{\r\n    position: absolute;\r\n    right: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #397dd6;\r\n    cursor: pointer;\n}\n.catPicture{\r\n    height: 100px;\r\n    width: 100px;\r\n    background-color: antiquewhite;\r\n    margin-right: 10px;\r\n    border-radius: 50%;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -27049,6 +27050,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Settings__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Settings___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_Settings__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -27109,68 +27132,81 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             viewItem: false,
             gridView: true,
             listView: false,
+            settings: '',
             viewTitle: '',
             viewCat: '',
+            viewBrand: '',
+            viewSerial: '',
+            viewWarranty: '',
+            viewWarrantyDuration: '',
+            viewPOP: '',
+            viewdop: '',
+            viewCost: '',
+            viewSubCat: '',
             contents: [{
                 'id': 0,
                 'title': 'Apple Watch',
                 'category': 'electronics',
-                'sub-category': 'Smartwatch',
+                'subCategory': 'Smartwatch',
                 'brand': 'Apple',
                 'picture': '',
-                'DOP': '',
-                'Place of Purchase': '',
-                'Serial Numbers': '',
-                'Warranty Type': '',
-                'Place Duration': '',
-                'Additional Warranty': '',
-                'Service Location': '',
-                'Reciept Picture': ''
+                'cost': '$600',
+                'dop': '12-02-2019',
+                'PPurchase': 'Halifax Shopping Center',
+                'SerialNumbers': 'Dg2751235s',
+                'WarrantyType': 'Aciidental Damage',
+                'Duration': '1 year',
+                'Add-Warranty': 'none',
+                'ServiceL': 'HSP',
+                'RPicture': ''
             }, {
                 'id': 1,
                 'title': 'iPad',
                 'category': 'electronics',
-                'sub-category': 'Tablet',
+                'subCategory': 'Tablet',
                 'brand': 'Apple',
                 'picture': '',
-                'DOP': '',
-                'Place of Purchase': '',
-                'Serial Numbers': '',
-                'Warranty Type': '',
-                'Place Duration': '',
-                'Additional Warranty': '',
-                'Service Location': '',
-                'Reciept Picture': ''
+                'cost': '$900',
+                'dop': '12-02-2019',
+                'PPurchase': 'Halifax Shopping Center',
+                'SerialNumbers': 'Dgsdfsd235s',
+                'WarrantyType': 'Aciidental Damage',
+                'Duration': '1 year',
+                'Add-Warranty': 'none',
+                'ServiceL': 'HSP',
+                'RPicture': ''
             }, {
                 'id': 2,
                 'title': 'Macbook',
                 'category': 'electronics',
-                'sub-category': 'Laptop',
+                'subCategory': 'Laptop',
                 'brand': 'Apple',
                 'picture': '',
-                'DOP': '',
-                'Place of Purchase': '',
-                'Serial Numbers': '',
-                'Warranty Type': '',
-                'Place Duration': '',
-                'Additional Warranty': '',
-                'Service Location': '',
-                'Reciept Picture': ''
+                'cost': '$1600',
+                'dop': '12-02-2019',
+                'PPurchase': 'Halifax Shopping Center',
+                'SerialNumbers': 'Dg3451235s',
+                'WarrantyType': 'Accidental Damage',
+                'Duration': '1 year',
+                'Add-Warranty': 'none',
+                'ServiceL': 'HSP',
+                'RPicture': ''
             }, {
                 'id': 3,
                 'title': 'iPhone',
                 'category': 'electronics',
-                'sub-category': 'Phone',
+                'subCategory': 'Phone',
                 'brand': 'Apple',
                 'picture': '',
-                'DOP': '',
-                'Place of Purchase': '',
-                'Serial Numbers': '',
-                'Warranty Type': '',
-                'Place Duration': '',
-                'Additional Warranty': '',
-                'Service Location': '',
-                'Reciept Picture': ''
+                'cost': '$900',
+                'dop': '12-02-2019',
+                'PPurchase': 'Halifax Shopping Center',
+                'SerialNumbers': 'Dg2751235s',
+                'WarrantyType': 'Accidental Damage',
+                'Duration': '1 year',
+                'Add-Warranty': 'Apple Care 3 years',
+                'ServiceL': 'HSP',
+                'RPicture': ''
             }]
         };
     },
@@ -27179,6 +27215,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         viewDetails: function viewDetails(id) {
             this.viewTitle = this.contents[id].title;
             this.viewCat = this.contents[id].category;
+            this.viewdop = this.contents[id].dop;
+            this.viewSubCat = this.contents[id].subCategory;
+            this.viewCost = this.contents[id].cost;
+            this.viewWarranty = this.contents[id].WarrantyType;
+            this.viewWarrantyDuration = this.contents[id].Duration;
+            this.viewSerial = this.contents[id].SerialNumbers;
+            this.viewBrand = this.contents[id].brand;
             this.viewItem = true;
         }
     }
@@ -27270,7 +27313,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.profile[data-v-095e6bda]{\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\n}\n.profile svg[data-v-095e6bda]{\r\n    color:white;\n}\n.photo[data-v-095e6bda]{\r\n    background-color: white;\r\n    border-radius:25px;\r\n    width:40px;\r\n    height: 40px;\n}\n.profileOptions[data-v-095e6bda]{\r\n    position: absolute;\r\n    z-index: 2;\r\n    right:0;\r\n    top:50px;\r\n    background-color: rgb(250, 250, 250);\r\n    -webkit-box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.473);\r\n            box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.473);\n}\n.profileOptions hr[data-v-095e6bda]{\r\n    margin: 0;\n}\n.profileOptions div[data-v-095e6bda]{\r\n    padding: 10px 25px;\r\n    cursor: pointer;\r\n    color: grey;\n}\n.profileOptions div[data-v-095e6bda]:hover{\r\n    background-color: #bdbdbd;\r\n    color:white;\n}\n.profileOptions svg[data-v-095e6bda]{\r\n    margin-right: 5px;\n}\n.settings[data-v-095e6bda]{\r\n    position: absolute;\r\n    z-index: 3;\r\n    right:0;\r\n    top:0px;\r\n    height: 100vh;\r\n    width:300px;\r\n    background-color: grey;\r\n    padding: 20px;\r\n    color:white;\n}\n.settings > svg[data-v-095e6bda]{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: white;\r\n    cursor: pointer;\n}\r\n", ""]);
+exports.push([module.i, "\n.profile[data-v-095e6bda]{\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\n}\n.profile svg[data-v-095e6bda]{\r\n    color:white;\n}\n.profilemask[data-v-095e6bda]{\r\n    position: absolute;\r\n    z-index: 1;\r\n    top:0;\r\n    right:0;\r\n    width:100vw;\r\n    height: 100vh;\r\n    background-color: transparent;\n}\n.photo[data-v-095e6bda]{\r\n    background-color: white;\r\n    border-radius:25px;\r\n    width:40px;\r\n    height: 40px;\n}\n.profileOptions[data-v-095e6bda]{\r\n    position: absolute;\r\n    z-index: 2;\r\n    right:0;\r\n    top:65px;\r\n    background-color: rgb(250, 250, 250);\r\n    -webkit-box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.473);\r\n            box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.473);\n}\n.profileOptions hr[data-v-095e6bda]{\r\n    margin: 0;\n}\n.profileOptions div[data-v-095e6bda]{\r\n    padding: 10px 25px;\r\n    cursor: pointer;\r\n    color: grey;\n}\n.profileOptions div[data-v-095e6bda]:hover{\r\n    background-color: #bdbdbd;\r\n    color:white;\n}\n.profileOptions svg[data-v-095e6bda]{\r\n    margin-right: 5px;\n}\n.settings[data-v-095e6bda]{\r\n    position: absolute;\r\n    z-index: 3;\r\n    right:0;\r\n    top:0px;\r\n    height: 100vh;\r\n    width:300px;\r\n    background-color: grey;\r\n    padding: 20px;\r\n    color:white;\n}\n.settings > svg[data-v-095e6bda]{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: white;\r\n    cursor: pointer;\n}\r\n", ""]);
 
 // exports
 
@@ -27282,6 +27325,7 @@ exports.push([module.i, "\n.profile[data-v-095e6bda]{\r\n    display:-webkit-box
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__ = __webpack_require__(2);
+//
 //
 //
 //
@@ -27378,6 +27422,17 @@ var render = function() {
         ])
       : _vm._e(),
     _vm._v(" "),
+    _vm.profilemenu
+      ? _c("div", {
+          staticClass: "profilemask",
+          on: {
+            click: function($event) {
+              _vm.profilemenu = !_vm.profilemenu
+            }
+          }
+        })
+      : _vm._e(),
+    _vm._v(" "),
     _vm.settings
       ? _c(
           "div",
@@ -27435,7 +27490,9 @@ var render = function() {
       _c(
         "div",
         [
-          _c("h4", { staticClass: "my-1 mx-2" }, [_vm._v("BillScribe")]),
+          _c("router-link", { attrs: { to: { name: "welcome" } } }, [
+            _c("h4", { staticClass: "my-1 mx-2" }, [_vm._v("BillScribe")])
+          ]),
           _vm._v(" "),
           _c("div", { staticClass: "functions" }, [
             _c("div", [
@@ -27481,7 +27538,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-primary",
+                  staticClass: "btn btn-success",
                   attrs: { id: "addButton" },
                   on: {
                     click: function($event) {
@@ -27491,7 +27548,7 @@ var render = function() {
                 },
                 [
                   _c("FontAwesomeIcon", { attrs: { icon: "plus" } }),
-                  _vm._v(" add")
+                  _vm._v(" ADD")
                 ],
                 1
               )
@@ -27516,7 +27573,8 @@ var render = function() {
             "div",
             {
               key: item.id,
-              class: [{ items: _vm.gridView }, { itemsList: _vm.listView }],
+              staticClass: "items",
+              class: [{ itemsGrid: _vm.gridView }, { itemsList: _vm.listView }],
               on: {
                 click: function($event) {
                   return _vm.viewDetails(item.id)
@@ -27530,9 +27588,10 @@ var render = function() {
                   { itemCategoryList: _vm.listView }
                 ]
               }),
-              _vm._v(
-                "\n                " + _vm._s(item.title) + "\n            "
-              )
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0 text-center" }, [
+                _vm._v(_vm._s(item.title))
+              ])
             ]
           )
         }),
@@ -27547,6 +27606,7 @@ var render = function() {
             { staticClass: "addItem" },
             [
               _c("FontAwesomeIcon", {
+                staticClass: "backButton",
                 attrs: { icon: "arrow-circle-left" },
                 on: {
                   click: function($event) {
@@ -27569,6 +27629,7 @@ var render = function() {
             { staticClass: "viewItem" },
             [
               _c("FontAwesomeIcon", {
+                staticClass: "backButton",
                 attrs: { icon: "arrow-circle-left" },
                 on: {
                   click: function($event) {
@@ -27577,11 +27638,56 @@ var render = function() {
                 }
               }),
               _vm._v(" "),
-              _c("h3", { staticClass: "mt-5" }, [
-                _vm._v(_vm._s(_vm.viewTitle))
+              _c("FontAwesomeIcon", {
+                staticClass: "editButton",
+                attrs: { icon: "edit" }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "d-flex" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c("div", [
+                  _c("h3", { staticClass: "mt-5" }, [
+                    _vm._v(_vm._s(_vm.viewTitle))
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(_vm.viewBrand))])
+                ])
               ]),
               _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(_vm.viewCat))])
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "d-flex" }, [
+                _c("div", { staticClass: "mr-5" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Category: " +
+                        _vm._s(_vm.viewCat) +
+                        " |  Subcategory:" +
+                        _vm._s(_vm.viewSubCat) +
+                        " "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Price: " + _vm._s(_vm.viewCost))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Purchase Date: " + _vm._s(_vm.viewdop))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Purchase Location: " + _vm._s(_vm.viewPOP))])
+                ]),
+                _vm._v(" "),
+                _c("div", [
+                  _c("p", [_vm._v("Serial No: " + _vm._s(_vm.viewSerial))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Warranty: " + _vm._s(_vm.viewWarranty))]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "Warranty Duration: " + _vm._s(_vm.viewWarrantyDuration)
+                    )
+                  ])
+                ])
+              ])
             ],
             1
           )
@@ -27589,7 +27695,14 @@ var render = function() {
       : _vm._e()
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [_c("div", { staticClass: "catPicture mt-5" })])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

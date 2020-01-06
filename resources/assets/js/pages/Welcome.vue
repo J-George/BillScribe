@@ -160,7 +160,7 @@ export default {
 }
 .whitebackground p,
 .blackbackground p {
-    font-weight: 600;
+    font-weight: 500;
 }
 .triangle {
     background: linear-gradient(136deg, white 57%, #ffffff73 0%);
@@ -174,7 +174,7 @@ export default {
     text-align: center;
     color: white;
     padding: 10px;
-    font-weight: 700;
+    font-weight: 500;
     max-width: 250px;
 }
 .d-flex svg {

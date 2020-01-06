@@ -21,11 +21,12 @@ import {
     faCaretDown,
     faArrowCircleLeft,
     faUserCog,
-    faSignOutAlt
+    faSignOutAlt,
+    faEdit
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faMobileAlt, faMapMarkedAlt, faUserTie, faTools, faPlus,
-     faList, faTh, faCaretDown, faArrowCircleLeft, faUserCog, faSignOutAlt);
+     faList, faTh, faCaretDown, faArrowCircleLeft, faUserCog, faEdit, faSignOutAlt);
 
 const router = new VueRouter({
     mode: "history",

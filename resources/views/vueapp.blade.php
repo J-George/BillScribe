@@ -9,7 +9,8 @@
         <title>BillScribe</title>
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700,800&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700,800&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">     
         <link rel="stylesheet" type="text/css" href="css/app.css">
     </head>
     <body>

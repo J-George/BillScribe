@@ -1,6 +1,7 @@
 <template>
     <div class="container-fluid">
         <div class="row">
+            <div class="col-lg-7 col-md-6"></div>
             <div class="col-lg-5 col-md-6 orangeBackground d-flex">
                 <router-link :to="{ name: 'welcome' }" class="nav-link logo"><FontAwesomeIcon icon="arrow-circle-left" /></router-link>
                 <div class="d-flex formBox">
@@ -48,7 +49,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-lg-7 col-md-6"></div>
+            
         </div>    
     </div>
 </template>
