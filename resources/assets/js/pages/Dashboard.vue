@@ -22,22 +22,58 @@
         </div>
         <div id="contents">
             <div class="container d-flex pt-5" v-bind:class="{ 'flex-column' : listView }">
+                <div v-if="listView" class=" d-flex flex-row">
+                </div>    
                 <div v-for="item in contents" :key="item.id" v-bind:class="[{itemsGrid:gridView},{itemsList:listView}]" class="items"  @click="viewDetails(item.id)">
                     <div v-bind:class="[{itemCategory:gridView},{itemCategoryList:listView}]"></div>
                     <p class="mb-0 text-center">{{ item.title }}</p>
                 </div>
             </div>
+            <hr>
         </div>
         <div class="addItemBox" v-if="displayed">
-                <div class="addItem">
+            <div class="addItem">
+                <div>
                     <FontAwesomeIcon icon="arrow-circle-left" class="backButton" @click="displayed = !displayed"/>
                     <h3 class="mt-5">Add Item</h3>
+                    <hr>
                 </div>
+                <form action="">
+                    <div class="d-flex">
+                        <div class="catPicture mt-2"></div>
+                        <div>
+                            <input type="text" placeholder="Title" class="my-2" ><br>
+                            <input type="text" placeholder="Brand">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex mb-1">
+                        <div class="mr-5">
+                        <label>Category</label>  
+                        <select>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                        </select><br>         
+                        <label for="">Price :</label><input type="text" placeholder="Price"><br> 
+                        <label for="">Purchase Date :</label><input type="text" placeholder="Date"><br> 
+                        <label for="">Purchase Location :</label><input type="text" placeholder="Location"><br> 
+                        </div>
+                        <div>
+                            <label for="">Serial No :</label><input type="text" placeholder="Serial"><br>  
+                            <label for="">Warranty :</label><input type="text" placeholder="Warranty"><br> 
+                            <label for="">Duration :</label><input type="text" placeholder="Duration"><br> 
+                        </div>
+                    </div>
+                    <button class="btn btn-success" type="submit">Add Item</button>
+                </form>
+            </div>
         </div>
         <div class="viewItemBox" v-if="viewItem">
             <div class="viewItem">
                 <FontAwesomeIcon icon="arrow-circle-left" class="backButton" @click="viewItem = !viewItem"/>
-                 <FontAwesomeIcon icon="edit" class="editButton" />
+                <FontAwesomeIcon icon="edit" class="editButton" @click="addDetails(viewID)" />
                 <div class="d-flex">
                     <div>
                         <div class="catPicture mt-5"></div>
@@ -81,6 +117,7 @@ export default {
             gridView:true,
             listView:false,
             settings: '',
+            viewID:'',
             viewTitle:'',
             viewCat:'',
             viewBrand:'',
@@ -134,7 +171,7 @@ export default {
                     'subCategory':'Laptop',
                     'brand': 'Apple',
                     'picture': '',
-                    'cost':'$1600',
+                    'cost':'',
                     'dop': '12-02-2019',
                     'PPurchase': 'Halifax Shopping Center',
                     'SerialNumbers': 'Dg3451235s',
@@ -166,6 +203,7 @@ export default {
     },
     methods:{
         viewDetails(id){
+            this.viewID = id;
             this.viewTitle=this.contents[id].title;
             this.viewCat=this.contents[id].category;
             this.viewdop=this.contents[id].dop;
@@ -176,6 +214,9 @@ export default {
             this.viewSerial=this.contents[id].SerialNumbers;
             this.viewBrand=this.contents[id].brand;
             this.viewItem=true;
+        },
+        addDetails(id){
+            alert('editing ' + id + '.' );
         },
     },
 };
@@ -214,6 +255,12 @@ export default {
 #contents .container
 {
     margin-top:65px;
+}
+#contents hr
+{
+    margin-top:2rem;
+    width:40%;
+    border-top: 2px solid rgba(0, 0, 0, 0.1)
 }
 .functions{
     display: flex;
@@ -398,7 +445,7 @@ export default {
 .editButton{
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 15px;
     width: 30px !important;
     height: 30px;
     color: #397dd6;

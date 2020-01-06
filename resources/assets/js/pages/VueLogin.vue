@@ -83,13 +83,11 @@ export default {
     background-color: #ffffff;
     flex-direction: column;
     align-items: center; 
-    width:500px;
+    width:430px;
     max-width: 100%;
     padding: 25px 0px;
     margin: 30px 5px;
-    border-radius: 10px;
-    box-shadow: 4px 5px 4px #ffaf61, -6px -6px 6px #f94d10;
-
+    border-radius: 4px;
 }
 .formBox img{
     max-width: 215px;
