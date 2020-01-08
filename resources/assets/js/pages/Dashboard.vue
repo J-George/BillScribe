@@ -4,14 +4,7 @@
             <div>
                 <router-link :to="{ name: 'welcome' }"><h4 class="my-1 mx-2">BillScribe</h4></router-link>
                 <div class="functions">
-                    <div>
-                        <button id="listButton" v-bind:class="{ darken:listView }" @click="listView = true;gridView = false">
-                            <FontAwesomeIcon icon="list" />
-                        </button>
-                        <button id="gridButton" v-bind:class="{ darken:gridView }" @click="listView = false;gridView = true">
-                            <FontAwesomeIcon icon="th" />
-                        </button>
-                    </div>
+                     <switchview />   
                     <input type="text" class="searchBar" placeholder="Search here...">
                     <div>
                         <button id="addButton" class="btn btn-success" @click="displayed = !displayed"><FontAwesomeIcon icon="plus" /> ADD</button>
@@ -105,17 +98,19 @@
 <script>
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import Settings from "../components/Settings";
+import ListGrid from "../components/ListGrid";
 export default {
     components: {
         FontAwesomeIcon,
         Settings,
+        'switchview':ListGrid,
     },
     data(){
         return{
             displayed:false,
             viewItem:false,
             gridView:true,
-            listView:false,
+            listView:false,            
             settings: '',
             viewID:'',
             viewTitle:'',
@@ -200,6 +195,10 @@ export default {
                 }
             ]
         }
+    },
+    created(){
+        eventBus.$on('switchList', (status)=> this.data.listView, this.gridView!= this.listView)  
+        eventBus.$on('switchGrid', (status)=> this.data.gridView, this.listView!= this.gridView)      
     },
     methods:{
         viewDetails(id){
@@ -317,61 +316,6 @@ export default {
 #addButton:active{
     font-size:13px;
     padding: 5px;   
-}
-#listButton,#gridButton{
-    color: white;
-}
-#listButton:focus,#gridButton:focus{
-    outline: orange;
-}
-
-#listButton:active,#gridButton:active{
-    background-color: #f5965e75;
-}
-.darken{
-    background-color: #f5965e75 !important;
-}
-#listButton:active svg{
-    margin-left: 2px;
-}
-#gridButton:active svg{
-    margin-right: 2px;
-}
-#listButton{
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    margin-right: -3px;
-    border: none;
-    padding: 4px 8px;
-    background-color: #f5965e;    
-}
-#gridButton{
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border: none;
-    padding: 4px 8px;
-    background-color: #f5965e;
-}
-#listButton svg,#gridButton svg{
-    width: 15px;
-    height: 15px;
-    margin-left: 1px;
-}
-#listButton svg{
-    margin-left: 1px;
-    margin-top: 3px;
-}
-#gridButton svg{
-    margin-right: 1px;
-    margin-top: 3px;
-}
-#listButton:active svg,#gridButton:active svg, .darken svg{
-    width: 14px;
-    height: 14px;
-    color:#d65205;
-}
-#listButton:hover svg,#gridButton:hover svg{
-    color:#d65205;
 }
 .items{
     padding: 10px;

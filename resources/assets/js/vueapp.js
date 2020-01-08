@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
+window.eventBus = new Vue();
+
 Vue.use(VueRouter);
 
 import App from "./components/App";
