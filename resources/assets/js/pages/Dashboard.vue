@@ -4,7 +4,7 @@
             <div>
                 <router-link :to="{ name: 'welcome' }"><h4 class="my-1 mx-2">BillScribe</h4></router-link>
                 <div class="functions">
-                     <switchview />   
+                     <switchview :listView="listView" :gridView="gridView" @switchList="listView = true;gridView=false" @switchGrid="gridView=true;listView=false" />   
                     <input type="text" class="searchBar" placeholder="Search here...">
                     <div>
                         <button id="addButton" class="btn btn-success" @click="displayed = !displayed"><FontAwesomeIcon icon="plus" /> ADD</button>
@@ -59,13 +59,14 @@
                             <label for="">Duration :</label><input type="text" placeholder="Duration"><br> 
                         </div>
                     </div>
-                    <button class="btn btn-success" type="submit">Add Item</button>
+                    <button class="btn btn-success" type="submit" @click="AddtoList">Add Item</button>
                 </form>
             </div>
         </div>
         <div class="viewItemBox" v-if="viewItem">
             <div class="viewItem">
                 <FontAwesomeIcon icon="arrow-circle-left" class="backButton" @click="viewItem = !viewItem"/>
+                <FontAwesomeIcon icon="trash-alt" class="deleteButton" @click="DeleteItem(viewID)" />
                 <FontAwesomeIcon icon="edit" class="editButton" @click="addDetails(viewID)" />
                 <div class="d-flex">
                     <div>
@@ -99,6 +100,7 @@
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import Settings from "../components/Settings";
 import ListGrid from "../components/ListGrid";
+
 export default {
     components: {
         FontAwesomeIcon,
@@ -196,10 +198,6 @@ export default {
             ]
         }
     },
-    created(){
-        eventBus.$on('switchList', (status)=> this.data.listView, this.gridView!= this.listView)  
-        eventBus.$on('switchGrid', (status)=> this.data.gridView, this.listView!= this.gridView)      
-    },
     methods:{
         viewDetails(id){
             this.viewID = id;
@@ -217,6 +215,9 @@ export default {
         addDetails(id){
             alert('editing ' + id + '.' );
         },
+        AddtoList(){
+            
+        }
     },
 };
 </script>
@@ -388,14 +389,22 @@ export default {
 }
 .editButton{
     position: absolute;
-    right: 20px;
+    right: 60px;
     top: 15px;
     width: 30px !important;
     height: 30px;
     color: #397dd6;
     cursor: pointer;  
 }
-
+.deleteButton{
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    width: 25px !important;
+    height: 25px;
+    color: #ca353d;
+    cursor: pointer; 
+}
 .catPicture{
     height: 100px;
     width: 100px;
@@ -403,5 +412,20 @@ export default {
     margin-right: 10px;
     border-radius: 50%;
 }
-
+form input{
+    border:none;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    transition: all .3s;
+}
+form input:focus{
+    outline:none;
+    border-bottom: 1px solid rgb(87, 87, 87);
+}
+form input:hover{
+    border-bottom: 1px solid grey;
+}
+form select{
+    font-family:'Roboto', sans-serif;
+    padding: 5px;
+}
 </style>

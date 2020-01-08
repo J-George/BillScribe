@@ -5229,7 +5229,7 @@ module.exports = defaults;
 /* unused harmony export faTransgender */
 /* unused harmony export faTransgenderAlt */
 /* unused harmony export faTrash */
-/* unused harmony export faTrashAlt */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return faTrashAlt; });
 /* unused harmony export faTrashRestore */
 /* unused harmony export faTrashRestoreAlt */
 /* unused harmony export faTree */
@@ -5260,7 +5260,7 @@ module.exports = defaults;
 /* unused harmony export faUserCheck */
 /* unused harmony export faUserCircle */
 /* unused harmony export faUserClock */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return faUserCog; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return faUserCog; });
 /* unused harmony export faUserEdit */
 /* unused harmony export faUserFriends */
 /* unused harmony export faUserGraduate */
@@ -5275,7 +5275,7 @@ module.exports = defaults;
 /* unused harmony export faUserShield */
 /* unused harmony export faUserSlash */
 /* unused harmony export faUserTag */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return faUserTie; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return faUserTie; });
 /* unused harmony export faUserTimes */
 /* unused harmony export faUsers */
 /* unused harmony export faUsersCog */
@@ -37746,7 +37746,7 @@ __webpack_require__(39);
 
 
 
-__WEBPACK_IMPORTED_MODULE_0__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["f" /* faMobileAlt */], __WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["e" /* faMapMarkedAlt */], __WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["l" /* faUserTie */]);
+__WEBPACK_IMPORTED_MODULE_0__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["f" /* faMobileAlt */], __WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["e" /* faMapMarkedAlt */], __WEBPACK_IMPORTED_MODULE_1__fortawesome_free_solid_svg_icons__["m" /* faUserTie */]);
 
 window.Vue = __webpack_require__(12);
 

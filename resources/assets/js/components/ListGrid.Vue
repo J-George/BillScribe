@@ -1,9 +1,9 @@
 <template>
     <div>
-        <button id="listButton" v-bind:class="{ darken:listView }" @click="listView = true;gridView = false; switchList(listView)">
+        <button id="listButton" v-bind:class="{ darken:listView }" @click="switchList(listView)">
             <FontAwesomeIcon icon="list" />
         </button>
-        <button id="gridButton" v-bind:class="{ darken:gridView }" @click="listView = false;gridView = true; switchGrid(gridView)">
+        <button id="gridButton" v-bind:class="{ darken:gridView }" @click="switchGrid(gridView)">
             <FontAwesomeIcon icon="th" />
         </button>
     </div>
@@ -25,10 +25,14 @@ export default {
     },
     methods:{
         switchList(status){
-            eventBus.$emit('listView', status);
+            this.$emit('switchList', status);
+            this.gridView = false;
+            this.listView = true;
         },
         switchGrid(status){
-            eventBus.$emit('gridView', status);
+            this.$emit('switchGrid', status);
+            this.gridView = true;
+            this.istView = false;
         },
     },
 }

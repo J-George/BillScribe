@@ -4817,7 +4817,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faTransgender */
 /* unused harmony export faTransgenderAlt */
 /* unused harmony export faTrash */
-/* unused harmony export faTrashAlt */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return faTrashAlt; });
 /* unused harmony export faTrashRestore */
 /* unused harmony export faTrashRestoreAlt */
 /* unused harmony export faTree */
@@ -4848,7 +4848,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faUserCheck */
 /* unused harmony export faUserCircle */
 /* unused harmony export faUserClock */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return faUserCog; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return faUserCog; });
 /* unused harmony export faUserEdit */
 /* unused harmony export faUserFriends */
 /* unused harmony export faUserGraduate */
@@ -4863,7 +4863,7 @@ process.umask = function() { return 0; };
 /* unused harmony export faUserShield */
 /* unused harmony export faUserSlash */
 /* unused harmony export faUserTag */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return faUserTie; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return faUserTie; });
 /* unused harmony export faUserTimes */
 /* unused harmony export faUsers */
 /* unused harmony export faUsersCog */
@@ -23902,7 +23902,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 
 
-__WEBPACK_IMPORTED_MODULE_7__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["f" /* faMobileAlt */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["e" /* faMapMarkedAlt */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["l" /* faUserTie */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["j" /* faTools */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["g" /* faPlus */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["d" /* faList */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["i" /* faTh */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["b" /* faCaretDown */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["a" /* faArrowCircleLeft */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["k" /* faUserCog */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["c" /* faEdit */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["h" /* faSignOutAlt */]);
+__WEBPACK_IMPORTED_MODULE_7__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["f" /* faMobileAlt */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["e" /* faMapMarkedAlt */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["m" /* faUserTie */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["j" /* faTools */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["g" /* faPlus */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["d" /* faList */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["i" /* faTh */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["b" /* faCaretDown */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["a" /* faArrowCircleLeft */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["l" /* faUserCog */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["k" /* faTrashAlt */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["c" /* faEdit */], __WEBPACK_IMPORTED_MODULE_8__fortawesome_free_solid_svg_icons__["h" /* faSignOutAlt */]);
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     mode: "history",
@@ -26965,7 +26965,7 @@ var normalizeComponent = __webpack_require__(5)
 /* script */
 var __vue_script__ = __webpack_require__(73)
 /* template */
-var __vue_template__ = __webpack_require__(79)
+var __vue_template__ = __webpack_require__(84)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -27038,7 +27038,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n#mainBar{\r\n    width:100vw;\r\n    background-color: rgb(214, 82, 5);\r\n    -webkit-box-shadow: 0px 6px 7px #c1c1c1;\r\n            box-shadow: 0px 6px 7px #c1c1c1;\r\n    position: fixed;\r\n    top:0;\r\n    z-index: 1;\n}\n#mainBar > div{\r\n    max-width: 1900px;\r\n    height:65px;\r\n    margin:0 auto;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\n}\n#mainBar h4{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents{\r\n    min-height: calc(100vh - 65px);\r\n    background: #fafafa;\r\n    position: relative;\r\n    z-index: 0;\n}\n#contents .container\r\n{\r\n    margin-top:65px;\n}\n#contents hr\r\n{\r\n    margin-top:2rem;\r\n    width:40%;\r\n    border-top: 2px solid rgba(0, 0, 0, 0.1)\n}\n.functions{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar{\r\n    width:60%;\r\n    border-radius: 5px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\n.searchBar:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 5px;\r\n    outline: white;\r\n    color: rgb(116, 116, 116);\r\n    background: #fcf7f4c4;\n}\n.searchBar:focus::-webkit-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-moz-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-ms-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar::-webkit-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-moz-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-ms-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n#addButton{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #227200;\r\n    color: white;\r\n    font-weight: 300;\n}\n#addButton svg{\r\n    margin-top: 5px;\r\n    margin-right: 5px;\n}\n#addButton:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n.items{\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\r\n    color: grey;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.itemsGrid{\r\n    background-color: #f9f9f9;   \r\n    margin-right: 30px;  \r\n    font-family: \"Roboto\", sans-serif;\r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    overflow: hidden;\r\n    width:100px;  \r\n    -webkit-box-orient: vertical;  \r\n    -webkit-box-direction: normal;  \r\n        -ms-flex-direction: column;  \r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.itemsList{\r\n    background-color: #f9f9f9;   \r\n    margin-bottom: 10px;   \r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;   \r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\n}\n.items:hover, .itemsList:hover{\r\n  -webkit-box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\r\n          box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\n}\n.itemCategory{\r\n    width:75px;\r\n    height:75px;\r\n    margin-bottom:5px;\n}\n.itemCategoryList{\r\n    width:30px;\r\n    height:30px;\r\n    margin-right:5px;\n}\n.addItemBox,.viewItemBox{\r\n    width:100vw;\r\n    height:100vh;\r\n    position: absolute;   \r\n    top: 0px;\r\n    z-index:2;\r\n    background: radial-gradient(transparent, #4e4e4ead);\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.addItem,.viewItem{\r\n    min-width:300px;\r\n    min-height:250px;\r\n    background-color: white;\r\n    position: relative;\r\n    padding:20px;\r\n    font-family: 'Roboto', sans-serif;\n}\n.backButton{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #d65205;\r\n    cursor: pointer;\n}\n.editButton{\r\n    position: absolute;\r\n    right: 20px;\r\n    top: 15px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #397dd6;\r\n    cursor: pointer;\n}\n.catPicture{\r\n    height: 100px;\r\n    width: 100px;\r\n    background-color: antiquewhite;\r\n    margin-right: 10px;\r\n    border-radius: 50%;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n#mainBar{\r\n    width:100vw;\r\n    background-color: rgb(214, 82, 5);\r\n    -webkit-box-shadow: 0px 6px 7px #c1c1c1;\r\n            box-shadow: 0px 6px 7px #c1c1c1;\r\n    position: fixed;\r\n    top:0;\r\n    z-index: 1;\n}\n#mainBar > div{\r\n    max-width: 1900px;\r\n    height:65px;\r\n    margin:0 auto;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\n}\n#mainBar h4{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents{\r\n    min-height: calc(100vh - 65px);\r\n    background: #fafafa;\r\n    position: relative;\r\n    z-index: 0;\n}\n#contents .container\r\n{\r\n    margin-top:65px;\n}\n#contents hr\r\n{\r\n    margin-top:2rem;\r\n    width:40%;\r\n    border-top: 2px solid rgba(0, 0, 0, 0.1)\n}\n.functions{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar{\r\n    width:60%;\r\n    border-radius: 5px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\n.searchBar:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 5px;\r\n    outline: white;\r\n    color: rgb(116, 116, 116);\r\n    background: #fcf7f4c4;\n}\n.searchBar:focus::-webkit-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-moz-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-ms-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar::-webkit-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-moz-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-ms-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n#addButton{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #227200;\r\n    color: white;\r\n    font-weight: 300;\n}\n#addButton svg{\r\n    margin-top: 5px;\r\n    margin-right: 5px;\n}\n#addButton:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n.items{\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\r\n    color: grey;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.itemsGrid{\r\n    background-color: #f9f9f9;   \r\n    margin-right: 30px;  \r\n    font-family: \"Roboto\", sans-serif;\r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    overflow: hidden;\r\n    width:100px;  \r\n    -webkit-box-orient: vertical;  \r\n    -webkit-box-direction: normal;  \r\n        -ms-flex-direction: column;  \r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.itemsList{\r\n    background-color: #f9f9f9;   \r\n    margin-bottom: 10px;   \r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;   \r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\n}\n.items:hover, .itemsList:hover{\r\n  -webkit-box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\r\n          box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\n}\n.itemCategory{\r\n    width:75px;\r\n    height:75px;\r\n    margin-bottom:5px;\n}\n.itemCategoryList{\r\n    width:30px;\r\n    height:30px;\r\n    margin-right:5px;\n}\n.addItemBox,.viewItemBox{\r\n    width:100vw;\r\n    height:100vh;\r\n    position: absolute;   \r\n    top: 0px;\r\n    z-index:2;\r\n    background: radial-gradient(transparent, #4e4e4ead);\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.addItem,.viewItem{\r\n    min-width:300px;\r\n    min-height:250px;\r\n    background-color: white;\r\n    position: relative;\r\n    padding:20px;\r\n    font-family: 'Roboto', sans-serif;\n}\n.backButton{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #d65205;\r\n    cursor: pointer;\n}\n.editButton{\r\n    position: absolute;\r\n    right: 60px;\r\n    top: 15px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #397dd6;\r\n    cursor: pointer;\n}\n.deleteButton{\r\n    position: absolute;\r\n    right: 20px;\r\n    top: 19px;\r\n    width: 25px !important;\r\n    height: 25px;\r\n    color: #ca353d;\r\n    cursor: pointer;\n}\n.catPicture{\r\n    height: 100px;\r\n    width: 100px;\r\n    background-color: antiquewhite;\r\n    margin-right: 10px;\r\n    border-radius: 50%;\n}\nform input{\r\n    border:none;\r\n    border-bottom: 1px solid rgb(187, 187, 187);\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\nform input:focus{\r\n    outline:none;\r\n    border-bottom: 1px solid rgb(87, 87, 87);\n}\nform input:hover{\r\n    border-bottom: 1px solid grey;\n}\nform select{\r\n    font-family:'Roboto', sans-serif;\r\n    padding: 5px;\n}\r\n", ""]);
 
 // exports
 
@@ -27052,7 +27052,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Settings__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Settings___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_Settings__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_ListGrid__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_ListGrid__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_ListGrid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_ListGrid__);
 //
 //
@@ -27151,6 +27151,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 
 
@@ -27246,16 +27248,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }]
         };
     },
-    created: function created() {
-        var _this = this;
-
-        eventBus.$on('switchList', function (status) {
-            return _this.data.listView;
-        }, this.gridView != this.listView);
-        eventBus.$on('switchGrid', function (status) {
-            return _this.data.gridView;
-        }, this.listView != this.gridView);
-    },
 
     methods: {
         viewDetails: function viewDetails(id) {
@@ -27273,7 +27265,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         addDetails: function addDetails(id) {
             alert('editing ' + id + '.');
-        }
+        },
+        AddtoList: function AddtoList() {}
     }
 });
 
@@ -27531,6 +27524,194 @@ if (false) {
 /* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(80)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(82)
+/* template */
+var __vue_template__ = __webpack_require__(83)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-3d13883b"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/ListGrid.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3d13883b", Component.options)
+  } else {
+    hotAPI.reload("data-v-3d13883b", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(81);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("81d1de9c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3d13883b\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ListGrid.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3d13883b\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ListGrid.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#listButton[data-v-3d13883b],#gridButton[data-v-3d13883b]{\r\n    color: white;\n}\n#listButton[data-v-3d13883b]:focus,#gridButton[data-v-3d13883b]:focus{\r\n    outline: orange;\n}\n#listButton[data-v-3d13883b]:active,#gridButton[data-v-3d13883b]:active{\r\n    background-color: #f5965e75;\n}\n.darken[data-v-3d13883b]{\r\n    background-color: #f5965e75 !important;\n}\n#listButton:active svg[data-v-3d13883b]{\r\n    margin-left: 2px;\n}\n#gridButton:active svg[data-v-3d13883b]{\r\n    margin-right: 2px;\n}\n#listButton[data-v-3d13883b]{\r\n    border-bottom-left-radius: 10px;\r\n    border-top-left-radius: 10px;\r\n    margin-right: -3px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#gridButton[data-v-3d13883b]{\r\n    border-bottom-right-radius: 10px;\r\n    border-top-right-radius: 10px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#listButton svg[data-v-3d13883b],#gridButton svg[data-v-3d13883b]{\r\n    width: 15px;\r\n    height: 15px;\r\n    margin-left: 1px;\n}\n#listButton svg[data-v-3d13883b]{\r\n    margin-left: 1px;\r\n    margin-top: 3px;\n}\n#gridButton svg[data-v-3d13883b]{\r\n    margin-right: 1px;\r\n    margin-top: 3px;\n}\n#listButton:active svg[data-v-3d13883b],#gridButton:active svg[data-v-3d13883b], .darken svg[data-v-3d13883b]{\r\n    width: 14px;\r\n    height: 14px;\r\n    color:#d65205;\n}\n#listButton:hover svg[data-v-3d13883b],#gridButton:hover svg[data-v-3d13883b]{\r\n    color:#d65205;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 82 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__ = __webpack_require__(2);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        FontAwesomeIcon: __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__["a" /* FontAwesomeIcon */]
+
+    },
+    data: function data() {
+        return {
+            gridView: true,
+            listView: false
+        };
+    },
+
+    methods: {
+        switchList: function switchList(status) {
+            this.$emit('switchList', status);
+            this.gridView = false;
+            this.listView = true;
+        },
+        switchGrid: function switchGrid(status) {
+            this.$emit('switchGrid', status);
+            this.gridView = true;
+            this.istView = false;
+        }
+    }
+});
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "button",
+      {
+        class: { darken: _vm.listView },
+        attrs: { id: "listButton" },
+        on: {
+          click: function($event) {
+            return _vm.switchList(_vm.listView)
+          }
+        }
+      },
+      [_c("FontAwesomeIcon", { attrs: { icon: "list" } })],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        class: { darken: _vm.gridView },
+        attrs: { id: "gridButton" },
+        on: {
+          click: function($event) {
+            return _vm.switchGrid(_vm.gridView)
+          }
+        }
+      },
+      [_c("FontAwesomeIcon", { attrs: { icon: "th" } })],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3d13883b", module.exports)
+  }
+}
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -27548,7 +27729,19 @@ var render = function() {
             "div",
             { staticClass: "functions" },
             [
-              _c("switchview"),
+              _c("switchview", {
+                attrs: { listView: _vm.listView, gridView: _vm.gridView },
+                on: {
+                  switchList: function($event) {
+                    _vm.listView = true
+                    _vm.gridView = false
+                  },
+                  switchGrid: function($event) {
+                    _vm.gridView = true
+                    _vm.listView = false
+                  }
+                }
+              }),
               _vm._v(" "),
               _c("input", {
                 staticClass: "searchBar",
@@ -27656,7 +27849,23 @@ var render = function() {
               1
             ),
             _vm._v(" "),
-            _vm._m(0)
+            _c("form", { attrs: { action: "" } }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-success",
+                  attrs: { type: "submit" },
+                  on: { click: _vm.AddtoList }
+                },
+                [_vm._v("Add Item")]
+              )
+            ])
           ])
         ])
       : _vm._e(),
@@ -27678,6 +27887,16 @@ var render = function() {
               }),
               _vm._v(" "),
               _c("FontAwesomeIcon", {
+                staticClass: "deleteButton",
+                attrs: { icon: "trash-alt" },
+                on: {
+                  click: function($event) {
+                    return _vm.DeleteItem(_vm.viewID)
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("FontAwesomeIcon", {
                 staticClass: "editButton",
                 attrs: { icon: "edit" },
                 on: {
@@ -27688,7 +27907,7 @@ var render = function() {
               }),
               _vm._v(" "),
               _c("div", { staticClass: "d-flex" }, [
-                _vm._m(1),
+                _vm._m(2),
                 _vm._v(" "),
                 _c("div", [
                   _c("h3", { staticClass: "mt-5" }, [
@@ -27744,71 +27963,65 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("form", { attrs: { action: "" } }, [
-      _c("div", { staticClass: "d-flex" }, [
-        _c("div", { staticClass: "catPicture mt-2" }),
+    return _c("div", { staticClass: "d-flex" }, [
+      _c("div", { staticClass: "catPicture mt-2" }),
+      _vm._v(" "),
+      _c("div", [
+        _c("input", {
+          staticClass: "my-2",
+          attrs: { type: "text", placeholder: "Title" }
+        }),
+        _c("br"),
         _vm._v(" "),
-        _c("div", [
-          _c("input", {
-            staticClass: "my-2",
-            attrs: { type: "text", placeholder: "Title" }
-          }),
-          _c("br"),
+        _c("input", { attrs: { type: "text", placeholder: "Brand" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "d-flex mb-1" }, [
+      _c("div", { staticClass: "mr-5" }, [
+        _c("label", [_vm._v("Category")]),
+        _vm._v(" "),
+        _c("select", [
+          _c("option", [_vm._v("Option 1")]),
           _vm._v(" "),
-          _c("input", { attrs: { type: "text", placeholder: "Brand" } })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("hr"),
-      _vm._v(" "),
-      _c("div", { staticClass: "d-flex mb-1" }, [
-        _c("div", { staticClass: "mr-5" }, [
-          _c("label", [_vm._v("Category")]),
+          _c("option", [_vm._v("Option 2")]),
           _vm._v(" "),
-          _c("select", [
-            _c("option", [_vm._v("Option 1")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Option 2")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Option 3")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Option 4")])
-          ]),
-          _c("br"),
+          _c("option", [_vm._v("Option 3")]),
           _vm._v(" "),
-          _c("label", { attrs: { for: "" } }, [_vm._v("Price :")]),
-          _c("input", { attrs: { type: "text", placeholder: "Price" } }),
-          _c("br"),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "" } }, [_vm._v("Purchase Date :")]),
-          _c("input", { attrs: { type: "text", placeholder: "Date" } }),
-          _c("br"),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "" } }, [_vm._v("Purchase Location :")]),
-          _c("input", { attrs: { type: "text", placeholder: "Location" } }),
-          _c("br")
+          _c("option", [_vm._v("Option 4")])
         ]),
+        _c("br"),
         _vm._v(" "),
-        _c("div", [
-          _c("label", { attrs: { for: "" } }, [_vm._v("Serial No :")]),
-          _c("input", { attrs: { type: "text", placeholder: "Serial" } }),
-          _c("br"),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "" } }, [_vm._v("Warranty :")]),
-          _c("input", { attrs: { type: "text", placeholder: "Warranty" } }),
-          _c("br"),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "" } }, [_vm._v("Duration :")]),
-          _c("input", { attrs: { type: "text", placeholder: "Duration" } }),
-          _c("br")
-        ])
+        _c("label", { attrs: { for: "" } }, [_vm._v("Price :")]),
+        _c("input", { attrs: { type: "text", placeholder: "Price" } }),
+        _c("br"),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "" } }, [_vm._v("Purchase Date :")]),
+        _c("input", { attrs: { type: "text", placeholder: "Date" } }),
+        _c("br"),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "" } }, [_vm._v("Purchase Location :")]),
+        _c("input", { attrs: { type: "text", placeholder: "Location" } }),
+        _c("br")
       ]),
       _vm._v(" "),
-      _c(
-        "button",
-        { staticClass: "btn btn-success", attrs: { type: "submit" } },
-        [_vm._v("Add Item")]
-      )
+      _c("div", [
+        _c("label", { attrs: { for: "" } }, [_vm._v("Serial No :")]),
+        _c("input", { attrs: { type: "text", placeholder: "Serial" } }),
+        _c("br"),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "" } }, [_vm._v("Warranty :")]),
+        _c("input", { attrs: { type: "text", placeholder: "Warranty" } }),
+        _c("br"),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "" } }, [_vm._v("Duration :")]),
+        _c("input", { attrs: { type: "text", placeholder: "Duration" } }),
+        _c("br")
+      ])
     ])
   },
   function() {
@@ -27824,197 +28037,6 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-049f0327", module.exports)
-  }
-}
-
-/***/ }),
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(84)
-}
-var normalizeComponent = __webpack_require__(5)
-/* script */
-var __vue_script__ = __webpack_require__(86)
-/* template */
-var __vue_template__ = __webpack_require__(87)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-3d13883b"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/ListGrid.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3d13883b", Component.options)
-  } else {
-    hotAPI.reload("data-v-3d13883b", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(85);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(4)("81d1de9c", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3d13883b\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ListGrid.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3d13883b\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ListGrid.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#listButton[data-v-3d13883b],#gridButton[data-v-3d13883b]{\r\n    color: white;\n}\n#listButton[data-v-3d13883b]:focus,#gridButton[data-v-3d13883b]:focus{\r\n    outline: orange;\n}\n#listButton[data-v-3d13883b]:active,#gridButton[data-v-3d13883b]:active{\r\n    background-color: #f5965e75;\n}\n.darken[data-v-3d13883b]{\r\n    background-color: #f5965e75 !important;\n}\n#listButton:active svg[data-v-3d13883b]{\r\n    margin-left: 2px;\n}\n#gridButton:active svg[data-v-3d13883b]{\r\n    margin-right: 2px;\n}\n#listButton[data-v-3d13883b]{\r\n    border-bottom-left-radius: 10px;\r\n    border-top-left-radius: 10px;\r\n    margin-right: -3px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#gridButton[data-v-3d13883b]{\r\n    border-bottom-right-radius: 10px;\r\n    border-top-right-radius: 10px;\r\n    border: none;\r\n    padding: 4px 8px;\r\n    background-color: #f5965e;\n}\n#listButton svg[data-v-3d13883b],#gridButton svg[data-v-3d13883b]{\r\n    width: 15px;\r\n    height: 15px;\r\n    margin-left: 1px;\n}\n#listButton svg[data-v-3d13883b]{\r\n    margin-left: 1px;\r\n    margin-top: 3px;\n}\n#gridButton svg[data-v-3d13883b]{\r\n    margin-right: 1px;\r\n    margin-top: 3px;\n}\n#listButton:active svg[data-v-3d13883b],#gridButton:active svg[data-v-3d13883b], .darken svg[data-v-3d13883b]{\r\n    width: 14px;\r\n    height: 14px;\r\n    color:#d65205;\n}\n#listButton:hover svg[data-v-3d13883b],#gridButton:hover svg[data-v-3d13883b]{\r\n    color:#d65205;\n}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 86 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__ = __webpack_require__(2);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        FontAwesomeIcon: __WEBPACK_IMPORTED_MODULE_0__fortawesome_vue_fontawesome__["a" /* FontAwesomeIcon */]
-
-    },
-    data: function data() {
-        return {
-            gridView: true,
-            listView: false
-        };
-    },
-
-    methods: {
-        switchList: function switchList(status) {
-            eventBus.$emit('listView', status);
-        },
-        switchGrid: function switchGrid(status) {
-            eventBus.$emit('gridView', status);
-        }
-    }
-});
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "button",
-      {
-        class: { darken: _vm.listView },
-        attrs: { id: "listButton" },
-        on: {
-          click: function($event) {
-            _vm.listView = true
-            _vm.gridView = false
-            _vm.switchList(_vm.listView)
-          }
-        }
-      },
-      [_c("FontAwesomeIcon", { attrs: { icon: "list" } })],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "button",
-      {
-        class: { darken: _vm.gridView },
-        attrs: { id: "gridButton" },
-        on: {
-          click: function($event) {
-            _vm.listView = false
-            _vm.gridView = true
-            _vm.switchGrid(_vm.gridView)
-          }
-        }
-      },
-      [_c("FontAwesomeIcon", { attrs: { icon: "th" } })],
-      1
-    )
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-3d13883b", module.exports)
   }
 }
 
