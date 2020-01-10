@@ -31,12 +31,12 @@
                     <h3 class="mt-5">Add Item</h3>
                     <hr>
                 </div>
-                <form action="">
+                
                     <div class="d-flex">
                         <div class="catPicture mt-2"></div>
                         <div>
-                            <input type="text" placeholder="Title" class="my-2" ><br>
-                            <input type="text" placeholder="Brand">
+                            <input type="text" placeholder="Title" class="my-2" name="inputTitle"><br>
+                            <input type="text" placeholder="Brand" name="inputBrand">
                         </div>
                     </div>
                     <hr>
@@ -49,24 +49,24 @@
                             <option>Option 3</option>
                             <option>Option 4</option>
                         </select><br>         
-                        <label for="">Price :</label><input type="text" placeholder="Price"><br> 
-                        <label for="">Purchase Date :</label><input type="text" placeholder="Date"><br> 
-                        <label for="">Purchase Location :</label><input type="text" placeholder="Location"><br> 
+                        <label for="">Price :</label><input type="text" placeholder="Price" name="inputPrice"><br> 
+                        <label for="">Purchase Date :</label><input type="text" placeholder="Date" name="inputDate"><br> 
+                        <label for="">Purchase Location :</label><input type="text" placeholder="Location" name="inputLocation"><br> 
                         </div>
                         <div>
-                            <label for="">Serial No :</label><input type="text" placeholder="Serial"><br>  
-                            <label for="">Warranty :</label><input type="text" placeholder="Warranty"><br> 
-                            <label for="">Duration :</label><input type="text" placeholder="Duration"><br> 
+                            <label for="">Serial No :</label><input type="text" placeholder="Serial" name="inputSerial"><br>  
+                            <label for="">Warranty :</label><input type="text" placeholder="Warranty" name="inputWarranty"><br> 
+                            <label for="">Duration :</label><input type="text" placeholder="Duration" name="inputDuration"><br> 
                         </div>
                     </div>
-                    <button class="btn btn-success" type="submit" @click="AddtoList">Add Item</button>
-                </form>
+                    <button class="btn btn-success" @click="addtoList">Add Item</button>
+                
             </div>
         </div>
         <div class="viewItemBox" v-if="viewItem">
             <div class="viewItem">
                 <FontAwesomeIcon icon="arrow-circle-left" class="backButton" @click="viewItem = !viewItem"/>
-                <FontAwesomeIcon icon="trash-alt" class="deleteButton" @click="DeleteItem(viewID)" />
+                <FontAwesomeIcon icon="trash-alt" class="deleteButton" @click="deleteItem(viewID)" />
                 <FontAwesomeIcon icon="edit" class="editButton" @click="addDetails(viewID)" />
                 <div class="d-flex">
                     <div>
@@ -125,6 +125,7 @@ export default {
             viewdop:'',
             viewCost:'',
             viewSubCat:'',
+            newID:4,
             contents:[
                 {
                     'id':0,
@@ -139,7 +140,7 @@ export default {
                     'SerialNumbers': 'Dg2751235s',
                     'WarrantyType': 'Aciidental Damage',
                     'Duration': '1 year',
-                    'Add-Warranty': 'none',
+                    'AddWarranty': 'none',
                     'ServiceL': 'HSP',
                     'RPicture': '',
                 },
@@ -157,7 +158,7 @@ export default {
                     'SerialNumbers': 'Dgsdfsd235s',
                     'WarrantyType': 'Aciidental Damage',
                     'Duration': '1 year',
-                    'Add-Warranty': 'none',
+                    'AddWarranty': 'none',
                     'ServiceL': 'HSP',
                     'RPicture': '',
                 },
@@ -174,7 +175,7 @@ export default {
                     'SerialNumbers': 'Dg3451235s',
                     'WarrantyType': 'Accidental Damage',
                     'Duration': '1 year',
-                    'Add-Warranty': 'none',
+                    'AddWarranty': 'none',
                     'ServiceL': 'HSP',
                     'RPicture': '',
                 },
@@ -191,7 +192,7 @@ export default {
                     'SerialNumbers': 'Dg2751235s',
                     'WarrantyType': 'Accidental Damage',
                     'Duration': '1 year',
-                    'Add-Warranty': 'Apple Care 3 years',
+                    'AddWarranty': 'Apple Care 3 years',
                     'ServiceL': 'HSP',
                     'RPicture': '',
                 }
@@ -200,6 +201,7 @@ export default {
     },
     methods:{
         viewDetails(id){
+            console.log(id);
             this.viewID = id;
             this.viewTitle=this.contents[id].title;
             this.viewCat=this.contents[id].category;
@@ -215,8 +217,31 @@ export default {
         addDetails(id){
             alert('editing ' + id + '.' );
         },
-        AddtoList(){
-            
+        addtoList(){
+            this.contents.push({
+                id: this.newID,
+                brand:'Microsoft',
+                title: 'Surface',
+                category:'Electronics',
+                subCategory: 'laptops',
+                cost:'$900',
+                dop: '12-02-2019',
+                PPurchase: 'Halifax Shopping Center',
+                SerialNumbers: 'Dg2751235s',
+                WarrantyType: 'Accidental Damage',
+                Duration: '1 year',
+                AddWarranty: 'Apple Care 3 years',
+                ServiceL: 'HSP',
+                RPicture: '',                
+            })
+            this.newID++;
+            this.displayed = false; 
+        },
+        deleteItem(id)
+        {
+            this.contents.splice(id, 1)
+            console.log(id)
+            this.viewItem=false;
         }
     },
 };
@@ -255,6 +280,8 @@ export default {
 #contents .container
 {
     margin-top:65px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #contents hr
 {
@@ -331,11 +358,13 @@ export default {
 }
 .itemsGrid{
     background-color: #f9f9f9;   
-    margin-right: 30px;  
+    margin-right: 30px; 
+    margin-bottom: 30px; 
     font-family: "Roboto", sans-serif;
     box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;
     overflow: hidden;
-    width:100px;  
+    width:100px; 
+    height:150px; 
     flex-direction: column;
     justify-content: center;
 }

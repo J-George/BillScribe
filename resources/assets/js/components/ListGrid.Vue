@@ -32,7 +32,7 @@ export default {
         switchGrid(status){
             this.$emit('switchGrid', status);
             this.gridView = true;
-            this.istView = false;
+            this.listView = false;
         },
     },
 }

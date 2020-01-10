@@ -27038,7 +27038,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n#mainBar{\r\n    width:100vw;\r\n    background-color: rgb(214, 82, 5);\r\n    -webkit-box-shadow: 0px 6px 7px #c1c1c1;\r\n            box-shadow: 0px 6px 7px #c1c1c1;\r\n    position: fixed;\r\n    top:0;\r\n    z-index: 1;\n}\n#mainBar > div{\r\n    max-width: 1900px;\r\n    height:65px;\r\n    margin:0 auto;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\n}\n#mainBar h4{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents{\r\n    min-height: calc(100vh - 65px);\r\n    background: #fafafa;\r\n    position: relative;\r\n    z-index: 0;\n}\n#contents .container\r\n{\r\n    margin-top:65px;\n}\n#contents hr\r\n{\r\n    margin-top:2rem;\r\n    width:40%;\r\n    border-top: 2px solid rgba(0, 0, 0, 0.1)\n}\n.functions{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar{\r\n    width:60%;\r\n    border-radius: 5px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\n.searchBar:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 5px;\r\n    outline: white;\r\n    color: rgb(116, 116, 116);\r\n    background: #fcf7f4c4;\n}\n.searchBar:focus::-webkit-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-moz-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-ms-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar::-webkit-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-moz-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-ms-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n#addButton{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #227200;\r\n    color: white;\r\n    font-weight: 300;\n}\n#addButton svg{\r\n    margin-top: 5px;\r\n    margin-right: 5px;\n}\n#addButton:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n.items{\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\r\n    color: grey;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.itemsGrid{\r\n    background-color: #f9f9f9;   \r\n    margin-right: 30px;  \r\n    font-family: \"Roboto\", sans-serif;\r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    overflow: hidden;\r\n    width:100px;  \r\n    -webkit-box-orient: vertical;  \r\n    -webkit-box-direction: normal;  \r\n        -ms-flex-direction: column;  \r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.itemsList{\r\n    background-color: #f9f9f9;   \r\n    margin-bottom: 10px;   \r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;   \r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\n}\n.items:hover, .itemsList:hover{\r\n  -webkit-box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\r\n          box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\n}\n.itemCategory{\r\n    width:75px;\r\n    height:75px;\r\n    margin-bottom:5px;\n}\n.itemCategoryList{\r\n    width:30px;\r\n    height:30px;\r\n    margin-right:5px;\n}\n.addItemBox,.viewItemBox{\r\n    width:100vw;\r\n    height:100vh;\r\n    position: absolute;   \r\n    top: 0px;\r\n    z-index:2;\r\n    background: radial-gradient(transparent, #4e4e4ead);\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.addItem,.viewItem{\r\n    min-width:300px;\r\n    min-height:250px;\r\n    background-color: white;\r\n    position: relative;\r\n    padding:20px;\r\n    font-family: 'Roboto', sans-serif;\n}\n.backButton{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #d65205;\r\n    cursor: pointer;\n}\n.editButton{\r\n    position: absolute;\r\n    right: 60px;\r\n    top: 15px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #397dd6;\r\n    cursor: pointer;\n}\n.deleteButton{\r\n    position: absolute;\r\n    right: 20px;\r\n    top: 19px;\r\n    width: 25px !important;\r\n    height: 25px;\r\n    color: #ca353d;\r\n    cursor: pointer;\n}\n.catPicture{\r\n    height: 100px;\r\n    width: 100px;\r\n    background-color: antiquewhite;\r\n    margin-right: 10px;\r\n    border-radius: 50%;\n}\nform input{\r\n    border:none;\r\n    border-bottom: 1px solid rgb(187, 187, 187);\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\nform input:focus{\r\n    outline:none;\r\n    border-bottom: 1px solid rgb(87, 87, 87);\n}\nform input:hover{\r\n    border-bottom: 1px solid grey;\n}\nform select{\r\n    font-family:'Roboto', sans-serif;\r\n    padding: 5px;\n}\r\n", ""]);
+exports.push([module.i, "\n#mainBar{\r\n    width:100vw;\r\n    background-color: rgb(214, 82, 5);\r\n    -webkit-box-shadow: 0px 6px 7px #c1c1c1;\r\n            box-shadow: 0px 6px 7px #c1c1c1;\r\n    position: fixed;\r\n    top:0;\r\n    z-index: 1;\n}\n#mainBar > div{\r\n    max-width: 1900px;\r\n    height:65px;\r\n    margin:0 auto;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\n}\n#mainBar h4{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents{\r\n    min-height: calc(100vh - 65px);\r\n    background: #fafafa;\r\n    position: relative;\r\n    z-index: 0;\n}\n#contents .container\r\n{\r\n    margin-top:65px;\r\n    -ms-flex-wrap: wrap;\r\n        flex-wrap: wrap;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n#contents hr\r\n{\r\n    margin-top:2rem;\r\n    width:40%;\r\n    border-top: 2px solid rgba(0, 0, 0, 0.1)\n}\n.functions{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar{\r\n    width:60%;\r\n    border-radius: 5px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\n.searchBar:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 5px;\r\n    outline: white;\r\n    color: rgb(116, 116, 116);\r\n    background: #fcf7f4c4;\n}\n.searchBar:focus::-webkit-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-moz-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-ms-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar::-webkit-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-moz-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-ms-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n#addButton{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #227200;\r\n    color: white;\r\n    font-weight: 300;\n}\n#addButton svg{\r\n    margin-top: 5px;\r\n    margin-right: 5px;\n}\n#addButton:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n.items{\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\r\n    color: grey;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.itemsGrid{\r\n    background-color: #f9f9f9;   \r\n    margin-right: 30px; \r\n    margin-bottom: 30px; \r\n    font-family: \"Roboto\", sans-serif;\r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    overflow: hidden;\r\n    width:100px; \r\n    height:150px; \r\n    -webkit-box-orient: vertical; \r\n    -webkit-box-direction: normal; \r\n        -ms-flex-direction: column; \r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.itemsList{\r\n    background-color: #f9f9f9;   \r\n    margin-bottom: 10px;   \r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;   \r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\n}\n.items:hover, .itemsList:hover{\r\n  -webkit-box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\r\n          box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\n}\n.itemCategory{\r\n    width:75px;\r\n    height:75px;\r\n    margin-bottom:5px;\n}\n.itemCategoryList{\r\n    width:30px;\r\n    height:30px;\r\n    margin-right:5px;\n}\n.addItemBox,.viewItemBox{\r\n    width:100vw;\r\n    height:100vh;\r\n    position: absolute;   \r\n    top: 0px;\r\n    z-index:2;\r\n    background: radial-gradient(transparent, #4e4e4ead);\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.addItem,.viewItem{\r\n    min-width:300px;\r\n    min-height:250px;\r\n    background-color: white;\r\n    position: relative;\r\n    padding:20px;\r\n    font-family: 'Roboto', sans-serif;\n}\n.backButton{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #d65205;\r\n    cursor: pointer;\n}\n.editButton{\r\n    position: absolute;\r\n    right: 60px;\r\n    top: 15px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #397dd6;\r\n    cursor: pointer;\n}\n.deleteButton{\r\n    position: absolute;\r\n    right: 20px;\r\n    top: 19px;\r\n    width: 25px !important;\r\n    height: 25px;\r\n    color: #ca353d;\r\n    cursor: pointer;\n}\n.catPicture{\r\n    height: 100px;\r\n    width: 100px;\r\n    background-color: antiquewhite;\r\n    margin-right: 10px;\r\n    border-radius: 50%;\n}\nform input{\r\n    border:none;\r\n    border-bottom: 1px solid rgb(187, 187, 187);\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\nform input:focus{\r\n    outline:none;\r\n    border-bottom: 1px solid rgb(87, 87, 87);\n}\nform input:hover{\r\n    border-bottom: 1px solid grey;\n}\nform select{\r\n    font-family:'Roboto', sans-serif;\r\n    padding: 5px;\n}\r\n", ""]);
 
 // exports
 
@@ -27181,6 +27181,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             viewdop: '',
             viewCost: '',
             viewSubCat: '',
+            newID: 4,
             contents: [{
                 'id': 0,
                 'title': 'Apple Watch',
@@ -27194,7 +27195,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'SerialNumbers': 'Dg2751235s',
                 'WarrantyType': 'Aciidental Damage',
                 'Duration': '1 year',
-                'Add-Warranty': 'none',
+                'AddWarranty': 'none',
                 'ServiceL': 'HSP',
                 'RPicture': ''
             }, {
@@ -27210,7 +27211,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'SerialNumbers': 'Dgsdfsd235s',
                 'WarrantyType': 'Aciidental Damage',
                 'Duration': '1 year',
-                'Add-Warranty': 'none',
+                'AddWarranty': 'none',
                 'ServiceL': 'HSP',
                 'RPicture': ''
             }, {
@@ -27226,7 +27227,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'SerialNumbers': 'Dg3451235s',
                 'WarrantyType': 'Accidental Damage',
                 'Duration': '1 year',
-                'Add-Warranty': 'none',
+                'AddWarranty': 'none',
                 'ServiceL': 'HSP',
                 'RPicture': ''
             }, {
@@ -27242,7 +27243,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'SerialNumbers': 'Dg2751235s',
                 'WarrantyType': 'Accidental Damage',
                 'Duration': '1 year',
-                'Add-Warranty': 'Apple Care 3 years',
+                'AddWarranty': 'Apple Care 3 years',
                 'ServiceL': 'HSP',
                 'RPicture': ''
             }]
@@ -27251,6 +27252,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         viewDetails: function viewDetails(id) {
+            console.log(id);
             this.viewID = id;
             this.viewTitle = this.contents[id].title;
             this.viewCat = this.contents[id].category;
@@ -27266,7 +27268,31 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         addDetails: function addDetails(id) {
             alert('editing ' + id + '.');
         },
-        AddtoList: function AddtoList() {}
+        addtoList: function addtoList() {
+            this.contents.push({
+                id: this.newID,
+                brand: 'Microsoft',
+                title: 'Surface',
+                category: 'Electronics',
+                subCategory: 'laptops',
+                cost: '$900',
+                dop: '12-02-2019',
+                PPurchase: 'Halifax Shopping Center',
+                SerialNumbers: 'Dg2751235s',
+                WarrantyType: 'Accidental Damage',
+                Duration: '1 year',
+                AddWarranty: 'Apple Care 3 years',
+                ServiceL: 'HSP',
+                RPicture: ''
+            });
+            this.newID++;
+            this.displayed = false;
+        },
+        deleteItem: function deleteItem(id) {
+            this.contents.splice(id, 1);
+            console.log(id);
+            this.viewItem = false;
+        }
     }
 });
 
@@ -27653,7 +27679,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         switchGrid: function switchGrid(status) {
             this.$emit('switchGrid', status);
             this.gridView = true;
-            this.istView = false;
+            this.listView = false;
         }
     }
 });
@@ -27849,23 +27875,17 @@ var render = function() {
               1
             ),
             _vm._v(" "),
-            _c("form", { attrs: { action: "" } }, [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("hr"),
-              _vm._v(" "),
-              _vm._m(1),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-success",
-                  attrs: { type: "submit" },
-                  on: { click: _vm.AddtoList }
-                },
-                [_vm._v("Add Item")]
-              )
-            ])
+            _vm._m(0),
+            _vm._v(" "),
+            _c("hr"),
+            _vm._v(" "),
+            _vm._m(1),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-success", on: { click: _vm.addtoList } },
+              [_vm._v("Add Item")]
+            )
           ])
         ])
       : _vm._e(),
@@ -27891,7 +27911,7 @@ var render = function() {
                 attrs: { icon: "trash-alt" },
                 on: {
                   click: function($event) {
-                    return _vm.DeleteItem(_vm.viewID)
+                    return _vm.deleteItem(_vm.viewID)
                   }
                 }
               }),
@@ -27969,11 +27989,13 @@ var staticRenderFns = [
       _c("div", [
         _c("input", {
           staticClass: "my-2",
-          attrs: { type: "text", placeholder: "Title" }
+          attrs: { type: "text", placeholder: "Title", name: "inputTitle" }
         }),
         _c("br"),
         _vm._v(" "),
-        _c("input", { attrs: { type: "text", placeholder: "Brand" } })
+        _c("input", {
+          attrs: { type: "text", placeholder: "Brand", name: "inputBrand" }
+        })
       ])
     ])
   },
@@ -27997,29 +28019,53 @@ var staticRenderFns = [
         _c("br"),
         _vm._v(" "),
         _c("label", { attrs: { for: "" } }, [_vm._v("Price :")]),
-        _c("input", { attrs: { type: "text", placeholder: "Price" } }),
+        _c("input", {
+          attrs: { type: "text", placeholder: "Price", name: "inputPrice" }
+        }),
         _c("br"),
         _vm._v(" "),
         _c("label", { attrs: { for: "" } }, [_vm._v("Purchase Date :")]),
-        _c("input", { attrs: { type: "text", placeholder: "Date" } }),
+        _c("input", {
+          attrs: { type: "text", placeholder: "Date", name: "inputDate" }
+        }),
         _c("br"),
         _vm._v(" "),
         _c("label", { attrs: { for: "" } }, [_vm._v("Purchase Location :")]),
-        _c("input", { attrs: { type: "text", placeholder: "Location" } }),
+        _c("input", {
+          attrs: {
+            type: "text",
+            placeholder: "Location",
+            name: "inputLocation"
+          }
+        }),
         _c("br")
       ]),
       _vm._v(" "),
       _c("div", [
         _c("label", { attrs: { for: "" } }, [_vm._v("Serial No :")]),
-        _c("input", { attrs: { type: "text", placeholder: "Serial" } }),
+        _c("input", {
+          attrs: { type: "text", placeholder: "Serial", name: "inputSerial" }
+        }),
         _c("br"),
         _vm._v(" "),
         _c("label", { attrs: { for: "" } }, [_vm._v("Warranty :")]),
-        _c("input", { attrs: { type: "text", placeholder: "Warranty" } }),
+        _c("input", {
+          attrs: {
+            type: "text",
+            placeholder: "Warranty",
+            name: "inputWarranty"
+          }
+        }),
         _c("br"),
         _vm._v(" "),
         _c("label", { attrs: { for: "" } }, [_vm._v("Duration :")]),
-        _c("input", { attrs: { type: "text", placeholder: "Duration" } }),
+        _c("input", {
+          attrs: {
+            type: "text",
+            placeholder: "Duration",
+            name: "inputDuration"
+          }
+        }),
         _c("br")
       ])
     ])
