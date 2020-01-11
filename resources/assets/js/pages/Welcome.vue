@@ -168,7 +168,7 @@ export default {
 .d-flex{
     margin-bottom: 100px;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .d-flex div {
     text-align: center;

@@ -19,7 +19,19 @@ Route::get('/', function () {
 // Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/{any}', function(){
+Route::get('/home', function(){
         return view('vueapp');
-})->where('any', '.*');
+});
+
+Route::get('/login', function(){
+    return view('vueapp');
+});
+
+Route::get('/register', function(){
+    return view('vueapp');
+});
+
+Route::get('/dashboard', function(){
+    return view('vueapp');
+});
 
