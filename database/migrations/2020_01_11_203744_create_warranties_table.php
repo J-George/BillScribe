@@ -15,20 +15,21 @@ class CreateWarrantiesTable extends Migration
     {
         Schema::create('warranties', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
             $table->string('title');
             $table->string('category');
             $table->string('subCategory');
             $table->string('brand');
-            $table->string('picture')->default(NULL);
+            $table->string('picture')->nullable();
             $table->double('cost');
-            $table->date('dateOfPurchase');
-            $table->string('placeOfPurchase');
-            $table->string('serialNumber')->default(NULL);
-            $table->string('warrantyType')->default(NULL);
-            $table->string('duration')->default(NULL);
-            $table->string('additionalWarranty')->default(NULL);
-            $table->string('additionalDuration')->default(NULL);
-            $table->string('receiptPicture')->default(NULL);
+            $table->date('dateOfPurchase')->nullable();
+            $table->string('placeOfPurchase')->nullable();
+            $table->string('serialNumber')->nullable();
+            $table->string('warrantyType')->nullable();
+            $table->string('duration')->nullable();
+            $table->string('additionalWarranty')->nullable();
+            $table->string('additionalDuration')->nullable();
+            $table->string('receiptPicture')->nullable();
             $table->timestamps();
         });
     }

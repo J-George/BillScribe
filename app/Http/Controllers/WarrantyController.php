@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Warranty;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class WarrantyController extends Controller
 {
@@ -35,7 +36,20 @@ class WarrantyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'title'             => 'required|string',
+            'category'          => 'required|string',
+            'subCategory'       => 'required|string',
+            'brand'             => 'required|string',
+            'placeOfPurchase'   => 'required|string',
+            'serialNumber'      => 'required|string',
+            'dateOfPurchase'    => 'required|date',
+            'cost'              => 'required|numeric'
+        ]);
+
+        $warranty = Warranty::create($data);
+        
+        return response($warranty, 201); 
     }
 
     /**
@@ -69,7 +83,13 @@ class WarrantyController extends Controller
      */
     public function update(Request $request, Warranty $warranty)
     {
-        //
+        $data = $request->validate([
+            'title'             => 'required|string',
+        ]);
+
+        $warranty->update($data);
+        
+        return response($warranty, 200);
     }
 
     /**
@@ -80,6 +100,8 @@ class WarrantyController extends Controller
      */
     public function destroy(Warranty $warranty)
     {
-        //
+        $warranty->delete();
+        
+        return response('Item Deleted',200);
     }
 }
