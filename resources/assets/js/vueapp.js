@@ -1,8 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import axios from 'axios';
 
 window.eventBus = new Vue();
-
+Vue.prototype.$http = axios;
 Vue.use(VueRouter);
 
 import App from "./components/App";
