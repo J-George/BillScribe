@@ -39,12 +39,14 @@ class WarrantyController extends Controller
         $data = $request->validate([
             'title'             => 'required|string',
             'category'          => 'required|string',
-            'subCategory'       => 'required|string',
+            'subCategory'       => 'string',
             'brand'             => 'required|string',
-            'placeOfPurchase'   => 'required|string',
-            'serialNumber'      => 'required|string',
-            'dateOfPurchase'    => 'required|date',
-            'cost'              => 'required|numeric'
+            'placeOfPurchase'   => 'string',
+            'serialNumber'      => 'string',
+            'dateOfPurchase'    => 'date',
+            'cost'              => 'numeric',
+            'warrantyType'      => 'string',
+            'duration'          => 'string',
         ]);
 
         $warranty = Warranty::create($data);
@@ -86,8 +88,17 @@ class WarrantyController extends Controller
     {
         $data = $request->validate([
             'title'             => 'required|string',
+            'category'          => 'required|string',
+            'subCategory'       => 'string',
+            'brand'             => 'required|string',
+            'placeOfPurchase'   => 'string',
+            'serialNumber'      => 'string',
+            'dateOfPurchase'    => 'date',
+            'cost'              => 'numeric',
+            'warrantyType'      => 'string',
+            'duration'          => 'string',
         ]);
-
+        
         $warranty->update($data);
         
         return response($warranty, 200);

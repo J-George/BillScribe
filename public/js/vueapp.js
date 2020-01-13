@@ -28438,19 +28438,19 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(71)
+  __webpack_require__(88)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
 var __vue_script__ = __webpack_require__(73)
 /* template */
-var __vue_template__ = __webpack_require__(84)
+var __vue_template__ = __webpack_require__(90)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-049f0327"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -28483,46 +28483,8 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(72);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(4)("ab8519ac", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-049f0327\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Dashboard.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-049f0327\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Dashboard.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#mainBar{\r\n    width:100vw;\r\n    background-color: rgb(214, 82, 5);\r\n    -webkit-box-shadow: 0px 6px 7px #c1c1c1;\r\n            box-shadow: 0px 6px 7px #c1c1c1;\r\n    position: fixed;\r\n    top:0;\r\n    z-index: 1;\n}\n#mainBar > div{\r\n    max-width: 1900px;\r\n    height:65px;\r\n    margin:0 auto;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\n}\n#mainBar h4{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents{\r\n    min-height: calc(100vh - 65px);\r\n    background: #fafafa;\r\n    position: relative;\r\n    z-index: 0;\n}\n#contents .container\r\n{\r\n    margin-top:65px;\r\n    -ms-flex-wrap: wrap;\r\n        flex-wrap: wrap;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n#contents hr\r\n{\r\n    margin-top:2rem;\r\n    width:40%;\r\n    border-top: 2px solid rgba(0, 0, 0, 0.1)\n}\n.functions{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar{\r\n    width:60%;\r\n    border-radius: 5px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\n.searchBar:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 5px;\r\n    outline: white;\r\n    color: rgb(116, 116, 116);\r\n    background: #fcf7f4c4;\n}\n.searchBar:focus::-webkit-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-moz-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::-ms-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar:focus::placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar::-webkit-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-moz-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::-ms-input-placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n.searchBar::placeholder{\r\n    color: rgba(219, 219, 219, 0.774);\n}\n#addButton{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #227200;\r\n    color: white;\r\n    font-weight: 300;\n}\n#addButton svg{\r\n    margin-top: 5px;\r\n    margin-right: 5px;\n}\n#addButton:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n.items{\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\r\n    color: grey;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.itemsGrid{\r\n    background-color: #f9f9f9;   \r\n    margin-right: 30px; \r\n    margin-bottom: 30px; \r\n    font-family: \"Roboto\", sans-serif;\r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    overflow: hidden;\r\n    width:100px; \r\n    height:150px; \r\n    -webkit-box-orient: vertical; \r\n    -webkit-box-direction: normal; \r\n        -ms-flex-direction: column; \r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.itemsList{\r\n    background-color: #f9f9f9;   \r\n    margin-bottom: 10px;   \r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;   \r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\n}\n.items:hover, .itemsList:hover{\r\n  -webkit-box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\r\n          box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\n}\n.itemCategory{\r\n    width:75px;\r\n    height:75px;\r\n    margin-bottom:5px;\n}\n.itemCategoryList{\r\n    width:30px;\r\n    height:30px;\r\n    margin-right:5px;\n}\n.addItemBox,.viewItemBox{\r\n    width:100vw;\r\n    height:100vh;\r\n    position: absolute;   \r\n    top: 0px;\r\n    z-index:2;\r\n    background: radial-gradient(transparent, #4e4e4ead);\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.addItem,.viewItem{\r\n    min-width:300px;\r\n    min-height:250px;\r\n    background-color: white;\r\n    position: relative;\r\n    padding:20px;\r\n    font-family: 'Roboto', sans-serif;\n}\n.backButton{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #d65205;\r\n    cursor: pointer;\n}\n.editButton{\r\n    position: absolute;\r\n    right: 60px;\r\n    top: 15px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #397dd6;\r\n    cursor: pointer;\n}\n.deleteButton{\r\n    position: absolute;\r\n    right: 20px;\r\n    top: 19px;\r\n    width: 25px !important;\r\n    height: 25px;\r\n    color: #ca353d;\r\n    cursor: pointer;\n}\n.catPicture{\r\n    height: 100px;\r\n    width: 100px;\r\n    background-color: antiquewhite;\r\n    margin-right: 10px;\r\n    border-radius: 50%;\n}\nform input{\r\n    border:none;\r\n    border-bottom: 1px solid rgb(187, 187, 187);\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\nform input:focus{\r\n    outline:none;\r\n    border-bottom: 1px solid rgb(87, 87, 87);\n}\nform input:hover{\r\n    border-bottom: 1px solid grey;\n}\nform select{\r\n    font-family:'Roboto', sans-serif;\r\n    padding: 5px;\n}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 71 */,
+/* 72 */,
 /* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -28535,6 +28497,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_ListGrid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_ListGrid__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_axios__);
+//
+//
 //
 //
 //
@@ -28648,9 +28612,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             displayed: false,
-            viewItem: false,
+            itemPopup: false,
             gridView: true,
             listView: false,
+            editMode: false,
             settings: '',
             result: '',
             viewID: '',
@@ -28664,6 +28629,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             viewdop: '',
             viewCost: '',
             viewSubCat: '',
+            inputID: '',
+            inputTitle: '',
+            inputCategory: '',
+            inputBrand: '',
+            inputSerial: '',
+            inputWarranty: '',
+            inputDuration: '',
+            inputLocation: '',
+            inputDate: '',
+            inputPrice: '',
+            activeClass: 'active',
             contents: []
         };
     },
@@ -28678,57 +28654,111 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-        viewDetails: function viewDetails(id) {
+        viewItem: function viewItem(id) {
             var _this2 = this;
 
-            console.log(id);
             __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get('/warranties/' + id).then(function (response) {
-                console.log(response);
                 _this2.result = response.data[0];
                 _this2.viewID = _this2.result.id;
                 _this2.viewTitle = _this2.result.title;
                 _this2.viewCat = _this2.result.category;
-                _this2.viewdop = _this2.result.dop;
+                _this2.viewdop = _this2.result.dateOfPurchase;
+                _this2.viewPOP = _this2.result.placeOfPurchase;
                 _this2.viewSubCat = _this2.result.subCategory;
                 _this2.viewCost = _this2.result.cost;
-                _this2.viewWarranty = _this2.result.WarrantyType;
-                _this2.viewWarrantyDuration = _this2.result.Duration;
-                _this2.viewSerial = _this2.result.SerialNumbers;
+                _this2.viewWarranty = _this2.result.warrantyType;
+                _this2.viewWarrantyDuration = _this2.result.duration;
+                _this2.viewSerial = _this2.result.serialNumber;
                 _this2.viewBrand = _this2.result.brand;
-                _this2.viewItem = true;
+                _this2.itemPopup = true;
             }).catch(function (error) {
                 console.log(error);
             });
         },
-        addDetails: function addDetails(id) {
-            alert('editing ' + id + '.');
+        addEditItem: function addEditItem() {
+            this.editMode ? this.editItem() : this.addItem();
+            this.editMode = false;
         },
-        addtoList: function addtoList() {
-            this.contents.push({
-                id: this.newID,
-                brand: 'Microsoft',
-                title: 'Surface',
-                category: 'Electronics',
-                subCategory: 'laptops',
-                cost: '$900',
-                dop: '12-02-2019',
-                PPurchase: 'Halifax Shopping Center',
-                SerialNumbers: 'Dg2751235s',
-                WarrantyType: 'Accidental Damage',
-                Duration: '1 year',
-                AddWarranty: 'Apple Care 3 years',
-                ServiceL: 'HSP',
-                RPicture: ''
+        editItem: function editItem() {
+            __WEBPACK_IMPORTED_MODULE_3_axios___default.a.patch('/warranties/' + this.inputID, {
+                brand: this.inputBrand,
+                title: this.inputTitle,
+                category: this.inputCategory,
+                cost: this.inputPrice,
+                dateOfPurchase: this.inputDate,
+                placeOfPurchase: this.inputLocation,
+                serialNumber: this.inputSerial,
+                warrantyType: this.inputWarranty,
+                duration: this.inputDuration
+            }).catch(function (error) {
+                console.log(error);
             });
-            this.newID++;
+            this.clearfields();
             this.displayed = false;
+            this.refreshList();
+        },
+        addItem: function addItem() {
+            __WEBPACK_IMPORTED_MODULE_3_axios___default.a.post('/warranties', {
+                brand: this.inputBrand,
+                title: this.inputTitle,
+                category: this.inputCategory,
+                cost: this.inputPrice,
+                dateOfPurchase: this.inputDate,
+                placeOfPurchase: this.inputLocation,
+                serialNumber: this.inputSerial,
+                warrantyType: this.inputWarranty,
+                duration: this.inputDuration
+            }).catch(function (error) {
+                console.log(error);
+            });
+            this.clearfields();
+            this.displayed = false;
+            this.refreshList();
         },
         deleteItem: function deleteItem(id) {
-            __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get('/warranties').then(function (response) {
+            __WEBPACK_IMPORTED_MODULE_3_axios___default.a.delete('/warranties/' + id).then(function (response) {
                 console.log(response);
             }).catch(function (error) {
                 console.log(error);
             });
+            this.itemPopup = false;
+            this.refreshList();
+        },
+        refreshList: function refreshList() {
+            var _this3 = this;
+
+            __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get('/warranties').then(function (response) {
+                _this3.contents = response.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+        showEditItem: function showEditItem(id) {
+            this.inputID = this.result.id;
+            this.inputBrand = this.result.brand;
+            this.inputTitle = this.result.title;
+            this.inputCategory = this.result.category;
+            this.inputPrice = this.result.cost;
+            this.inputDate = this.result.dateOfPurchase;
+            this.inputLocation = this.result.placeOfPurchase;
+            this.inputSerial = this.result.serialNumber;
+            this.inputWarranty = this.result.warrantyType;
+            this.inputDuration = this.result.duration;
+            this.editMode = true;
+            this.itemPopup = false;
+            this.displayed = true;
+        },
+        clearfields: function clearfields() {
+            this.inputID = '';
+            this.inputBrand = '';
+            this.inputTitle = '';
+            this.inputCategory = '';
+            this.inputPrice = '';
+            this.inputDate = '';
+            this.inputLocation = '';
+            this.inputSerial = '';
+            this.inputWarranty = '';
+            this.inputDuration = '';
         }
     }
 });
@@ -28819,7 +28849,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.profile[data-v-095e6bda]{\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\n}\n.profile svg[data-v-095e6bda]{\r\n    color:white;\n}\n.profilemask[data-v-095e6bda]{\r\n    position: absolute;\r\n    z-index: 1;\r\n    top:0;\r\n    right:0;\r\n    width:100vw;\r\n    height: 100vh;\r\n    background-color: transparent;\n}\n.photo[data-v-095e6bda]{\r\n    background-color: white;\r\n    border-radius:25px;\r\n    width:40px;\r\n    height: 40px;\n}\n.profileOptions[data-v-095e6bda]{\r\n    position: absolute;\r\n    z-index: 2;\r\n    right:0;\r\n    top:65px;\r\n    background-color: rgb(250, 250, 250);\r\n    -webkit-box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.473);\r\n            box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.473);\n}\n.profileOptions hr[data-v-095e6bda]{\r\n    margin: 0;\n}\n.profileOptions div[data-v-095e6bda]{\r\n    padding: 10px 25px;\r\n    cursor: pointer;\r\n    color: grey;\n}\n.profileOptions div[data-v-095e6bda]:hover{\r\n    background-color: #bdbdbd;\r\n    color:white;\n}\n.profileOptions svg[data-v-095e6bda]{\r\n    margin-right: 5px;\n}\n.settings[data-v-095e6bda]{\r\n    position: absolute;\r\n    z-index: 3;\r\n    right:0;\r\n    top:0px;\r\n    height: 100vh;\r\n    width:300px;\r\n    background-color: grey;\r\n    padding: 20px;\r\n    color:white;\n}\n.settings > svg[data-v-095e6bda]{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: white;\r\n    cursor: pointer;\n}\r\n", ""]);
+exports.push([module.i, "\n.profile[data-v-095e6bda]{\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\n}\n.profile svg[data-v-095e6bda]{\r\n    color:white;\n}\n.profilemask[data-v-095e6bda]{\r\n    position: absolute;\r\n    z-index: 1;\r\n    top:0;\r\n    right:0;\r\n    width:100vw;\r\n    height: 100vh;\r\n    background-color: transparent;\n}\n.photo[data-v-095e6bda]{\r\n    background-color: #363537;\r\n    border-radius:25px;\r\n    width:40px;\r\n    height: 40px;\n}\n.profileOptions[data-v-095e6bda]{\r\n    position: absolute;\r\n    z-index: 2;\r\n    right:0;\r\n    top:65px;\r\n    background-color: rgb(250, 250, 250);\r\n    -webkit-box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.473);\r\n            box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.473);\n}\n.profileOptions hr[data-v-095e6bda]{\r\n    margin: 0;\n}\n.profileOptions div[data-v-095e6bda]{\r\n    padding: 10px 25px;\r\n    cursor: pointer;\r\n    color: grey;\n}\n.profileOptions div[data-v-095e6bda]:hover{\r\n    background-color: #bdbdbd;\r\n    color:white;\n}\n.profileOptions svg[data-v-095e6bda]{\r\n    margin-right: 5px;\n}\n.settings[data-v-095e6bda]{\r\n    position: absolute;\r\n    z-index: 3;\r\n    right:0;\r\n    top:0px;\r\n    height: 100vh;\r\n    width:300px;\r\n    background-color: grey;\r\n    padding: 20px;\r\n    color:white;\n}\n.settings > svg[data-v-095e6bda]{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: white;\r\n    cursor: pointer;\n}\r\n", ""]);
 
 // exports
 
@@ -29172,7 +29202,51 @@ if (false) {
 }
 
 /***/ }),
-/* 84 */
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(89);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("68bb58dd", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-049f0327\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Dashboard.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-049f0327\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Dashboard.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#mainBar[data-v-049f0327]{\r\n    width:100vw;\r\n    background-color: #EE5622;\r\n    position: fixed;\r\n    top:0;\r\n    z-index: 1;\n}\n#mainBar > div[data-v-049f0327]{\r\n    max-width: 1900px;\r\n    height:65px;\r\n    margin:0 auto;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\n}\n#mainBar h4[data-v-049f0327]{\r\n    color:white;\r\n    font-weight: 600;\n}\n#contents[data-v-049f0327]{\r\n    min-height: calc(100vh - 65px);\r\n    background: #fafafa;\r\n    position: relative;\r\n    z-index: 0;\n}\n#contents .container[data-v-049f0327]\r\n{\r\n    margin-top:65px;\r\n    -ms-flex-wrap: wrap;\r\n        flex-wrap: wrap;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n#contents hr[data-v-049f0327]\r\n{\r\n    margin-top:2rem;\r\n    width:40%;\r\n    border-top: 2px solid rgba(0, 0, 0, 0.1)\n}\n.functions[data-v-049f0327]{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    width:40%;\r\n    min-width: 425px;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\n}\n.searchBar[data-v-049f0327]{\r\n    width:60%;\r\n    border-radius: 5px;\r\n    border: 1px #d65205;\r\n    background: #f59f6ec4;\r\n    border: 1px solid #f59f6ec4;\r\n    color: white;\r\n    padding: 1px 5px;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\r\n    font-family: 'Raleway', sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: -1px;\r\n    padding: 4px;\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\n.searchBar[data-v-049f0327]:focus{\r\n    border: 1px solid rgb(245, 189, 153);\r\n    border-radius: 5px;\r\n    outline: #EFEFD0;\r\n    color: rgb(116, 116, 116);\r\n    background: rgb(245, 217, 209);\n}\n.searchBar[data-v-049f0327]:focus::-webkit-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar[data-v-049f0327]:focus::-moz-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar[data-v-049f0327]:focus::-ms-input-placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar[data-v-049f0327]:focus::placeholder{\r\n    color: rgba(78, 78, 78, 0.637);\n}\n.searchBar[data-v-049f0327]::-webkit-input-placeholder{\r\n    color: rgba(224, 91, 14, 0.774);\n}\n.searchBar[data-v-049f0327]::-moz-placeholder{\r\n    color: rgba(224, 91, 14, 0.774);\n}\n.searchBar[data-v-049f0327]::-ms-input-placeholder{\r\n    color: rgba(224, 91, 14, 0.774);\n}\n.searchBar[data-v-049f0327]::placeholder{\r\n    color: rgba(224, 91, 14, 0.774);\n}\n#addButton[data-v-049f0327]{\r\n    width: 81px;\r\n    border:none;\r\n    border-radius: 6px;\r\n    padding: 4px;\r\n    background: #0E4749;\r\n    color: white;\r\n    font-weight: 500;\n}\n#addButton svg[data-v-049f0327]{\r\n    margin-top: 5px;\r\n    margin-right: 5px;\n}\n#addButton[data-v-049f0327]:focus{\r\n    outline: rgb(255, 255, 255);\n}\n#addButton[data-v-049f0327]:active{\r\n    font-size:13px;\r\n    padding: 5px;\n}\n.items[data-v-049f0327]{\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    font-family: \"Roboto\", sans-serif;\r\n    font-weight: 500;\r\n    color: grey;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    cursor: pointer;\r\n    -webkit-transition: all .2s;\r\n    transition: all .2s;\n}\n.itemsGrid[data-v-049f0327]{\r\n    background-color: #f9f9f9;   \r\n    margin-right: 30px; \r\n    margin-bottom: 30px; \r\n    font-family: \"Roboto\", sans-serif;\r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\r\n    overflow: hidden;\r\n    width:100px; \r\n    height:150px; \r\n    -webkit-box-orient: vertical; \r\n    -webkit-box-direction: normal; \r\n        -ms-flex-direction: column; \r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.itemsList[data-v-049f0327]{\r\n    background-color: #f9f9f9;   \r\n    margin-bottom: 10px;   \r\n    -webkit-box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;   \r\n            box-shadow: 3px 3px 3px #dedede, -3px -3px 3px white;\n}\n.items[data-v-049f0327]:hover, .itemsList[data-v-049f0327]:hover{\r\n  -webkit-box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\r\n          box-shadow: 5px 5px 5px #dedede, -5px -5px 5px white;\n}\n.itemCategory[data-v-049f0327]{\r\n    width:75px;\r\n    height:75px;\r\n    margin-bottom:5px;\n}\n.itemCategoryList[data-v-049f0327]{\r\n    width:30px;\r\n    height:30px;\r\n    margin-right:5px;\n}\n.addItemBox[data-v-049f0327],.viewItemBox[data-v-049f0327]{\r\n    width:100vw;\r\n    height:100vh;\r\n    position: absolute;   \r\n    top: 0px;\r\n    z-index:2;\r\n    background: radial-gradient(transparent, #4e4e4ead);\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\n}\n.addItem[data-v-049f0327],.viewItem[data-v-049f0327]{\r\n    min-width:300px;\r\n    min-height:250px;\r\n    background-color: white;\r\n    position: relative;\r\n    padding:20px;\r\n    font-family: 'Roboto', sans-serif;\n}\n.backButton[data-v-049f0327]{\r\n    position: absolute;\r\n    left: 20px;\r\n    top: 20px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #d65205;\r\n    cursor: pointer;\n}\n.editButton[data-v-049f0327]{\r\n    position: absolute;\r\n    right: 60px;\r\n    top: 15px;\r\n    width: 30px !important;\r\n    height: 30px;\r\n    color: #397dd6;\r\n    cursor: pointer;\n}\n.deleteButton[data-v-049f0327]{\r\n    position: absolute;\r\n    right: 20px;\r\n    top: 19px;\r\n    width: 25px !important;\r\n    height: 25px;\r\n    color: #ca353d;\r\n    cursor: pointer;\n}\n.catPicture[data-v-049f0327]{\r\n    height: 100px;\r\n    width: 100px;\r\n    background-color: antiquewhite;\r\n    margin-right: 10px;\r\n    border-radius: 50%;\n}\nform input[data-v-049f0327]{\r\n    border:none;\r\n    border-bottom: 1px solid rgb(187, 187, 187);\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\n}\nform input[data-v-049f0327]:focus{\r\n    outline:none;\r\n    border-bottom: 1px solid rgb(87, 87, 87);\n}\nform input[data-v-049f0327]:hover{\r\n    border-bottom: 1px solid grey;\n}\nform select[data-v-049f0327]{\r\n    font-family:'Roboto', sans-serif;\r\n    padding: 5px;\r\n    border:none;\r\n    border-bottom: 1px solid grey;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -29264,7 +29338,7 @@ var render = function() {
                 ],
                 on: {
                   click: function($event) {
-                    return _vm.viewDetails(item.id)
+                    return _vm.viewItem(item.id)
                   }
                 }
               },
@@ -29301,33 +29375,294 @@ var render = function() {
                   on: {
                     click: function($event) {
                       _vm.displayed = !_vm.displayed
+                      _vm.clearfields()
+                      _vm.editMode = false
                     }
                   }
                 }),
                 _vm._v(" "),
-                _c("h3", { staticClass: "mt-5" }, [_vm._v("Add Item")]),
+                !_vm.editMode
+                  ? _c("h3", { staticClass: "mt-5" }, [_vm._v("Add Item")])
+                  : _c("h3", { staticClass: "mt-5" }, [_vm._v("Edit Mode")]),
                 _vm._v(" "),
                 _c("hr")
               ],
               1
             ),
             _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _c("hr"),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
             _c(
-              "button",
-              { staticClass: "btn btn-success", on: { click: _vm.addtoList } },
-              [_vm._v("Add Item")]
+              "form",
+              {
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.addEditItem($event)
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "d-flex" }, [
+                  _c("div", { staticClass: "catPicture mt-2" }),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.inputTitle,
+                          expression: "inputTitle"
+                        }
+                      ],
+                      staticClass: "my-2",
+                      attrs: {
+                        type: "text",
+                        placeholder: "Title",
+                        required: ""
+                      },
+                      domProps: { value: _vm.inputTitle },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.inputTitle = $event.target.value
+                        }
+                      }
+                    }),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.inputBrand,
+                          expression: "inputBrand"
+                        }
+                      ],
+                      attrs: { type: "text", placeholder: "Brand" },
+                      domProps: { value: _vm.inputBrand },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.inputBrand = $event.target.value
+                        }
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("hr"),
+                _vm._v(" "),
+                _c("div", { staticClass: "d-flex mb-1" }, [
+                  _c("div", { staticClass: "mr-5" }, [
+                    _c("label", [_vm._v("Category :")]),
+                    _vm._v(" "),
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.inputCategory,
+                            expression: "inputCategory"
+                          }
+                        ],
+                        attrs: { required: "" },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.inputCategory = $event.target.multiple
+                              ? $$selectedVal
+                              : $$selectedVal[0]
+                          }
+                        }
+                      },
+                      [
+                        _c("option", [_vm._v("Option 1")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Option 2")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Option 3")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Option 4")])
+                      ]
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "" } }, [_vm._v("Price :")]),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.inputPrice,
+                          expression: "inputPrice"
+                        }
+                      ],
+                      attrs: { type: "text", placeholder: "Price" },
+                      domProps: { value: _vm.inputPrice },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.inputPrice = $event.target.value
+                        }
+                      }
+                    }),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "" } }, [
+                      _vm._v("Purchase Date :")
+                    ]),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.inputDate,
+                          expression: "inputDate"
+                        }
+                      ],
+                      attrs: { type: "text", placeholder: "Date" },
+                      domProps: { value: _vm.inputDate },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.inputDate = $event.target.value
+                        }
+                      }
+                    }),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "" } }, [
+                      _vm._v("Purchase Location :")
+                    ]),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.inputLocation,
+                          expression: "inputLocation"
+                        }
+                      ],
+                      attrs: { type: "text", placeholder: "Location" },
+                      domProps: { value: _vm.inputLocation },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.inputLocation = $event.target.value
+                        }
+                      }
+                    }),
+                    _c("br")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("label", { attrs: { for: "" } }, [
+                      _vm._v("Serial No :")
+                    ]),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.inputSerial,
+                          expression: "inputSerial"
+                        }
+                      ],
+                      attrs: { type: "text", placeholder: "Serial" },
+                      domProps: { value: _vm.inputSerial },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.inputSerial = $event.target.value
+                        }
+                      }
+                    }),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "" } }, [_vm._v("Warranty :")]),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.inputWarranty,
+                          expression: "inputWarranty"
+                        }
+                      ],
+                      attrs: { type: "text", placeholder: "Warranty" },
+                      domProps: { value: _vm.inputWarranty },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.inputWarranty = $event.target.value
+                        }
+                      }
+                    }),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "" } }, [_vm._v("Duration :")]),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.inputDuration,
+                          expression: "inputDuration"
+                        }
+                      ],
+                      attrs: { type: "text", placeholder: "Duration" },
+                      domProps: { value: _vm.inputDuration },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.inputDuration = $event.target.value
+                        }
+                      }
+                    }),
+                    _c("br")
+                  ])
+                ]),
+                _vm._v(" "),
+                !_vm.editMode
+                  ? _c("button", { attrs: { type: "submit" } }, [
+                      _vm._v("Submit")
+                    ])
+                  : _c("button", { attrs: { type: "submit" } }, [
+                      _vm._v("Edit Item")
+                    ])
+              ]
             )
           ])
         ])
       : _vm._e(),
     _vm._v(" "),
-    _vm.viewItem
+    _vm.itemPopup
       ? _c("div", { staticClass: "viewItemBox" }, [
           _c(
             "div",
@@ -29338,7 +29673,7 @@ var render = function() {
                 attrs: { icon: "arrow-circle-left" },
                 on: {
                   click: function($event) {
-                    _vm.viewItem = !_vm.viewItem
+                    _vm.itemPopup = !_vm.itemPopup
                   }
                 }
               }),
@@ -29358,13 +29693,13 @@ var render = function() {
                 attrs: { icon: "edit" },
                 on: {
                   click: function($event) {
-                    return _vm.addDetails(_vm.viewID)
+                    return _vm.showEditItem(_vm.viewID)
                   }
                 }
               }),
               _vm._v(" "),
               _c("div", { staticClass: "d-flex" }, [
-                _vm._m(2),
+                _vm._m(0),
                 _vm._v(" "),
                 _c("div", [
                   _c("h3", { staticClass: "mt-5" }, [
@@ -29416,97 +29751,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "d-flex" }, [
-      _c("div", { staticClass: "catPicture mt-2" }),
-      _vm._v(" "),
-      _c("div", [
-        _c("input", {
-          staticClass: "my-2",
-          attrs: { type: "text", placeholder: "Title", name: "inputTitle" }
-        }),
-        _c("br"),
-        _vm._v(" "),
-        _c("input", {
-          attrs: { type: "text", placeholder: "Brand", name: "inputBrand" }
-        })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "d-flex mb-1" }, [
-      _c("div", { staticClass: "mr-5" }, [
-        _c("label", [_vm._v("Category")]),
-        _vm._v(" "),
-        _c("select", [
-          _c("option", [_vm._v("Option 1")]),
-          _vm._v(" "),
-          _c("option", [_vm._v("Option 2")]),
-          _vm._v(" "),
-          _c("option", [_vm._v("Option 3")]),
-          _vm._v(" "),
-          _c("option", [_vm._v("Option 4")])
-        ]),
-        _c("br"),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "" } }, [_vm._v("Price :")]),
-        _c("input", {
-          attrs: { type: "text", placeholder: "Price", name: "inputPrice" }
-        }),
-        _c("br"),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "" } }, [_vm._v("Purchase Date :")]),
-        _c("input", {
-          attrs: { type: "text", placeholder: "Date", name: "inputDate" }
-        }),
-        _c("br"),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "" } }, [_vm._v("Purchase Location :")]),
-        _c("input", {
-          attrs: {
-            type: "text",
-            placeholder: "Location",
-            name: "inputLocation"
-          }
-        }),
-        _c("br")
-      ]),
-      _vm._v(" "),
-      _c("div", [
-        _c("label", { attrs: { for: "" } }, [_vm._v("Serial No :")]),
-        _c("input", {
-          attrs: { type: "text", placeholder: "Serial", name: "inputSerial" }
-        }),
-        _c("br"),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "" } }, [_vm._v("Warranty :")]),
-        _c("input", {
-          attrs: {
-            type: "text",
-            placeholder: "Warranty",
-            name: "inputWarranty"
-          }
-        }),
-        _c("br"),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "" } }, [_vm._v("Duration :")]),
-        _c("input", {
-          attrs: {
-            type: "text",
-            placeholder: "Duration",
-            name: "inputDuration"
-          }
-        }),
-        _c("br")
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

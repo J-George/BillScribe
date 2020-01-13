@@ -17,7 +17,7 @@
             <div class="container d-flex pt-5" v-bind:class="{ 'flex-column' : listView }">
                 <div v-if="listView" class=" d-flex flex-row">
                 </div>    
-                <div v-for="item in contents" :key="item.id" v-bind:class="[{itemsGrid:gridView},{itemsList:listView}]" class="items"  @click="viewDetails(item.id)">
+                <div v-for="item in contents" :key="item.id" v-bind:class="[{itemsGrid:gridView},{itemsList:listView}]" class="items"  @click="viewItem(item.id)">
                     <div v-bind:class="[{itemCategory:gridView},{itemCategoryList:listView}]"></div>
                     <p class="mb-0 text-center">{{ item.title }}</p>
                 </div>
@@ -27,47 +27,49 @@
         <div class="addItemBox" v-if="displayed">
             <div class="addItem">
                 <div>
-                    <FontAwesomeIcon icon="arrow-circle-left" class="backButton" @click="displayed = !displayed"/>
-                    <h3 class="mt-5">Add Item</h3>
+                    <FontAwesomeIcon icon="arrow-circle-left" class="backButton" @click="displayed = !displayed; clearfields(); editMode=false"/>
+                    <h3 class="mt-5" v-if="!editMode">Add Item</h3>
+                    <h3 class="mt-5" v-else>Edit Mode</h3>
                     <hr>
                 </div>
-                
+                <form @submit.prevent="addEditItem">    
                     <div class="d-flex">
                         <div class="catPicture mt-2"></div>
                         <div>
-                            <input type="text" placeholder="Title" class="my-2" name="inputTitle"><br>
-                            <input type="text" placeholder="Brand" name="inputBrand">
+                            <input type="text" placeholder="Title" class="my-2" v-model="inputTitle" required><br>
+                            <input type="text" placeholder="Brand" v-model="inputBrand">
                         </div>
                     </div>
                     <hr>
                     <div class="d-flex mb-1">
                         <div class="mr-5">
-                        <label>Category</label>  
-                        <select>
+                        <label>Category :</label>  
+                        <select v-model="inputCategory" required>
                             <option>Option 1</option>
                             <option>Option 2</option>
                             <option>Option 3</option>
                             <option>Option 4</option>
                         </select><br>         
-                        <label for="">Price :</label><input type="text" placeholder="Price" name="inputPrice"><br> 
-                        <label for="">Purchase Date :</label><input type="text" placeholder="Date" name="inputDate"><br> 
-                        <label for="">Purchase Location :</label><input type="text" placeholder="Location" name="inputLocation"><br> 
+                        <label for="">Price :</label><input type="text" placeholder="Price" v-model="inputPrice"><br> 
+                        <label for="">Purchase Date :</label><input type="text" placeholder="Date" v-model="inputDate"><br> 
+                        <label for="">Purchase Location :</label><input type="text" placeholder="Location" v-model="inputLocation"><br> 
                         </div>
                         <div>
-                            <label for="">Serial No :</label><input type="text" placeholder="Serial" name="inputSerial"><br>  
-                            <label for="">Warranty :</label><input type="text" placeholder="Warranty" name="inputWarranty"><br> 
-                            <label for="">Duration :</label><input type="text" placeholder="Duration" name="inputDuration"><br> 
+                            <label for="">Serial No :</label><input type="text" placeholder="Serial" v-model="inputSerial"><br>  
+                            <label for="">Warranty :</label><input type="text" placeholder="Warranty" v-model="inputWarranty"><br> 
+                            <label for="">Duration :</label><input type="text" placeholder="Duration" v-model="inputDuration"><br> 
                         </div>
                     </div>
-                    <button class="btn btn-success" @click="addtoList">Add Item</button>
-                
+                    <button type="submit" v-if="!editMode">Submit</button>
+                    <button type="submit" v-else>Edit Item</button>
+                </form>
             </div>
         </div>
-        <div class="viewItemBox" v-if="viewItem">
+        <div class="viewItemBox" v-if="itemPopup">
             <div class="viewItem">
-                <FontAwesomeIcon icon="arrow-circle-left" class="backButton" @click="viewItem = !viewItem"/>
+                <FontAwesomeIcon icon="arrow-circle-left" class="backButton" @click="itemPopup = !itemPopup"/>
                 <FontAwesomeIcon icon="trash-alt" class="deleteButton" @click="deleteItem(viewID)" />
-                <FontAwesomeIcon icon="edit" class="editButton" @click="addDetails(viewID)" />
+                <FontAwesomeIcon icon="edit" class="editButton" @click="showEditItem(viewID)" />
                 <div class="d-flex">
                     <div>
                         <div class="catPicture mt-5"></div>
@@ -111,9 +113,10 @@ export default {
     data(){
         return{
             displayed:false,
-            viewItem:false,
+            itemPopup:false,
             gridView:true,
-            listView:false,            
+            listView:false,
+            editMode:false,           
             settings: '',
             result:'',
             viewID:'',
@@ -127,6 +130,17 @@ export default {
             viewdop:'',
             viewCost:'',
             viewSubCat:'',
+            inputID:'',
+            inputTitle:'',
+            inputCategory:'',
+            inputBrand:'',
+            inputSerial:'',
+            inputWarranty:'',
+            inputDuration:'',
+            inputLocation:'',
+            inputDate:'',
+            inputPrice:'',
+            activeClass: 'active',
             contents:[]
         }
     },
@@ -140,70 +154,131 @@ export default {
             })    
     },
     methods:{
-        viewDetails(id){
-            console.log(id);
+        viewItem(id){
             axios.get('/warranties/'+ id)
                 .then(response=>{
-                    console.log(response)
                     this.result = response.data[0]
                     this.viewID = this.result.id;
                     this.viewTitle = this.result.title;
                     this.viewCat = this.result.category;
-                    this.viewdop = this.result.dop;
+                    this.viewdop = this.result.dateOfPurchase;
+                    this.viewPOP = this.result.placeOfPurchase;
                     this.viewSubCat = this.result.subCategory;
                     this.viewCost = this.result.cost;
-                    this.viewWarranty = this.result.WarrantyType;
-                    this.viewWarrantyDuration = this.result.Duration;
-                    this.viewSerial = this.result.SerialNumbers;
+                    this.viewWarranty = this.result.warrantyType;
+                    this.viewWarrantyDuration = this.result.duration;
+                    this.viewSerial = this.result.serialNumber;
                     this.viewBrand = this.result.brand;
-                    this.viewItem=true;
+                    this.itemPopup=true;
                 })
                 .catch(error=>{
                     console.log(error)
                 }) 
         },
-        addDetails(id){
-            alert('editing ' + id + '.' );
+
+        addEditItem(){
+            this.editMode ? this.editItem() : this.addItem()
+            this.editMode = false
         },
-        addtoList(){
-            this.contents.push({
-                id: this.newID,
-                brand:'Microsoft',
-                title: 'Surface',
-                category:'Electronics',
-                subCategory: 'laptops',
-                cost:'$900',
-                dop: '12-02-2019',
-                PPurchase: 'Halifax Shopping Center',
-                SerialNumbers: 'Dg2751235s',
-                WarrantyType: 'Accidental Damage',
-                Duration: '1 year',
-                AddWarranty: 'Apple Care 3 years',
-                ServiceL: 'HSP',
-                RPicture: '',                
+
+        editItem(){
+            axios.patch('/warranties/' + this.inputID ,{
+                brand: this.inputBrand,
+                title: this.inputTitle,
+                category: this.inputCategory,
+                cost: this.inputPrice,
+                dateOfPurchase: this.inputDate,
+                placeOfPurchase: this.inputLocation,
+                serialNumber: this.inputSerial,
+                warrantyType: this.inputWarranty,
+                duration: this.inputDuration, 
             })
-            this.newID++;
-            this.displayed = false; 
+            .catch(function (error) {
+                console.log(error);
+            })
+            this.clearfields()
+            this.displayed = false
+            this.refreshList()
         },
-        deleteItem(id)
-        {
-            axios.get('/warranties')
+
+        addItem(){
+            axios.post('/warranties', {
+                brand: this.inputBrand,
+                title: this.inputTitle,
+                category: this.inputCategory,
+                cost: this.inputPrice,
+                dateOfPurchase: this.inputDate,
+                placeOfPurchase: this.inputLocation,
+                serialNumber: this.inputSerial,
+                warrantyType: this.inputWarranty,
+                duration: this.inputDuration,                
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+            this.clearfields()
+            this.displayed = false
+            this.refreshList()
+        },
+
+        deleteItem(id){   
+            axios.delete('/warranties/' + id)
                 .then(response => {
                     console.log(response)
                 })
                .catch(error=> {
                     console.log(error)
                 })
+                this.itemPopup = false
+                this.refreshList()
         },
+
+        refreshList(){
+                axios.get('/warranties')
+                    .then(response=>{
+                        this.contents = response.data
+                    }) 
+                    .catch(error=>{
+                        console.log(error)
+                    }) 
+        },
+
+        showEditItem(id){
+            this.inputID = this.result.id
+            this.inputBrand = this.result.brand
+            this.inputTitle = this.result.title
+            this.inputCategory = this.result.category
+            this.inputPrice = this.result.cost
+            this.inputDate = this.result.dateOfPurchase
+            this.inputLocation = this.result.placeOfPurchase
+            this.inputSerial = this.result.serialNumber
+            this.inputWarranty = this.result.warrantyType
+            this.inputDuration = this.result.duration
+            this.editMode=true;
+            this.itemPopup=false
+            this.displayed = true
+        },
+
+        clearfields(){
+            this.inputID = ''
+            this.inputBrand = ''
+            this.inputTitle = ''
+            this.inputCategory = ''
+            this.inputPrice = ''
+            this.inputDate = ''
+            this.inputLocation = ''
+            this.inputSerial = ''
+            this.inputWarranty = ''
+            this.inputDuration = ''
+        }
     },
 };
 </script>
 
-<style>
+<style scoped>
 #mainBar{
     width:100vw;
-    background-color: rgb(214, 82, 5);
-    box-shadow: 0px 6px 7px #c1c1c1;
+    background-color: #EE5622;
     position: fixed;
     top:0;
     z-index: 1;
@@ -267,24 +342,24 @@ export default {
 .searchBar:focus{
     border: 1px solid rgb(245, 189, 153);
     border-radius: 5px;
-    outline: white;
+    outline: #EFEFD0;
     color: rgb(116, 116, 116);
-    background: #fcf7f4c4;
+    background: rgb(245, 217, 209);
 }
 .searchBar:focus::placeholder{
     color: rgba(78, 78, 78, 0.637);
 }
 .searchBar::placeholder{
-    color: rgba(219, 219, 219, 0.774);
+    color: rgba(224, 91, 14, 0.774);
 }
 #addButton{
     width: 81px;
     border:none;
     border-radius: 6px;
     padding: 4px;
-    background: #227200;
+    background: #0E4749;
     color: white;
-    font-weight: 300;
+    font-weight: 500;
 }
 #addButton svg{
     margin-top: 5px;
@@ -408,5 +483,7 @@ form input:hover{
 form select{
     font-family:'Roboto', sans-serif;
     padding: 5px;
+    border:none;
+    border-bottom: 1px solid grey;
 }
 </style>

@@ -56,7 +56,7 @@ export default {
     background-color: transparent;   
 }
 .photo{
-    background-color: white;
+    background-color: #363537;
     border-radius:25px;
     width:40px;
     height: 40px;
