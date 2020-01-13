@@ -18,6 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/warranties', 'WarrantyController@index');
+Route::get('/warranties/{warranty}', 'WarrantyController@show');
 Route::post('/warranties', 'WarrantyController@store');
 Route::patch('/warranties/{warranty}', 'WarrantyController@update');
 Route::delete('/warranties/{warranty}', 'WarrantyController@destroy');

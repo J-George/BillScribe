@@ -28652,6 +28652,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             gridView: true,
             listView: false,
             settings: '',
+            result: '',
             viewID: '',
             viewTitle: '',
             viewCat: '',
@@ -28663,7 +28664,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             viewdop: '',
             viewCost: '',
             viewSubCat: '',
-            newID: 4,
             contents: [
                 //    {
                 //         'id':0,
@@ -28749,18 +28749,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         viewDetails: function viewDetails(id) {
+            var _this2 = this;
+
             console.log(id);
-            this.viewID = id;
-            this.viewTitle = this.contents[id].title;
-            this.viewCat = this.contents[id].category;
-            this.viewdop = this.contents[id].dop;
-            this.viewSubCat = this.contents[id].subCategory;
-            this.viewCost = this.contents[id].cost;
-            this.viewWarranty = this.contents[id].WarrantyType;
-            this.viewWarrantyDuration = this.contents[id].Duration;
-            this.viewSerial = this.contents[id].SerialNumbers;
-            this.viewBrand = this.contents[id].brand;
-            this.viewItem = true;
+            __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get('/warranties/' + id).then(function (response) {
+                console.log(response);
+                _this2.result = response.data[0];
+                _this2.viewID = _this2.result.id;
+                _this2.viewTitle = _this2.result.title;
+                _this2.viewCat = _this2.result.category;
+                _this2.viewdop = _this2.result.dop;
+                _this2.viewSubCat = _this2.result.subCategory;
+                _this2.viewCost = _this2.result.cost;
+                _this2.viewWarranty = _this2.result.WarrantyType;
+                _this2.viewWarrantyDuration = _this2.result.Duration;
+                _this2.viewSerial = _this2.result.SerialNumbers;
+                _this2.viewBrand = _this2.result.brand;
+                _this2.viewItem = true;
+            }).catch(function (error) {
+                console.log(error);
+            });
         },
         addDetails: function addDetails(id) {
             alert('editing ' + id + '.');

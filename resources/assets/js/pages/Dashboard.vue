@@ -115,6 +115,7 @@ export default {
             gridView:true,
             listView:false,            
             settings: '',
+            result:'',
             viewID:'',
             viewTitle:'',
             viewCat:'',
@@ -126,7 +127,6 @@ export default {
             viewdop:'',
             viewCost:'',
             viewSubCat:'',
-            newID:4,
             contents:[
             //    {
             //         'id':0,
@@ -212,17 +212,25 @@ export default {
     methods:{
         viewDetails(id){
             console.log(id);
-            this.viewID = id;
-            this.viewTitle=this.contents[id].title;
-            this.viewCat=this.contents[id].category;
-            this.viewdop=this.contents[id].dop;
-            this.viewSubCat=this.contents[id].subCategory;
-            this.viewCost=this.contents[id].cost;
-            this.viewWarranty=this.contents[id].WarrantyType;
-            this.viewWarrantyDuration=this.contents[id].Duration;
-            this.viewSerial=this.contents[id].SerialNumbers;
-            this.viewBrand=this.contents[id].brand;
-            this.viewItem=true;
+            axios.get('/warranties/'+ id)
+                .then(response=>{
+                    console.log(response)
+                    this.result = response.data[0]
+                    this.viewID = this.result.id;
+                    this.viewTitle = this.result.title;
+                    this.viewCat = this.result.category;
+                    this.viewdop = this.result.dop;
+                    this.viewSubCat = this.result.subCategory;
+                    this.viewCost = this.result.cost;
+                    this.viewWarranty = this.result.WarrantyType;
+                    this.viewWarrantyDuration = this.result.Duration;
+                    this.viewSerial = this.result.SerialNumbers;
+                    this.viewBrand = this.result.brand;
+                    this.viewItem=true;
+                })
+                .catch(error=>{
+                    console.log(error)
+                }) 
         },
         addDetails(id){
             alert('editing ' + id + '.' );

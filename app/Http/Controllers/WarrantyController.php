@@ -60,7 +60,8 @@ class WarrantyController extends Controller
      */
     public function show(Warranty $warranty)
     {
-        //
+        return Warranty::where('id',$warranty->id)
+                        ->get();
     }
 
     /**
