@@ -22,7 +22,10 @@
                     <p class="mb-0 text-center">{{ item.title }}</p>
                 </div>
             </div>
-            <hr>
+            <div class='contents-footer'>
+                <hr>
+                <small>{{contents.length}} items</small>
+            </div>
         </div>
         <div class="addItemBox" v-if="displayed">
             <div class="addItem">
@@ -310,10 +313,13 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
 }
-#contents hr
+.contents-footer{
+    margin:0 auto;
+    width:40%;
+}
+.contents-footer hr
 {
     margin-top:2rem;
-    width:40%;
     border-top: 2px solid rgba(0, 0, 0, 0.1)
 }
 .functions{
