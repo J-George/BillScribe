@@ -3,7 +3,9 @@ import VueRouter from "vue-router";
 import axios from 'axios';
 
 window.eventBus = new Vue();
-Vue.prototype.$http = axios;
+Vue.prototype.$http = axios
+axios.defaults.baseURL = 'http://127.0.0.1:8000/api'
+
 Vue.use(VueRouter);
 
 import App from "./components/App";

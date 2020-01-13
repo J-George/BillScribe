@@ -100,6 +100,7 @@
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import Settings from "../components/Settings";
 import ListGrid from "../components/ListGrid";
+import axios from 'axios';
 
 export default {
     components: {
@@ -127,77 +128,86 @@ export default {
             viewSubCat:'',
             newID:4,
             contents:[
-                {
-                    'id':0,
-                    'title': 'Apple Watch',
-                    'category': 'electronics',
-                    'subCategory':'Smartwatch',
-                    'brand': 'Apple',
-                    'picture': '',
-                    'cost':'$600',
-                    'dop': '12-02-2019',
-                    'PPurchase': 'Halifax Shopping Center',
-                    'SerialNumbers': 'Dg2751235s',
-                    'WarrantyType': 'Aciidental Damage',
-                    'Duration': '1 year',
-                    'AddWarranty': 'none',
-                    'ServiceL': 'HSP',
-                    'RPicture': '',
-                },
+            //    {
+            //         'id':0,
+            //         'title': 'Apple Watch',
+            //         'category': 'electronics',
+            //         'subCategory':'Smartwatch',
+            //         'brand': 'Apple',
+            //         'picture': '',
+            //         'cost':'$600',
+            //         'dop': '12-02-2019',
+            //         'PPurchase': 'Halifax Shopping Center',
+            //         'SerialNumbers': 'Dg2751235s',
+            //         'WarrantyType': 'Aciidental Damage',
+            //         'Duration': '1 year',
+            //         'AddWarranty': 'none',
+            //         'ServiceL': 'HSP',
+            //         'RPicture': '',
+            //     },
                 
-                {
-                    'id':1,
-                    'title': 'iPad',
-                    'category': 'electronics',
-                    'subCategory':'Tablet',
-                    'brand': 'Apple',
-                    'picture': '',
-                    'cost':'$900',
-                    'dop': '12-02-2019',
-                    'PPurchase': 'Halifax Shopping Center',
-                    'SerialNumbers': 'Dgsdfsd235s',
-                    'WarrantyType': 'Aciidental Damage',
-                    'Duration': '1 year',
-                    'AddWarranty': 'none',
-                    'ServiceL': 'HSP',
-                    'RPicture': '',
-                },
-                {
-                    'id':2,
-                    'title': 'Macbook',
-                    'category': 'electronics',
-                    'subCategory':'Laptop',
-                    'brand': 'Apple',
-                    'picture': '',
-                    'cost':'',
-                    'dop': '12-02-2019',
-                    'PPurchase': 'Halifax Shopping Center',
-                    'SerialNumbers': 'Dg3451235s',
-                    'WarrantyType': 'Accidental Damage',
-                    'Duration': '1 year',
-                    'AddWarranty': 'none',
-                    'ServiceL': 'HSP',
-                    'RPicture': '',
-                },
-                {
-                    'id':3,
-                    'title': 'iPhone',
-                    'category': 'electronics',
-                    'subCategory':'Phone',
-                    'brand': 'Apple',
-                    'picture': '',
-                    'cost':'$900',
-                    'dop': '12-02-2019',
-                    'PPurchase': 'Halifax Shopping Center',
-                    'SerialNumbers': 'Dg2751235s',
-                    'WarrantyType': 'Accidental Damage',
-                    'Duration': '1 year',
-                    'AddWarranty': 'Apple Care 3 years',
-                    'ServiceL': 'HSP',
-                    'RPicture': '',
-                }
-            ]
+            //     {
+            //         'id':1,
+            //         'title': 'iPad',
+            //         'category': 'electronics',
+            //         'subCategory':'Tablet',
+            //         'brand': 'Apple',
+            //         'picture': '',
+            //         'cost':'$900',
+            //         'dop': '12-02-2019',
+            //         'PPurchase': 'Halifax Shopping Center',
+            //         'SerialNumbers': 'Dgsdfsd235s',
+            //         'WarrantyType': 'Aciidental Damage',
+            //         'Duration': '1 year',
+            //         'AddWarranty': 'none',
+            //         'ServiceL': 'HSP',
+            //         'RPicture': '',
+            //     },
+            //     {
+            //         'id':2,
+            //         'title': 'Macbook',
+            //         'category': 'electronics',
+            //         'subCategory':'Laptop',
+            //         'brand': 'Apple',
+            //         'picture': '',
+            //         'cost':'',
+            //         'dop': '12-02-2019',
+            //         'PPurchase': 'Halifax Shopping Center',
+            //         'SerialNumbers': 'Dg3451235s',
+            //         'WarrantyType': 'Accidental Damage',
+            //         'Duration': '1 year',
+            //         'AddWarranty': 'none',
+            //         'ServiceL': 'HSP',
+            //         'RPicture': '',
+            //     },
+            //     {
+            //         'id':3,
+            //         'title': 'iPhone',
+            //         'category': 'electronics',
+            //         'subCategory':'Phone',
+            //         'brand': 'Apple',
+            //         'picture': '',
+            //         'cost':'$900',
+            //         'dop': '12-02-2019',
+            //         'PPurchase': 'Halifax Shopping Center',
+            //         'SerialNumbers': 'Dg2751235s',
+            //         'WarrantyType': 'Accidental Damage',
+            //         'Duration': '1 year',
+            //         'AddWarranty': 'Apple Care 3 years',
+            //         'ServiceL': 'HSP',
+            //         'RPicture': '',
+            //     }
+             ]
         }
+    },
+    created(){
+        axios.get('/warranties')
+            .then(response=>{
+                this.contents = response.data
+            }) 
+            .catch(error=>{
+                console.log(error)
+            })    
     },
     methods:{
         viewDetails(id){
@@ -239,10 +249,14 @@ export default {
         },
         deleteItem(id)
         {
-            this.contents.splice(id, 1)
-            console.log(id)
-            this.viewItem=false;
-        }
+            axios.get('/warranties')
+                .then(response => {
+                    console.log(response)
+                })
+               .catch(error=> {
+                    console.log(error)
+                })
+        },
     },
 };
 </script>
