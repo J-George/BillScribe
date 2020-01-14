@@ -50,7 +50,8 @@ export default {
     background-color: #f5965e75;
 }
 .darken{
-    background-color: #f5965e75 !important;
+    /* background-color: #f5965e75 !important; */
+    background-color: #67364e !important;
 }
 #listButton:active svg{
     margin-left: 2px;
@@ -64,14 +65,16 @@ export default {
     margin-right: -3px;
     border: none;
     padding: 4px 8px;
-    background-color: #f5965e;    
+    /* background-color: #f5965e;     */
+    background-color: #9a5d7b;
 }
 #gridButton{
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     border: none;
     padding: 4px 8px;
-    background-color: #f5965e;
+    /* background-color: #f5965e; */
+    background-color: #9a5d7b;
 }
 #listButton svg,#gridButton svg{
     width: 15px;
@@ -89,9 +92,11 @@ export default {
 #listButton:active svg,#gridButton:active svg, .darken svg{
     width: 14px;
     height: 14px;
-    color:#d65205;
+    /* color:#d65205; */
+    color: #d270a0
 }
 #listButton:hover svg,#gridButton:hover svg{
-    color:#d65205;
+    /* color:#d65205; */
+    color: #d270a0
 }
 </style>

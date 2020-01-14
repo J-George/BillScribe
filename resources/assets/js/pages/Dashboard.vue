@@ -281,7 +281,8 @@ export default {
 <style scoped>
 #mainBar{
     width:100vw;
-    background-color: #EE5622;
+    /* background-color: #EE5622; */
+    background-color: #75485E;
     position: fixed;
     top:0;
     z-index: 1;
@@ -332,9 +333,10 @@ export default {
 .searchBar{
     width:60%;
     border-radius: 5px;
-    border: 1px #d65205;
-    background: #f59f6ec4;
-    border: 1px solid #f59f6ec4;
+    /* background: #f59f6ec4; */
+    background-color: #9a5d7b;
+    /* border: 1px solid #f59f6ec4; */
+     border: 1px solid #9e4588c4;
     color: white;
     padding: 1px 5px;
     transition: all .2s;
@@ -346,17 +348,20 @@ export default {
 
 }
 .searchBar:focus{
-    border: 1px solid rgb(245, 189, 153);
+    /* border: 1px solid rgb(245, 189, 153); */
+    border: 1px solid rgb(245, 153, 245);
     border-radius: 5px;
-    outline: #EFEFD0;
+    outline: none;
     color: rgb(116, 116, 116);
-    background: rgb(245, 217, 209);
+    /* background: rgb(245, 217, 209); */
+    background: rgb(239, 209, 245);
 }
 .searchBar:focus::placeholder{
     color: rgba(78, 78, 78, 0.637);
 }
 .searchBar::placeholder{
-    color: rgba(224, 91, 14, 0.774);
+    /* color: rgba(224, 91, 14, 0.774); */
+    color: rgba(223, 217, 221, 0.774);
 }
 #addButton{
     width: 81px;
