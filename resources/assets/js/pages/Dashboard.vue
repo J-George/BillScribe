@@ -354,7 +354,7 @@ export default {
     outline: none;
     color: rgb(116, 116, 116);
     /* background: rgb(245, 217, 209); */
-    background: rgb(239, 209, 245);
+    background: #fafafa;
 }
 .searchBar:focus::placeholder{
     color: rgba(78, 78, 78, 0.637);

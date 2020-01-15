@@ -13,6 +13,7 @@ import Welcome from "./pages/Welcome";
 import VueLogin from "./pages/VueLogin";
 import VueRegister from "./pages/VueRegister";
 import Dashboard from "./pages/Dashboard";
+import AuthClients from "./pages/AuthClients"
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -63,7 +64,12 @@ const router = new VueRouter({
             path: "/dashboard",
             name: "dashboard",
             component: Dashboard,
-        }
+        },
+        {
+            path: "/passport",
+            name: "passport",
+            component: AuthClients,
+        },
     ]
 });
 const app = new Vue({

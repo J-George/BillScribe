@@ -35,3 +35,7 @@ Route::get('/dashboard', function(){
     return view('vueapp');
 });
 
+Route::get('/passport', function(){
+    return view('vueapp');
+});
+
