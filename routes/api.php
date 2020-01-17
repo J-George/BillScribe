@@ -17,6 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post('/login', 'LoginController@login');
+
 Route::get('/warranties', 'WarrantyController@index');
 Route::get('/warranties/{warranty}', 'WarrantyController@show');
 Route::post('/warranties', 'WarrantyController@store');
